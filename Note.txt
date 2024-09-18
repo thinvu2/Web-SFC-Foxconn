@@ -1,0 +1,66 @@
+runas/user:vngz\V1013676 cmd
+
+Foxconn160507...
+
+runas/user:vngz\V0957268 cmd
+Foxconn2024)*
+
+cd/
+type nul > Select.ini
+
+icacls Select.ini /grant Everyone:F 
+
+for %i in (*.ocx) do regsvr32 %i
+
+for %i in (*.dll) do regsvr32 %i
+
+VNfii@ITsfc2022@@!
+
+Github: 
+-- get code from github
+git clone https://github.com/username/repository.git
+-- Push code to responsitory
+1. Initialize respository
+- git init
+- git add .
+- git commit -m "Initial commit"
+ - git remote add origin https://github.com/thinvu2/Vuejs
+- git remote -v
+- git push origin main
+
+-- Doi ten nhanh cuc bo:
+- git checkout master
+- git branch -m master main
+
+--Day nhanh moi len remote va thiet lap theo doi:
+- git push origin main
+- git push --set-upstream origin main
+
+-- Xoa nhanh master tren remote (options):
+- git push origin --delete master
+
+Yarn
+yarn config set proxy http://V0990938:JBCjg97h@10.220.3.16:3128
+yarn config set https-proxy http://V0990938:JBCjg97h@10.220.3.16:3128
+---
+yarn config set proxy http://V1039442:foxconn20!!@10.220.3.16:3128
+yarn config set https-proxy http://V1039442:foxconn20!!@10.220.3.16:3128
+NPM:
+npm config set proxy http://V0990938:JBCjg97h@10.220.3.16:3128
+npm config set https-proxy http://V0990938:JBCjg97h@10.220.3.16:3128
+
+--Git
+git config --global http.proxy http://username:password@proxyserver:port
+git config --global http.proxy https://username:password@proxyserver:port
+
+-->> copy file bang cmd: 
+robocopy "C:\Program Files (x86)\Common Files\Borland Shared" "C:\Program Files\Common Files\Borland Shared" /e
+
+-->> co dau cach thi can them "" 
+
+----Telnet:
+  -- Open "Start" (Windows Button)
+  -- Search for "Turn Windows features On or Off"
+   --Check "Telnet client" and check "Telnet server".
+
+

@@ -1,0 +1,20 @@
+var menuQInv2 = [
+    { name: "MO", icon: "database", children: [] },
+    { name: "Serial", icon: "syringe", children: [] },
+    { name: "MAC", icon: "box-open", children: [] },
+    { name: "Box", icon: "gift", children: [] },
+    { name: "R2S_MAC", icon: "pallet", children: [] },
+    { name: "Invoice", icon: "calendar-alt", children: [] },
+    //{ name: "C_MAC", icon: "dolly", children: [] },
+    //{ name: "A_MAC", icon: "gift", children: [] }, 
+    { name: "H_Invoice", icon: "route", children: [] },
+    //{ name: "HC_MAC", icon: "sim-card", children: [] },
+    //{ name: "HA_MAC", icon: "tools", children: [] },
+    //{ name: "R2S_Ship", icon: "chart-line", children: [] },
+    //{ name: "H2S_Ship", icon: "bacteria", children: [] },
+    { name: "Find_MO", icon: "list", children: [] },    
+    //{ name: "T77", icon: "list", children: [] },  
+    //{ name: "IMEI/IMEID", icon: "list", children: [] },  
+    //{ name: "J01N027", icon: "list", children: [] },  
+]
+export default menuQInv2
