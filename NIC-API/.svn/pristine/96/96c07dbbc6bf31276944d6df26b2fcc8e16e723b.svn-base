@@ -1,0 +1,2773 @@
+D:\Linh\Learn\SN_API\SN_API\bin\roslyn\csc.exe
+D:\Linh\Learn\SN_API\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Linh\Learn\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Linh\Learn\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Linh\Learn\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Linh\Learn\SN_API\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Linh\Learn\SN_API\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Linh\Learn\SN_API\SN_API\bin\roslyn\System.Collections.Immutable.dll
+D:\Linh\Learn\SN_API\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+D:\Linh\Learn\SN_API\SN_API\bin\roslyn\vbc.exe
+D:\Linh\Learn\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe
+D:\Linh\Learn\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe.config
+D:\Linh\Learn\SN_API\SN_API\bin\SN_API.dll.config
+D:\Linh\Learn\SN_API\SN_API\bin\SN_API.dll
+D:\Linh\Learn\SN_API\SN_API\bin\SN_API.pdb
+D:\Linh\Learn\SN_API\SN_API\bin\Antlr3.Runtime.dll
+D:\Linh\Learn\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Linh\Learn\SN_API\SN_API\bin\Microsoft.Web.Infrastructure.dll
+D:\Linh\Learn\SN_API\SN_API\bin\Newtonsoft.Json.dll
+D:\Linh\Learn\SN_API\SN_API\bin\System.Net.Http.Formatting.dll
+D:\Linh\Learn\SN_API\SN_API\bin\System.Web.Helpers.dll
+D:\Linh\Learn\SN_API\SN_API\bin\System.Web.Http.dll
+D:\Linh\Learn\SN_API\SN_API\bin\System.Web.Http.WebHost.dll
+D:\Linh\Learn\SN_API\SN_API\bin\System.Web.Mvc.dll
+D:\Linh\Learn\SN_API\SN_API\bin\System.Web.Optimization.dll
+D:\Linh\Learn\SN_API\SN_API\bin\System.Web.Razor.dll
+D:\Linh\Learn\SN_API\SN_API\bin\System.Web.WebPages.Deployment.dll
+D:\Linh\Learn\SN_API\SN_API\bin\System.Web.WebPages.dll
+D:\Linh\Learn\SN_API\SN_API\bin\System.Web.WebPages.Razor.dll
+D:\Linh\Learn\SN_API\SN_API\bin\WebGrease.dll
+D:\Linh\Learn\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Linh\Learn\SN_API\SN_API\bin\System.Web.Helpers.xml
+D:\Linh\Learn\SN_API\SN_API\bin\System.Web.Mvc.xml
+D:\Linh\Learn\SN_API\SN_API\bin\System.Web.Optimization.xml
+D:\Linh\Learn\SN_API\SN_API\bin\System.Web.Razor.xml
+D:\Linh\Learn\SN_API\SN_API\bin\System.Web.WebPages.xml
+D:\Linh\Learn\SN_API\SN_API\bin\System.Web.WebPages.Deployment.xml
+D:\Linh\Learn\SN_API\SN_API\bin\System.Web.WebPages.Razor.xml
+D:\Linh\Learn\SN_API\SN_API\bin\Antlr3.Runtime.pdb
+D:\Linh\Learn\SN_API\SN_API\bin\Newtonsoft.Json.xml
+D:\Linh\Learn\SN_API\SN_API\bin\System.Net.Http.Formatting.xml
+D:\Linh\Learn\SN_API\SN_API\bin\System.Web.Http.xml
+D:\Linh\Learn\SN_API\SN_API\bin\System.Web.Http.WebHost.xml
+D:\Linh\Learn\SN_API\SN_API\obj\Debug\SN_API.csprojResolveAssemblyReference.cache
+D:\Linh\Learn\SN_API\SN_API\obj\Debug\SN_API.dll
+D:\Linh\Learn\SN_API\SN_API\obj\Debug\SN_API.pdb
+D:\TienLuat\SN_API\SN_API\bin\roslyn\csc.exe
+D:\TienLuat\SN_API\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TienLuat\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TienLuat\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TienLuat\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TienLuat\SN_API\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TienLuat\SN_API\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TienLuat\SN_API\SN_API\bin\roslyn\System.Collections.Immutable.dll
+D:\TienLuat\SN_API\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+D:\TienLuat\SN_API\SN_API\bin\roslyn\vbc.exe
+D:\TienLuat\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe
+D:\TienLuat\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe.config
+D:\TienLuat\SN_API\SN_API\bin\SN_API.dll.config
+D:\TienLuat\SN_API\SN_API\bin\SN_API.dll
+D:\TienLuat\SN_API\SN_API\bin\SN_API.pdb
+D:\TienLuat\SN_API\SN_API\bin\Antlr3.Runtime.dll
+D:\TienLuat\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TienLuat\SN_API\SN_API\bin\Microsoft.Web.Infrastructure.dll
+D:\TienLuat\SN_API\SN_API\bin\Newtonsoft.Json.dll
+D:\TienLuat\SN_API\SN_API\bin\System.Net.Http.Formatting.dll
+D:\TienLuat\SN_API\SN_API\bin\System.Web.Helpers.dll
+D:\TienLuat\SN_API\SN_API\bin\System.Web.Http.dll
+D:\TienLuat\SN_API\SN_API\bin\System.Web.Http.WebHost.dll
+D:\TienLuat\SN_API\SN_API\bin\System.Web.Mvc.dll
+D:\TienLuat\SN_API\SN_API\bin\System.Web.Optimization.dll
+D:\TienLuat\SN_API\SN_API\bin\System.Web.Razor.dll
+D:\TienLuat\SN_API\SN_API\bin\System.Web.WebPages.Deployment.dll
+D:\TienLuat\SN_API\SN_API\bin\System.Web.WebPages.dll
+D:\TienLuat\SN_API\SN_API\bin\System.Web.WebPages.Razor.dll
+D:\TienLuat\SN_API\SN_API\bin\WebGrease.dll
+D:\TienLuat\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TienLuat\SN_API\SN_API\bin\System.Web.Helpers.xml
+D:\TienLuat\SN_API\SN_API\bin\System.Web.Mvc.xml
+D:\TienLuat\SN_API\SN_API\bin\System.Web.Optimization.xml
+D:\TienLuat\SN_API\SN_API\bin\System.Web.Razor.xml
+D:\TienLuat\SN_API\SN_API\bin\System.Web.WebPages.xml
+D:\TienLuat\SN_API\SN_API\bin\System.Web.WebPages.Deployment.xml
+D:\TienLuat\SN_API\SN_API\bin\System.Web.WebPages.Razor.xml
+D:\TienLuat\SN_API\SN_API\bin\Antlr3.Runtime.pdb
+D:\TienLuat\SN_API\SN_API\bin\Newtonsoft.Json.xml
+D:\TienLuat\SN_API\SN_API\bin\System.Net.Http.Formatting.xml
+D:\TienLuat\SN_API\SN_API\bin\System.Web.Http.xml
+D:\TienLuat\SN_API\SN_API\bin\System.Web.Http.WebHost.xml
+D:\TienLuat\SN_API\SN_API\obj\Debug\SN_API.dll
+D:\TienLuat\SN_API\SN_API\obj\Debug\SN_API.pdb
+D:\TienLuat\SN_API\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+D:\TienLuat\SN_API\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+D:\TienLuat\SN_API\SN_API\bin\Microsoft.Owin.Cors.dll
+D:\TienLuat\SN_API\SN_API\bin\Microsoft.Owin.dll
+D:\TienLuat\SN_API\SN_API\bin\Microsoft.Owin.Security.dll
+D:\TienLuat\SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\TienLuat\SN_API\SN_API\bin\Owin.dll
+D:\TienLuat\SN_API\SN_API\bin\System.Web.Cors.dll
+D:\TienLuat\SN_API\SN_API\bin\System.Web.Http.Owin.dll
+D:\TienLuat\SN_API\SN_API\bin\Microsoft.Owin.xml
+D:\TienLuat\SN_API\SN_API\bin\Microsoft.Owin.Cors.xml
+D:\TienLuat\SN_API\SN_API\bin\Microsoft.Owin.Security.xml
+D:\TienLuat\SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\TienLuat\SN_API\SN_API\bin\System.Web.Http.Owin.xml
+D:\TienLuat\SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\TienLuat\SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+D:\TienLuat\SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+D:\TienLuat\SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\TienLuat\SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\TienLuat\SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+D:\TienLuat\SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+D:\TienLuat\SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\TienLuat\SN_API\SN_API\obj\Debug\SN_API.csprojAssemblyReference.cache
+F:\Code C#\SN_API\SN_API\bin\roslyn\csc.exe
+F:\Code C#\SN_API\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Code C#\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Code C#\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Code C#\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Code C#\SN_API\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Code C#\SN_API\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Code C#\SN_API\SN_API\bin\roslyn\System.Collections.Immutable.dll
+F:\Code C#\SN_API\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+F:\Code C#\SN_API\SN_API\bin\roslyn\vbc.exe
+F:\Code C#\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe
+F:\Code C#\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe.config
+F:\Code C#\SN_API\SN_API\bin\SN_API.dll.config
+F:\Code C#\SN_API\SN_API\bin\SN_API.dll
+F:\Code C#\SN_API\SN_API\bin\SN_API.pdb
+F:\Code C#\SN_API\SN_API\bin\Antlr3.Runtime.dll
+F:\Code C#\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Code C#\SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\Code C#\SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+F:\Code C#\SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+F:\Code C#\SN_API\SN_API\bin\Microsoft.Owin.Cors.dll
+F:\Code C#\SN_API\SN_API\bin\Microsoft.Owin.dll
+F:\Code C#\SN_API\SN_API\bin\Microsoft.Owin.Security.dll
+F:\Code C#\SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+F:\Code C#\SN_API\SN_API\bin\Microsoft.Web.Infrastructure.dll
+F:\Code C#\SN_API\SN_API\bin\Newtonsoft.Json.dll
+F:\Code C#\SN_API\SN_API\bin\Owin.dll
+F:\Code C#\SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+F:\Code C#\SN_API\SN_API\bin\System.Net.Http.Formatting.dll
+F:\Code C#\SN_API\SN_API\bin\System.Web.Cors.dll
+F:\Code C#\SN_API\SN_API\bin\System.Web.Helpers.dll
+F:\Code C#\SN_API\SN_API\bin\System.Web.Http.dll
+F:\Code C#\SN_API\SN_API\bin\System.Web.Http.Owin.dll
+F:\Code C#\SN_API\SN_API\bin\System.Web.Http.WebHost.dll
+F:\Code C#\SN_API\SN_API\bin\System.Web.Mvc.dll
+F:\Code C#\SN_API\SN_API\bin\System.Web.Optimization.dll
+F:\Code C#\SN_API\SN_API\bin\System.Web.Razor.dll
+F:\Code C#\SN_API\SN_API\bin\System.Web.WebPages.Deployment.dll
+F:\Code C#\SN_API\SN_API\bin\System.Web.WebPages.dll
+F:\Code C#\SN_API\SN_API\bin\System.Web.WebPages.Razor.dll
+F:\Code C#\SN_API\SN_API\bin\WebGrease.dll
+F:\Code C#\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Code C#\SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+F:\Code C#\SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+F:\Code C#\SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+F:\Code C#\SN_API\SN_API\bin\Microsoft.Owin.xml
+F:\Code C#\SN_API\SN_API\bin\Microsoft.Owin.Cors.xml
+F:\Code C#\SN_API\SN_API\bin\Microsoft.Owin.Security.xml
+F:\Code C#\SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+F:\Code C#\SN_API\SN_API\bin\Newtonsoft.Json.xml
+F:\Code C#\SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+F:\Code C#\SN_API\SN_API\bin\System.Net.Http.Formatting.xml
+F:\Code C#\SN_API\SN_API\bin\System.Web.Http.xml
+F:\Code C#\SN_API\SN_API\bin\System.Web.Http.Owin.xml
+F:\Code C#\SN_API\SN_API\bin\System.Web.Helpers.xml
+F:\Code C#\SN_API\SN_API\bin\System.Web.Mvc.xml
+F:\Code C#\SN_API\SN_API\bin\System.Web.Optimization.xml
+F:\Code C#\SN_API\SN_API\bin\System.Web.Razor.xml
+F:\Code C#\SN_API\SN_API\bin\System.Web.WebPages.xml
+F:\Code C#\SN_API\SN_API\bin\System.Web.WebPages.Deployment.xml
+F:\Code C#\SN_API\SN_API\bin\System.Web.WebPages.Razor.xml
+F:\Code C#\SN_API\SN_API\bin\Antlr3.Runtime.pdb
+F:\Code C#\SN_API\SN_API\bin\System.Web.Http.WebHost.xml
+F:\Code C#\SN_API\SN_API\obj\Debug\SN_API.csprojAssemblyReference.cache
+F:\Code C#\SN_API\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+F:\Code C#\SN_API\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+F:\Code C#\SN_API\SN_API\obj\Debug\SN_API.dll
+F:\Code C#\SN_API\SN_API\obj\Debug\SN_API.pdb
+D:\TienLuat\CODE\SN_API\SN_API\bin\roslyn\csc.exe
+D:\TienLuat\CODE\SN_API\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TienLuat\CODE\SN_API\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TienLuat\CODE\SN_API\SN_API\bin\roslyn\System.Collections.Immutable.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\roslyn\vbc.exe
+D:\TienLuat\CODE\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe
+D:\TienLuat\CODE\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe.config
+D:\TienLuat\CODE\SN_API\SN_API\bin\SN_API.dll.config
+D:\TienLuat\CODE\SN_API\SN_API\bin\SN_API.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\SN_API.pdb
+D:\TienLuat\CODE\SN_API\SN_API\bin\Antlr3.Runtime.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\Microsoft.Owin.Cors.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\Microsoft.Owin.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\Microsoft.Owin.Security.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\Microsoft.Web.Infrastructure.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\Newtonsoft.Json.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\Owin.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Net.Http.Formatting.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Web.Cors.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Web.Helpers.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Web.Http.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Web.Http.Owin.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Web.Http.WebHost.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Web.Mvc.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Web.Optimization.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Web.Razor.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Web.WebPages.Deployment.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Web.WebPages.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Web.WebPages.Razor.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\WebGrease.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TienLuat\CODE\SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\TienLuat\CODE\SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+D:\TienLuat\CODE\SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+D:\TienLuat\CODE\SN_API\SN_API\bin\Microsoft.Owin.xml
+D:\TienLuat\CODE\SN_API\SN_API\bin\Microsoft.Owin.Cors.xml
+D:\TienLuat\CODE\SN_API\SN_API\bin\Microsoft.Owin.Security.xml
+D:\TienLuat\CODE\SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\TienLuat\CODE\SN_API\SN_API\bin\Newtonsoft.Json.xml
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Net.Http.Formatting.xml
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Web.Http.xml
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Web.Http.Owin.xml
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Web.Helpers.xml
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Web.Mvc.xml
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Web.Optimization.xml
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Web.Razor.xml
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Web.WebPages.xml
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Web.WebPages.Deployment.xml
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Web.WebPages.Razor.xml
+D:\TienLuat\CODE\SN_API\SN_API\bin\Antlr3.Runtime.pdb
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Web.Http.WebHost.xml
+D:\TienLuat\CODE\SN_API\SN_API\obj\Debug\SN_API.csprojAssemblyReference.cache
+D:\TienLuat\CODE\SN_API\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+D:\TienLuat\CODE\SN_API\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+D:\TienLuat\CODE\SN_API\SN_API\obj\Debug\SN_API.dll
+D:\TienLuat\CODE\SN_API\SN_API\obj\Debug\SN_API.pdb
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\roslyn\csc.exe
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\roslyn\System.Collections.Immutable.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\roslyn\vbc.exe
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe.config
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\SN_API.dll.config
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\SN_API.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\SN_API.pdb
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\Antlr3.Runtime.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\Microsoft.Owin.Cors.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\Microsoft.Owin.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\Microsoft.Owin.Security.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\Microsoft.Web.Infrastructure.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\Newtonsoft.Json.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\Owin.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.Net.Http.Formatting.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.Web.Cors.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.Web.Helpers.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.Web.Http.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.Web.Http.Owin.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.Web.Http.WebHost.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.Web.Mvc.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.Web.Optimization.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.Web.Razor.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.Web.WebPages.Deployment.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.Web.WebPages.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.Web.WebPages.Razor.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\WebGrease.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\Microsoft.Owin.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\Microsoft.Owin.Cors.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\Microsoft.Owin.Security.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\Newtonsoft.Json.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.Net.Http.Formatting.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.Web.Http.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.Web.Http.Owin.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.Web.Helpers.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.Web.Mvc.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.Web.Optimization.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.Web.Razor.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.Web.WebPages.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.Web.WebPages.Deployment.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.Web.WebPages.Razor.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\Antlr3.Runtime.pdb
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\bin\System.Web.Http.WebHost.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\obj\Debug\SN_API.csprojAssemblyReference.cache
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\obj\Debug\SN_API.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API\SN_API\obj\Debug\SN_API.pdb
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\roslyn\csc.exe
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\roslyn\System.Collections.Immutable.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\roslyn\vbc.exe
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\roslyn\VBCSCompiler.exe
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\roslyn\VBCSCompiler.exe.config
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\SN_API.dll.config
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\SN_API.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\SN_API.pdb
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\Antlr3.Runtime.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\Microsoft.Owin.Cors.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\Microsoft.Owin.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\Microsoft.Owin.Security.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\Microsoft.Web.Infrastructure.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\Newtonsoft.Json.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\Owin.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Net.Http.Formatting.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Web.Cors.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Web.Helpers.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Web.Http.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Web.Http.Owin.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Web.Http.WebHost.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Web.Mvc.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Web.Optimization.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Web.Razor.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Web.WebPages.Deployment.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Web.WebPages.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Web.WebPages.Razor.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\WebGrease.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\Microsoft.Owin.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\Microsoft.Owin.Cors.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\Microsoft.Owin.Security.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\Newtonsoft.Json.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Net.Http.Formatting.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Web.Http.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Web.Http.Owin.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Web.Helpers.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Web.Mvc.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Web.Optimization.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Web.Razor.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Web.WebPages.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Web.WebPages.Deployment.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Web.WebPages.Razor.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\Antlr3.Runtime.pdb
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Web.Http.WebHost.xml
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\obj\Debug\SN_API.csprojAssemblyReference.cache
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\obj\Debug\SN_API.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\obj\Debug\SN_API.pdb
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Web.Http.Cors.dll
+D:\TienLuat\CODE\SN_API_NEW\SN_API_20210201\SN_API\bin\System.Web.Http.Cors.xml
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\roslyn\csc.exe
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\roslyn\System.Collections.Immutable.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\roslyn\vbc.exe
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\roslyn\VBCSCompiler.exe
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\roslyn\VBCSCompiler.exe.config
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\SN_API.dll.config
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\SN_API.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\SN_API.pdb
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\Antlr3.Runtime.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\Microsoft.Owin.Cors.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\Microsoft.Owin.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\Microsoft.Owin.Security.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\Microsoft.Web.Infrastructure.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\Newtonsoft.Json.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\Owin.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Net.Http.Formatting.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Web.Cors.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Web.Helpers.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Web.Http.Cors.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Web.Http.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Web.Http.Owin.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Web.Http.WebHost.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Web.Mvc.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Web.Optimization.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Web.Razor.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Web.WebPages.Deployment.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Web.WebPages.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Web.WebPages.Razor.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\WebGrease.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\Microsoft.Owin.xml
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\Microsoft.Owin.Cors.xml
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\Microsoft.Owin.Security.xml
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\Newtonsoft.Json.xml
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Net.Http.Formatting.xml
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Web.Http.xml
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Web.Http.Cors.xml
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Web.Http.Owin.xml
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Web.Helpers.xml
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Web.Mvc.xml
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Web.Optimization.xml
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Web.Razor.xml
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Web.WebPages.xml
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Web.WebPages.Deployment.xml
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Web.WebPages.Razor.xml
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\Antlr3.Runtime.pdb
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\bin\System.Web.Http.WebHost.xml
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\obj\Debug\SN_API.csprojAssemblyReference.cache
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\obj\Debug\SN_API.dll
+D:\TienLuat\CODE\SN_API_20210205_1\SN_API\obj\Debug\SN_API.pdb
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\roslyn\csc.exe
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\roslyn\System.Collections.Immutable.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\roslyn\vbc.exe
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\roslyn\VBCSCompiler.exe
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\roslyn\VBCSCompiler.exe.config
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\SN_API.dll.config
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\SN_API.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\SN_API.pdb
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\Antlr3.Runtime.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\Microsoft.Owin.Cors.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\Microsoft.Owin.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\Microsoft.Owin.Security.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\Microsoft.Web.Infrastructure.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\Newtonsoft.Json.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\Owin.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Net.Http.Formatting.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Web.Cors.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Web.Helpers.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Web.Http.Cors.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Web.Http.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Web.Http.Owin.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Web.Http.WebHost.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Web.Mvc.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Web.Optimization.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Web.Razor.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Web.WebPages.Deployment.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Web.WebPages.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Web.WebPages.Razor.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\WebGrease.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\Microsoft.Owin.xml
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\Microsoft.Owin.Cors.xml
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\Microsoft.Owin.Security.xml
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\Newtonsoft.Json.xml
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Net.Http.Formatting.xml
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Web.Http.xml
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Web.Http.Cors.xml
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Web.Http.Owin.xml
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Web.Helpers.xml
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Web.Mvc.xml
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Web.Optimization.xml
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Web.Razor.xml
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Web.WebPages.xml
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Web.WebPages.Deployment.xml
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Web.WebPages.Razor.xml
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\Antlr3.Runtime.pdb
+D:\TienLuat\CODE\SN_API_20210209\SN_API\bin\System.Web.Http.WebHost.xml
+D:\TienLuat\CODE\SN_API_20210209\SN_API\obj\Debug\SN_API.csprojAssemblyReference.cache
+D:\TienLuat\CODE\SN_API_20210209\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+D:\TienLuat\CODE\SN_API_20210209\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+D:\TienLuat\CODE\SN_API_20210209\SN_API\obj\Debug\SN_API.dll
+D:\TienLuat\CODE\SN_API_20210209\SN_API\obj\Debug\SN_API.pdb
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\roslyn\csc.exe
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\roslyn\System.Collections.Immutable.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\roslyn\vbc.exe
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\roslyn\VBCSCompiler.exe
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\roslyn\VBCSCompiler.exe.config
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\SN_API.dll.config
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\SN_API.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\SN_API.pdb
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\Antlr3.Runtime.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\Microsoft.Owin.Cors.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\Microsoft.Owin.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\Microsoft.Owin.Security.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\Microsoft.Web.Infrastructure.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\Newtonsoft.Json.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\Owin.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Net.Http.Formatting.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Web.Cors.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Web.Helpers.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Web.Http.Cors.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Web.Http.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Web.Http.Owin.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Web.Http.WebHost.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Web.Mvc.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Web.Optimization.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Web.Razor.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Web.WebPages.Deployment.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Web.WebPages.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Web.WebPages.Razor.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\WebGrease.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\Microsoft.Owin.xml
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\Microsoft.Owin.Cors.xml
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\Microsoft.Owin.Security.xml
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\Newtonsoft.Json.xml
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Net.Http.Formatting.xml
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Web.Http.xml
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Web.Http.Cors.xml
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Web.Http.Owin.xml
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Web.Helpers.xml
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Web.Mvc.xml
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Web.Optimization.xml
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Web.Razor.xml
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Web.WebPages.xml
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Web.WebPages.Deployment.xml
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Web.WebPages.Razor.xml
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\Antlr3.Runtime.pdb
+D:\TienLuat\CODE\SN_API_20210218\SN_API\bin\System.Web.Http.WebHost.xml
+D:\TienLuat\CODE\SN_API_20210218\SN_API\obj\Debug\SN_API.csprojAssemblyReference.cache
+D:\TienLuat\CODE\SN_API_20210218\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+D:\TienLuat\CODE\SN_API_20210218\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+D:\TienLuat\CODE\SN_API_20210218\SN_API\obj\Debug\SN_API.dll
+D:\TienLuat\CODE\SN_API_20210218\SN_API\obj\Debug\SN_API.pdb
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\roslyn\csc.exe
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\roslyn\System.Collections.Immutable.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\roslyn\vbc.exe
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\roslyn\VBCSCompiler.exe
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\roslyn\VBCSCompiler.exe.config
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\SN_API.dll.config
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\SN_API.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\SN_API.pdb
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\Antlr3.Runtime.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\Microsoft.Owin.Cors.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\Microsoft.Owin.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\Microsoft.Owin.Security.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\Microsoft.Web.Infrastructure.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\Newtonsoft.Json.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\Owin.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Net.Http.Formatting.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Web.Cors.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Web.Helpers.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Web.Http.Cors.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Web.Http.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Web.Http.Owin.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Web.Http.WebHost.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Web.Mvc.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Web.Optimization.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Web.Razor.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Web.WebPages.Deployment.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Web.WebPages.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Web.WebPages.Razor.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\WebGrease.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\Microsoft.Owin.xml
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\Microsoft.Owin.Cors.xml
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\Microsoft.Owin.Security.xml
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\Newtonsoft.Json.xml
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Net.Http.Formatting.xml
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Web.Http.xml
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Web.Http.Cors.xml
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Web.Http.Owin.xml
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Web.Helpers.xml
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Web.Mvc.xml
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Web.Optimization.xml
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Web.Razor.xml
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Web.WebPages.xml
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Web.WebPages.Deployment.xml
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Web.WebPages.Razor.xml
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\Antlr3.Runtime.pdb
+D:\TienLuat\CODE\SN_API_20210219\SN_API\bin\System.Web.Http.WebHost.xml
+D:\TienLuat\CODE\SN_API_20210219\SN_API\obj\Debug\SN_API.csprojAssemblyReference.cache
+D:\TienLuat\CODE\SN_API_20210219\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+D:\TienLuat\CODE\SN_API_20210219\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+D:\TienLuat\CODE\SN_API_20210219\SN_API\obj\Debug\SN_API.dll
+D:\TienLuat\CODE\SN_API_20210219\SN_API\obj\Debug\SN_API.pdb
+D:\TienLuat\CODE\SN_API_20210222\SN_API\obj\Debug\SN_API.csprojAssemblyReference.cache
+D:\TienLuat\CODE\SN_API_20210222\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+D:\TienLuat\CODE\SN_API_20210222\SN_API\obj\Debug\SN_API.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\obj\Debug\SN_API.pdb
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\roslyn\csc.exe
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\roslyn\System.Collections.Immutable.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\roslyn\vbc.exe
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\roslyn\VBCSCompiler.exe
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\roslyn\VBCSCompiler.exe.config
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\SN_API.dll.config
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\SN_API.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\SN_API.pdb
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\Antlr3.Runtime.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\Microsoft.Owin.Cors.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\Microsoft.Owin.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\Microsoft.Owin.Security.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\Microsoft.Web.Infrastructure.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\Newtonsoft.Json.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\Owin.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Net.Http.Formatting.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Web.Cors.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Web.Helpers.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Web.Http.Cors.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Web.Http.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Web.Http.Owin.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Web.Http.WebHost.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Web.Mvc.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Web.Optimization.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Web.Razor.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Web.WebPages.Deployment.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Web.WebPages.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Web.WebPages.Razor.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\WebGrease.dll
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\Microsoft.Owin.xml
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\Microsoft.Owin.Cors.xml
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\Microsoft.Owin.Security.xml
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\Newtonsoft.Json.xml
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Net.Http.Formatting.xml
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Web.Http.xml
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Web.Http.Cors.xml
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Web.Http.Owin.xml
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Web.Helpers.xml
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Web.Mvc.xml
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Web.Optimization.xml
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Web.Razor.xml
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Web.WebPages.xml
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Web.WebPages.Deployment.xml
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Web.WebPages.Razor.xml
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\Antlr3.Runtime.pdb
+D:\TienLuat\CODE\SN_API_20210222\SN_API\bin\System.Web.Http.WebHost.xml
+D:\TienLuat\CODE\SN_API_20210222\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\roslyn\csc.exe
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\roslyn\System.Collections.Immutable.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\roslyn\vbc.exe
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\roslyn\VBCSCompiler.exe
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\roslyn\VBCSCompiler.exe.config
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\SN_API.dll.config
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\SN_API.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\SN_API.pdb
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\Antlr3.Runtime.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\Microsoft.Owin.Cors.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\Microsoft.Owin.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\Microsoft.Owin.Security.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\Microsoft.Web.Infrastructure.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\Newtonsoft.Json.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\Owin.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Net.Http.Formatting.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Web.Cors.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Web.Helpers.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Web.Http.Cors.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Web.Http.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Web.Http.Owin.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Web.Http.WebHost.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Web.Mvc.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Web.Optimization.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Web.Razor.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Web.WebPages.Deployment.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Web.WebPages.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Web.WebPages.Razor.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\WebGrease.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\Microsoft.Owin.xml
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\Microsoft.Owin.Cors.xml
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\Microsoft.Owin.Security.xml
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\Newtonsoft.Json.xml
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Net.Http.Formatting.xml
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Web.Http.xml
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Web.Http.Cors.xml
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Web.Http.Owin.xml
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Web.Helpers.xml
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Web.Mvc.xml
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Web.Optimization.xml
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Web.Razor.xml
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Web.WebPages.xml
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Web.WebPages.Deployment.xml
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Web.WebPages.Razor.xml
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\Antlr3.Runtime.pdb
+D:\TienLuat\CODE\SN_API_20210223\SN_API\bin\System.Web.Http.WebHost.xml
+D:\TienLuat\CODE\SN_API_20210223\SN_API\obj\Debug\SN_API.csprojAssemblyReference.cache
+D:\TienLuat\CODE\SN_API_20210223\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+D:\TienLuat\CODE\SN_API_20210223\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+D:\TienLuat\CODE\SN_API_20210223\SN_API\obj\Debug\SN_API.dll
+D:\TienLuat\CODE\SN_API_20210223\SN_API\obj\Debug\SN_API.pdb
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\roslyn\csc.exe
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\roslyn\System.Collections.Immutable.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\roslyn\vbc.exe
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\roslyn\VBCSCompiler.exe
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\roslyn\VBCSCompiler.exe.config
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\SN_API.dll.config
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\SN_API.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\SN_API.pdb
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\Antlr3.Runtime.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\Microsoft.Owin.Cors.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\Microsoft.Owin.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\Microsoft.Owin.Security.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\Microsoft.Web.Infrastructure.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\Newtonsoft.Json.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\Owin.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Net.Http.Formatting.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Web.Cors.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Web.Helpers.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Web.Http.Cors.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Web.Http.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Web.Http.Owin.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Web.Http.WebHost.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Web.Mvc.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Web.Optimization.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Web.Razor.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Web.WebPages.Deployment.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Web.WebPages.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Web.WebPages.Razor.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\WebGrease.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\Microsoft.Owin.xml
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\Microsoft.Owin.Cors.xml
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\Microsoft.Owin.Security.xml
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\Newtonsoft.Json.xml
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Net.Http.Formatting.xml
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Web.Http.xml
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Web.Http.Cors.xml
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Web.Http.Owin.xml
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Web.Helpers.xml
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Web.Mvc.xml
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Web.Optimization.xml
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Web.Razor.xml
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Web.WebPages.xml
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Web.WebPages.Deployment.xml
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Web.WebPages.Razor.xml
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\Antlr3.Runtime.pdb
+D:\TienLuat\CODE\SN_API_20210224\SN_API\bin\System.Web.Http.WebHost.xml
+D:\TienLuat\CODE\SN_API_20210224\SN_API\obj\Debug\SN_API.csprojAssemblyReference.cache
+D:\TienLuat\CODE\SN_API_20210224\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+D:\TienLuat\CODE\SN_API_20210224\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+D:\TienLuat\CODE\SN_API_20210224\SN_API\obj\Debug\SN_API.dll
+D:\TienLuat\CODE\SN_API_20210224\SN_API\obj\Debug\SN_API.pdb
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\roslyn\csc.exe
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\roslyn\System.Collections.Immutable.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\roslyn\vbc.exe
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\roslyn\VBCSCompiler.exe
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\roslyn\VBCSCompiler.exe.config
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\SN_API.dll.config
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\SN_API.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\SN_API.pdb
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\Antlr3.Runtime.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\Microsoft.Owin.Cors.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\Microsoft.Owin.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\Microsoft.Owin.Security.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\Microsoft.Web.Infrastructure.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\Newtonsoft.Json.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\Owin.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Net.Http.Formatting.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Web.Cors.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Web.Helpers.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Web.Http.Cors.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Web.Http.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Web.Http.Owin.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Web.Http.WebHost.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Web.Mvc.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Web.Optimization.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Web.Razor.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Web.WebPages.Deployment.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Web.WebPages.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Web.WebPages.Razor.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\WebGrease.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\Microsoft.Owin.xml
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\Microsoft.Owin.Cors.xml
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\Microsoft.Owin.Security.xml
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\Newtonsoft.Json.xml
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Net.Http.Formatting.xml
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Web.Http.xml
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Web.Http.Cors.xml
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Web.Http.Owin.xml
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Web.Helpers.xml
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Web.Mvc.xml
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Web.Optimization.xml
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Web.Razor.xml
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Web.WebPages.xml
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Web.WebPages.Deployment.xml
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Web.WebPages.Razor.xml
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\Antlr3.Runtime.pdb
+D:\TienLuat\CODE\SN_API_20210308\SN_API\bin\System.Web.Http.WebHost.xml
+D:\TienLuat\CODE\SN_API_20210308\SN_API\obj\Debug\SN_API.csprojAssemblyReference.cache
+D:\TienLuat\CODE\SN_API_20210308\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+D:\TienLuat\CODE\SN_API_20210308\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+D:\TienLuat\CODE\SN_API_20210308\SN_API\obj\Debug\SN_API.dll
+D:\TienLuat\CODE\SN_API_20210308\SN_API\obj\Debug\SN_API.pdb
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Web.Http.Cors.dll
+D:\TienLuat\CODE\SN_API\SN_API\bin\System.Web.Http.Cors.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\roslyn\csc.exe
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\roslyn\vbc.exe
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\SN_API.dll.config
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\SN_API.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\SN_API.pdb
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\Antlr3.Runtime.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\Microsoft.Owin.Cors.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\Microsoft.Owin.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\Microsoft.Owin.Security.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\Owin.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Web.Cors.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Web.Http.Cors.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Web.Http.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Web.Http.Owin.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Web.Razor.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\WebGrease.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\Microsoft.Owin.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\Microsoft.Owin.Cors.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\Microsoft.Owin.Security.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Web.Http.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Web.Http.Cors.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Web.Http.Owin.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Web.Optimization.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Web.Razor.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\Antlr3.Runtime.pdb
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\obj\Debug\SN_API.csprojAssemblyReference.cache
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\obj\Debug\SN_API.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\SN_API\obj\Debug\SN_API.pdb
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\roslyn\csc.exe
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\roslyn\vbc.exe
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\roslyn\VBCSCompiler.exe
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\SN_API.dll.config
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\SN_API.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\SN_API.pdb
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\Antlr3.Runtime.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\Microsoft.Owin.Cors.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\Microsoft.Owin.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\Microsoft.Owin.Security.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\Owin.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Web.Cors.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Web.Http.Cors.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Web.Http.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Web.Http.Owin.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Web.Razor.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\WebGrease.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\Microsoft.Owin.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\Microsoft.Owin.Cors.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\Microsoft.Owin.Security.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Web.Http.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Web.Http.Cors.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Web.Http.Owin.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Web.Optimization.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Web.Razor.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\Antlr3.Runtime.pdb
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\obj\Debug\SN_API.csprojAssemblyReference.cache
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\obj\Debug\SN_API.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\obj\Debug\SN_API.pdb
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\obj\Debug\SN_API.csprojAssemblyReference.cache
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\obj\Debug\SN_API.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\obj\Debug\SN_API.pdb
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\roslyn\csc.exe
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\roslyn\System.Collections.Immutable.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\roslyn\vbc.exe
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\roslyn\VBCSCompiler.exe
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\roslyn\VBCSCompiler.exe.config
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\SN_API.dll.config
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\SN_API.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\SN_API.pdb
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\Antlr3.Runtime.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\Microsoft.Owin.Cors.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\Microsoft.Owin.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\Microsoft.Owin.Security.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\Microsoft.Web.Infrastructure.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\Newtonsoft.Json.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\Owin.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Net.Http.Formatting.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Web.Cors.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Web.Helpers.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Web.Http.Cors.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Web.Http.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Web.Http.Owin.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Web.Http.WebHost.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Web.Mvc.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Web.Optimization.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Web.Razor.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Web.WebPages.Deployment.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Web.WebPages.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Web.WebPages.Razor.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\WebGrease.dll
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\Microsoft.Owin.xml
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\Microsoft.Owin.Cors.xml
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\Microsoft.Owin.Security.xml
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\Newtonsoft.Json.xml
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Net.Http.Formatting.xml
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Web.Http.xml
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Web.Http.Cors.xml
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Web.Http.Owin.xml
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Web.Helpers.xml
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Web.Mvc.xml
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Web.Optimization.xml
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Web.Razor.xml
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Web.WebPages.xml
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Web.WebPages.Deployment.xml
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Web.WebPages.Razor.xml
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\Antlr3.Runtime.pdb
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\bin\System.Web.Http.WebHost.xml
+D:\TienLuat\CODE\SFC_API_SVN\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\Swashbuckle.Core.dll
+C:\Users\Administrator\Downloads\A_SN_API\SN_API\bin\WebActivatorEx.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\roslyn\csc.exe
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\roslyn\vbc.exe
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\roslyn\VBCSCompiler.exe
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\SN_API.dll.config
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\SN_API.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\SN_API.pdb
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\Antlr3.Runtime.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\Microsoft.Owin.Cors.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\Microsoft.Owin.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\Microsoft.Owin.Security.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\Owin.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\Swashbuckle.Core.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Web.Cors.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Web.Http.Cors.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Web.Http.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Web.Http.Owin.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Web.Razor.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\WebActivatorEx.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\WebGrease.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\Microsoft.Owin.xml
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\Microsoft.Owin.Cors.xml
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\Microsoft.Owin.Security.xml
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Web.Http.xml
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Web.Http.Cors.xml
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Web.Http.Owin.xml
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Web.Optimization.xml
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Web.Razor.xml
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\Antlr3.Runtime.pdb
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\obj\Debug\SN_API.csprojAssemblyReference.cache
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\obj\Debug\SN_API.dll
+C:\Users\Administrator\Downloads\SN_API_T\SN_API\obj\Debug\SN_API.pdb
+D:\TienLuat\SVN_CODE\SN_API\SN_API\obj\Debug\SN_API.csprojAssemblyReference.cache
+D:\TienLuat\SVN_CODE\SN_API\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+D:\TienLuat\SVN_CODE\SN_API\SN_API\obj\Debug\SN_API.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\obj\Debug\SN_API.pdb
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\roslyn\csc.exe
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\roslyn\System.Collections.Immutable.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\roslyn\vbc.exe
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe.config
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\SN_API.dll.config
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\SN_API.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\SN_API.pdb
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\Antlr3.Runtime.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\Microsoft.Owin.Cors.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\Microsoft.Owin.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\Microsoft.Owin.Security.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\Microsoft.Web.Infrastructure.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\Newtonsoft.Json.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\Owin.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\Swashbuckle.Core.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Net.Http.Formatting.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Web.Cors.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Web.Helpers.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Web.Http.Cors.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Web.Http.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Web.Http.Owin.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Web.Http.WebHost.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Web.Mvc.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Web.Optimization.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Web.Razor.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Web.WebPages.Deployment.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Web.WebPages.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Web.WebPages.Razor.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\WebActivatorEx.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\WebGrease.dll
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\Microsoft.Owin.xml
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\Microsoft.Owin.Cors.xml
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\Microsoft.Owin.Security.xml
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\Newtonsoft.Json.xml
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Net.Http.Formatting.xml
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Web.Http.xml
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Web.Http.Cors.xml
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Web.Http.Owin.xml
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Web.Helpers.xml
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Web.Mvc.xml
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Web.Optimization.xml
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Web.Razor.xml
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Web.WebPages.xml
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Web.WebPages.Deployment.xml
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Web.WebPages.Razor.xml
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\Antlr3.Runtime.pdb
+D:\TienLuat\SVN_CODE\SN_API\SN_API\bin\System.Web.Http.WebHost.xml
+D:\TienLuat\SVN_CODE\SN_API\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\obj\Debug\SN_API.csproj.AssemblyReference.cache
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\roslyn\csc.exe
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\roslyn\System.Collections.Immutable.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\roslyn\vbc.exe
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe.config
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\SN_API.dll.config
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\SN_API.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\SN_API.pdb
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\Antlr3.Runtime.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\Microsoft.Owin.Cors.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\Microsoft.Owin.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\Microsoft.Owin.Security.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\Microsoft.Web.Infrastructure.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\Newtonsoft.Json.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\Oracle.ManagedDataAccess.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\Owin.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\Swashbuckle.Core.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Net.Http.Formatting.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Web.Cors.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Web.Helpers.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Web.Http.Cors.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Web.Http.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Web.Http.Owin.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Web.Http.WebHost.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Web.Mvc.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Web.Optimization.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Web.Razor.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Web.WebPages.Deployment.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Web.WebPages.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Web.WebPages.Razor.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\WebActivatorEx.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\WebGrease.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\Microsoft.Owin.xml
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\Microsoft.Owin.Cors.xml
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\Microsoft.Owin.Security.xml
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\Newtonsoft.Json.xml
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Net.Http.Formatting.xml
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Web.Http.xml
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Web.Http.Cors.xml
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Web.Http.Owin.xml
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Web.Helpers.xml
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Web.Mvc.xml
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Web.Optimization.xml
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Web.Razor.xml
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Web.WebPages.xml
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Web.WebPages.Deployment.xml
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Web.WebPages.Razor.xml
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\Antlr3.Runtime.pdb
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\bin\System.Web.Http.WebHost.xml
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\obj\Debug\SN_API.dll
+D:\TienLuat\CODE\Code SVN\SN_API\SN_API\obj\Debug\SN_API.pdb
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\obj\Debug\SN_API.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\obj\Debug\SN_API.pdb
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\roslyn\csc.exe
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\roslyn\System.Collections.Immutable.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\roslyn\vbc.exe
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe.config
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\SN_API.dll.config
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\SN_API.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\SN_API.pdb
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\Antlr3.Runtime.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\Microsoft.Owin.Cors.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\Microsoft.Owin.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\Microsoft.Owin.Security.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\Microsoft.Web.Infrastructure.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\Newtonsoft.Json.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\Owin.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\Swashbuckle.Core.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Net.Http.Formatting.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Web.Cors.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Web.Helpers.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Web.Http.Cors.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Web.Http.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Web.Http.Owin.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Web.Http.WebHost.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Web.Mvc.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Web.Optimization.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Web.Razor.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Web.WebPages.Deployment.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Web.WebPages.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Web.WebPages.Razor.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\WebActivatorEx.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\WebGrease.dll
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\Microsoft.Owin.xml
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\Microsoft.Owin.Cors.xml
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\Microsoft.Owin.Security.xml
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\Newtonsoft.Json.xml
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Net.Http.Formatting.xml
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Web.Http.xml
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Web.Http.Cors.xml
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Web.Http.Owin.xml
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Web.Helpers.xml
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Web.Mvc.xml
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Web.Optimization.xml
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Web.Razor.xml
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Web.WebPages.xml
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Web.WebPages.Deployment.xml
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Web.WebPages.Razor.xml
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\Antlr3.Runtime.pdb
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\bin\System.Web.Http.WebHost.xml
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+E:\CODE\CODE_SVN_LUAT\SN_API\SN_API\obj\Debug\SN_API.csproj.AssemblyReference.cache
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\roslyn\csc.exe
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\roslyn\System.Collections.Immutable.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\roslyn\vbc.exe
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\roslyn\VBCSCompiler.exe
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\roslyn\VBCSCompiler.exe.config
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\SN_API.dll.config
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\SN_API.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\SN_API.pdb
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\Antlr3.Runtime.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\Microsoft.Owin.Cors.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\Microsoft.Owin.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\Microsoft.Owin.Security.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\Microsoft.Web.Infrastructure.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\Newtonsoft.Json.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\Owin.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\Swashbuckle.Core.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Net.Http.Formatting.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Web.Cors.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Web.Helpers.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Web.Http.Cors.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Web.Http.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Web.Http.Owin.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Web.Http.WebHost.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Web.Mvc.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Web.Optimization.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Web.Razor.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Web.WebPages.Deployment.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Web.WebPages.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Web.WebPages.Razor.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\WebActivatorEx.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\WebGrease.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\Microsoft.Owin.xml
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\Microsoft.Owin.Cors.xml
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\Microsoft.Owin.Security.xml
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\Newtonsoft.Json.xml
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Net.Http.Formatting.xml
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Web.Http.xml
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Web.Http.Cors.xml
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Web.Http.Owin.xml
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Web.Helpers.xml
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Web.Mvc.xml
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Web.Optimization.xml
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Web.Razor.xml
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Web.WebPages.xml
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Web.WebPages.Deployment.xml
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Web.WebPages.Razor.xml
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\Antlr3.Runtime.pdb
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\bin\System.Web.Http.WebHost.xml
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\obj\Debug\SN_API.csproj.AssemblyReference.cache
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\obj\Debug\SN_API.dll
+E:\CODE\CODE_SVN_LUAT\SN_APII\SN_API\obj\Debug\SN_API.pdb
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\roslyn\csc.exe
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\roslyn\System.Collections.Immutable.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\roslyn\vbc.exe
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\roslyn\VBCSCompiler.exe
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\roslyn\VBCSCompiler.exe.config
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\SN_API.dll.config
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\SN_API.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\SN_API.pdb
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\Antlr3.Runtime.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\Microsoft.Owin.Cors.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\Microsoft.Owin.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\Microsoft.Owin.Security.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\Microsoft.Web.Infrastructure.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\Newtonsoft.Json.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\Owin.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\Swashbuckle.Core.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Net.Http.Formatting.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Web.Cors.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Web.Helpers.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Web.Http.Cors.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Web.Http.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Web.Http.Owin.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Web.Http.WebHost.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Web.Mvc.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Web.Optimization.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Web.Razor.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Web.WebPages.Deployment.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Web.WebPages.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Web.WebPages.Razor.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\WebActivatorEx.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\WebGrease.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\Microsoft.Owin.xml
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\Microsoft.Owin.Cors.xml
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\Microsoft.Owin.Security.xml
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\Newtonsoft.Json.xml
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Net.Http.Formatting.xml
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Web.Http.xml
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Web.Http.Cors.xml
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Web.Http.Owin.xml
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Web.Helpers.xml
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Web.Mvc.xml
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Web.Optimization.xml
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Web.Razor.xml
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Web.WebPages.xml
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Web.WebPages.Deployment.xml
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Web.WebPages.Razor.xml
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\Antlr3.Runtime.pdb
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\System.Web.Http.WebHost.xml
+E:\CODE\CODE_SVN_LUAT\API\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+E:\CODE\CODE_SVN_LUAT\API\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+E:\CODE\CODE_SVN_LUAT\API\SN_API\obj\Debug\SN_API.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\obj\Debug\SN_API.pdb
+E:\CODE\CODE_SVN_LUAT\API\SN_API\obj\Debug\SN_API.csproj.AssemblyReference.cache
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\zxing.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\zxing.presentation.dll
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\zxing.pdb
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\zxing.xml
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\zxing.presentation.pdb
+E:\CODE\CODE_SVN_LUAT\API\SN_API\bin\zxing.presentation.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\obj\Debug\SN_API.csprojAssemblyReference.cache
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\obj\Debug\SN_API.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\obj\Debug\SN_API.pdb
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\roslyn\csc.exe
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\roslyn\vbc.exe
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\SN_API.dll.config
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\SN_API.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\SN_API.pdb
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\Antlr3.Runtime.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\Microsoft.Owin.Cors.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\Microsoft.Owin.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\Microsoft.Owin.Security.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\Newtonsoft.Json.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\Owin.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\Swashbuckle.Core.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Net.Http.Formatting.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Web.Cors.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Web.Helpers.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Web.Http.Cors.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Web.Http.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Web.Http.Owin.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Web.Http.WebHost.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Web.Mvc.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Web.Optimization.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Web.Razor.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Web.WebPages.Deployment.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Web.WebPages.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Web.WebPages.Razor.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\WebActivatorEx.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\WebGrease.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\zxing.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\zxing.presentation.dll
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\Microsoft.Owin.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\Microsoft.Owin.Cors.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\Microsoft.Owin.Security.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\Newtonsoft.Json.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Net.Http.Formatting.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Web.Http.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Web.Http.Cors.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Web.Http.Owin.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Web.Helpers.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Web.Mvc.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Web.Optimization.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Web.Razor.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Web.WebPages.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Web.WebPages.Deployment.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Web.WebPages.Razor.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\Antlr3.Runtime.pdb
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\zxing.pdb
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\zxing.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\zxing.presentation.pdb
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\zxing.presentation.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\bin\System.Web.Http.WebHost.xml
+C:\Users\V0957266\Desktop\FileCode\C#\ModifySFC\SN_API\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+E:\SN_API\SN_API\obj\Debug\SN_API.csproj.AssemblyReference.cache
+E:\SN_API\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+E:\SN_API\SN_API\obj\Debug\SN_API.dll
+E:\SN_API\SN_API\obj\Debug\SN_API.pdb
+E:\SN_API\SN_API\bin\roslyn\csc.exe
+E:\SN_API\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\SN_API\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\SN_API\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\SN_API\SN_API\bin\roslyn\System.Collections.Immutable.dll
+E:\SN_API\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+E:\SN_API\SN_API\bin\roslyn\vbc.exe
+E:\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe
+E:\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe.config
+E:\SN_API\SN_API\bin\SN_API.dll.config
+E:\SN_API\SN_API\bin\SN_API.dll
+E:\SN_API\SN_API\bin\SN_API.pdb
+E:\SN_API\SN_API\bin\Antlr3.Runtime.dll
+E:\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+E:\SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+E:\SN_API\SN_API\bin\Microsoft.Owin.Cors.dll
+E:\SN_API\SN_API\bin\Microsoft.Owin.dll
+E:\SN_API\SN_API\bin\Microsoft.Owin.Security.dll
+E:\SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+E:\SN_API\SN_API\bin\Microsoft.Web.Infrastructure.dll
+E:\SN_API\SN_API\bin\Newtonsoft.Json.dll
+E:\SN_API\SN_API\bin\Owin.dll
+E:\SN_API\SN_API\bin\Swashbuckle.Core.dll
+E:\SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\SN_API\SN_API\bin\System.Net.Http.Formatting.dll
+E:\SN_API\SN_API\bin\System.Web.Cors.dll
+E:\SN_API\SN_API\bin\System.Web.Helpers.dll
+E:\SN_API\SN_API\bin\System.Web.Http.Cors.dll
+E:\SN_API\SN_API\bin\System.Web.Http.dll
+E:\SN_API\SN_API\bin\System.Web.Http.Owin.dll
+E:\SN_API\SN_API\bin\System.Web.Http.WebHost.dll
+E:\SN_API\SN_API\bin\System.Web.Mvc.dll
+E:\SN_API\SN_API\bin\System.Web.Optimization.dll
+E:\SN_API\SN_API\bin\System.Web.Razor.dll
+E:\SN_API\SN_API\bin\System.Web.WebPages.Deployment.dll
+E:\SN_API\SN_API\bin\System.Web.WebPages.dll
+E:\SN_API\SN_API\bin\System.Web.WebPages.Razor.dll
+E:\SN_API\SN_API\bin\WebActivatorEx.dll
+E:\SN_API\SN_API\bin\WebGrease.dll
+E:\SN_API\SN_API\bin\zxing.dll
+E:\SN_API\SN_API\bin\zxing.presentation.dll
+E:\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+E:\SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+E:\SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+E:\SN_API\SN_API\bin\Microsoft.Owin.xml
+E:\SN_API\SN_API\bin\Microsoft.Owin.Cors.xml
+E:\SN_API\SN_API\bin\Microsoft.Owin.Security.xml
+E:\SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+E:\SN_API\SN_API\bin\Newtonsoft.Json.xml
+E:\SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\SN_API\SN_API\bin\System.Net.Http.Formatting.xml
+E:\SN_API\SN_API\bin\System.Web.Http.xml
+E:\SN_API\SN_API\bin\System.Web.Http.Cors.xml
+E:\SN_API\SN_API\bin\System.Web.Http.Owin.xml
+E:\SN_API\SN_API\bin\System.Web.Helpers.xml
+E:\SN_API\SN_API\bin\System.Web.Mvc.xml
+E:\SN_API\SN_API\bin\System.Web.Optimization.xml
+E:\SN_API\SN_API\bin\System.Web.Razor.xml
+E:\SN_API\SN_API\bin\System.Web.WebPages.xml
+E:\SN_API\SN_API\bin\System.Web.WebPages.Deployment.xml
+E:\SN_API\SN_API\bin\System.Web.WebPages.Razor.xml
+E:\SN_API\SN_API\bin\Antlr3.Runtime.pdb
+E:\SN_API\SN_API\bin\zxing.pdb
+E:\SN_API\SN_API\bin\zxing.xml
+E:\SN_API\SN_API\bin\zxing.presentation.pdb
+E:\SN_API\SN_API\bin\zxing.presentation.xml
+E:\SN_API\SN_API\bin\System.Web.Http.WebHost.xml
+E:\SN_API\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+D:\5.0\SN_API\SN_API\bin\roslyn\csc.exe
+D:\5.0\SN_API\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\5.0\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\5.0\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\5.0\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\5.0\SN_API\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\5.0\SN_API\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\5.0\SN_API\SN_API\bin\roslyn\System.Collections.Immutable.dll
+D:\5.0\SN_API\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+D:\5.0\SN_API\SN_API\bin\roslyn\vbc.exe
+D:\5.0\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe
+D:\5.0\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe.config
+D:\5.0\SN_API\SN_API\bin\SN_API.dll.config
+D:\5.0\SN_API\SN_API\bin\SN_API.dll
+D:\5.0\SN_API\SN_API\bin\SN_API.pdb
+D:\5.0\SN_API\SN_API\bin\Antlr3.Runtime.dll
+D:\5.0\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\5.0\SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\5.0\SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+D:\5.0\SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+D:\5.0\SN_API\SN_API\bin\Microsoft.Owin.Cors.dll
+D:\5.0\SN_API\SN_API\bin\Microsoft.Owin.dll
+D:\5.0\SN_API\SN_API\bin\Microsoft.Owin.Security.dll
+D:\5.0\SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\5.0\SN_API\SN_API\bin\Microsoft.Web.Infrastructure.dll
+D:\5.0\SN_API\SN_API\bin\Newtonsoft.Json.dll
+D:\5.0\SN_API\SN_API\bin\Owin.dll
+D:\5.0\SN_API\SN_API\bin\Swashbuckle.Core.dll
+D:\5.0\SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\5.0\SN_API\SN_API\bin\System.Net.Http.Formatting.dll
+D:\5.0\SN_API\SN_API\bin\System.Web.Cors.dll
+D:\5.0\SN_API\SN_API\bin\System.Web.Helpers.dll
+D:\5.0\SN_API\SN_API\bin\System.Web.Http.Cors.dll
+D:\5.0\SN_API\SN_API\bin\System.Web.Http.dll
+D:\5.0\SN_API\SN_API\bin\System.Web.Http.Owin.dll
+D:\5.0\SN_API\SN_API\bin\System.Web.Http.WebHost.dll
+D:\5.0\SN_API\SN_API\bin\System.Web.Mvc.dll
+D:\5.0\SN_API\SN_API\bin\System.Web.Optimization.dll
+D:\5.0\SN_API\SN_API\bin\System.Web.Razor.dll
+D:\5.0\SN_API\SN_API\bin\System.Web.WebPages.Deployment.dll
+D:\5.0\SN_API\SN_API\bin\System.Web.WebPages.dll
+D:\5.0\SN_API\SN_API\bin\System.Web.WebPages.Razor.dll
+D:\5.0\SN_API\SN_API\bin\WebActivatorEx.dll
+D:\5.0\SN_API\SN_API\bin\WebGrease.dll
+D:\5.0\SN_API\SN_API\bin\zxing.dll
+D:\5.0\SN_API\SN_API\bin\zxing.presentation.dll
+D:\5.0\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\5.0\SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\5.0\SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+D:\5.0\SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+D:\5.0\SN_API\SN_API\bin\Microsoft.Owin.xml
+D:\5.0\SN_API\SN_API\bin\Microsoft.Owin.Cors.xml
+D:\5.0\SN_API\SN_API\bin\Microsoft.Owin.Security.xml
+D:\5.0\SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\5.0\SN_API\SN_API\bin\Newtonsoft.Json.xml
+D:\5.0\SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\5.0\SN_API\SN_API\bin\System.Net.Http.Formatting.xml
+D:\5.0\SN_API\SN_API\bin\System.Web.Http.xml
+D:\5.0\SN_API\SN_API\bin\System.Web.Http.Cors.xml
+D:\5.0\SN_API\SN_API\bin\System.Web.Http.Owin.xml
+D:\5.0\SN_API\SN_API\bin\System.Web.Helpers.xml
+D:\5.0\SN_API\SN_API\bin\System.Web.Mvc.xml
+D:\5.0\SN_API\SN_API\bin\System.Web.Optimization.xml
+D:\5.0\SN_API\SN_API\bin\System.Web.Razor.xml
+D:\5.0\SN_API\SN_API\bin\System.Web.WebPages.xml
+D:\5.0\SN_API\SN_API\bin\System.Web.WebPages.Deployment.xml
+D:\5.0\SN_API\SN_API\bin\System.Web.WebPages.Razor.xml
+D:\5.0\SN_API\SN_API\bin\Antlr3.Runtime.pdb
+D:\5.0\SN_API\SN_API\bin\zxing.pdb
+D:\5.0\SN_API\SN_API\bin\zxing.xml
+D:\5.0\SN_API\SN_API\bin\zxing.presentation.pdb
+D:\5.0\SN_API\SN_API\bin\zxing.presentation.xml
+D:\5.0\SN_API\SN_API\bin\System.Web.Http.WebHost.xml
+D:\5.0\SN_API\SN_API\obj\Debug\SN_API.dll
+D:\5.0\SN_API\SN_API\obj\Debug\SN_API.pdb
+D:\DATA\PROJECT\SN_API\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+D:\DATA\PROJECT\SN_API\SN_API\bin\roslyn\csc.exe
+D:\DATA\PROJECT\SN_API\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\DATA\PROJECT\SN_API\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\DATA\PROJECT\SN_API\SN_API\bin\roslyn\System.Collections.Immutable.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\roslyn\vbc.exe
+D:\DATA\PROJECT\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe
+D:\DATA\PROJECT\SN_API\SN_API\bin\roslyn\VBCSCompiler.exe.config
+D:\DATA\PROJECT\SN_API\SN_API\bin\SN_API.dll.config
+D:\DATA\PROJECT\SN_API\SN_API\bin\SN_API.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\SN_API.pdb
+D:\DATA\PROJECT\SN_API\SN_API\bin\Antlr3.Runtime.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\Microsoft.Owin.Cors.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\Microsoft.Owin.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\Microsoft.Owin.Security.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\Microsoft.Web.Infrastructure.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\Newtonsoft.Json.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\Owin.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\Swashbuckle.Core.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Net.Http.Formatting.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Web.Cors.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Web.Helpers.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Web.Http.Cors.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Web.Http.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Web.Http.Owin.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Web.Http.WebHost.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Web.Mvc.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Web.Optimization.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Web.Razor.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Web.WebPages.Deployment.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Web.WebPages.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Web.WebPages.Razor.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\WebActivatorEx.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\WebGrease.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\zxing.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\zxing.presentation.dll
+D:\DATA\PROJECT\SN_API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\DATA\PROJECT\SN_API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\DATA\PROJECT\SN_API\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+D:\DATA\PROJECT\SN_API\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+D:\DATA\PROJECT\SN_API\SN_API\bin\Microsoft.Owin.xml
+D:\DATA\PROJECT\SN_API\SN_API\bin\Microsoft.Owin.Cors.xml
+D:\DATA\PROJECT\SN_API\SN_API\bin\Microsoft.Owin.Security.xml
+D:\DATA\PROJECT\SN_API\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\DATA\PROJECT\SN_API\SN_API\bin\Newtonsoft.Json.xml
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Net.Http.Formatting.xml
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Web.Http.xml
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Web.Http.Cors.xml
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Web.Http.Owin.xml
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Web.Helpers.xml
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Web.Mvc.xml
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Web.Optimization.xml
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Web.Razor.xml
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Web.WebPages.xml
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Web.WebPages.Deployment.xml
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Web.WebPages.Razor.xml
+D:\DATA\PROJECT\SN_API\SN_API\bin\Antlr3.Runtime.pdb
+D:\DATA\PROJECT\SN_API\SN_API\bin\zxing.pdb
+D:\DATA\PROJECT\SN_API\SN_API\bin\zxing.xml
+D:\DATA\PROJECT\SN_API\SN_API\bin\zxing.presentation.pdb
+D:\DATA\PROJECT\SN_API\SN_API\bin\zxing.presentation.xml
+D:\DATA\PROJECT\SN_API\SN_API\bin\System.Web.Http.WebHost.xml
+D:\DATA\PROJECT\SN_API\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+D:\DATA\PROJECT\SN_API\SN_API\obj\Debug\SN_API.dll
+D:\DATA\PROJECT\SN_API\SN_API\obj\Debug\SN_API.pdb
+D:\DATA\PROJECT\SN_API\SN_API\obj\Debug\SN_API.csprojAssemblyReference.cache
+E:\NIC_SOURCE\webapi\SN_API\bin\roslyn\csc.exe
+E:\NIC_SOURCE\webapi\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\NIC_SOURCE\webapi\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\NIC_SOURCE\webapi\SN_API\bin\roslyn\System.Collections.Immutable.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\roslyn\vbc.exe
+E:\NIC_SOURCE\webapi\SN_API\bin\roslyn\VBCSCompiler.exe
+E:\NIC_SOURCE\webapi\SN_API\bin\roslyn\VBCSCompiler.exe.config
+E:\NIC_SOURCE\webapi\SN_API\bin\SN_API.dll.config
+E:\NIC_SOURCE\webapi\SN_API\bin\SN_API.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\SN_API.pdb
+E:\NIC_SOURCE\webapi\SN_API\bin\Antlr3.Runtime.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\Microsoft.Owin.Cors.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\Microsoft.Owin.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\Microsoft.Owin.Security.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\Microsoft.Web.Infrastructure.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\Newtonsoft.Json.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\Owin.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\Swashbuckle.Core.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Net.Http.Formatting.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Web.Cors.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Web.Helpers.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Web.Http.Cors.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Web.Http.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Web.Http.Owin.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Web.Http.WebHost.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Web.Mvc.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Web.Optimization.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Web.Razor.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Web.WebPages.Deployment.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Web.WebPages.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Web.WebPages.Razor.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\WebActivatorEx.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\WebGrease.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\zxing.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\zxing.presentation.dll
+E:\NIC_SOURCE\webapi\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\NIC_SOURCE\webapi\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+E:\NIC_SOURCE\webapi\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+E:\NIC_SOURCE\webapi\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+E:\NIC_SOURCE\webapi\SN_API\bin\Microsoft.Owin.xml
+E:\NIC_SOURCE\webapi\SN_API\bin\Microsoft.Owin.Cors.xml
+E:\NIC_SOURCE\webapi\SN_API\bin\Microsoft.Owin.Security.xml
+E:\NIC_SOURCE\webapi\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+E:\NIC_SOURCE\webapi\SN_API\bin\Newtonsoft.Json.xml
+E:\NIC_SOURCE\webapi\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Net.Http.Formatting.xml
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Web.Http.xml
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Web.Http.Cors.xml
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Web.Http.Owin.xml
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Web.Helpers.xml
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Web.Mvc.xml
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Web.Optimization.xml
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Web.Razor.xml
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Web.WebPages.xml
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Web.WebPages.Deployment.xml
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Web.WebPages.Razor.xml
+E:\NIC_SOURCE\webapi\SN_API\bin\Antlr3.Runtime.pdb
+E:\NIC_SOURCE\webapi\SN_API\bin\zxing.pdb
+E:\NIC_SOURCE\webapi\SN_API\bin\zxing.xml
+E:\NIC_SOURCE\webapi\SN_API\bin\zxing.presentation.pdb
+E:\NIC_SOURCE\webapi\SN_API\bin\zxing.presentation.xml
+E:\NIC_SOURCE\webapi\SN_API\bin\System.Web.Http.WebHost.xml
+E:\NIC_SOURCE\webapi\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+E:\NIC_SOURCE\webapi\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+E:\NIC_SOURCE\webapi\SN_API\obj\Debug\SN_API.dll
+E:\NIC_SOURCE\webapi\SN_API\obj\Debug\SN_API.pdb
+E:\NIC_SOURCE\webapi\SN_API\obj\Debug\SN_API.csproj.AssemblyReference.cache
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\roslyn\csc.exe
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\roslyn\vbc.exe
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\roslyn\VBCSCompiler.exe
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\SN_API.dll.config
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\SN_API.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\SN_API.pdb
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\Antlr3.Runtime.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\Microsoft.Owin.Cors.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\Microsoft.Owin.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\Microsoft.Owin.Security.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\Newtonsoft.Json.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\Owin.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\Swashbuckle.Core.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Net.Http.Formatting.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Web.Cors.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Web.Helpers.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Web.Http.Cors.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Web.Http.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Web.Http.Owin.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Web.Http.WebHost.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Web.Mvc.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Web.Optimization.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Web.Razor.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Web.WebPages.Deployment.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Web.WebPages.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Web.WebPages.Razor.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\WebActivatorEx.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\WebGrease.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\zxing.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\zxing.presentation.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\Microsoft.Owin.xml
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\Microsoft.Owin.Cors.xml
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\Microsoft.Owin.Security.xml
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\Newtonsoft.Json.xml
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Net.Http.Formatting.xml
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Web.Http.xml
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Web.Http.Cors.xml
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Web.Http.Owin.xml
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Web.Helpers.xml
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Web.Mvc.xml
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Web.Optimization.xml
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Web.Razor.xml
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Web.WebPages.xml
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Web.WebPages.Deployment.xml
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Web.WebPages.Razor.xml
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\Antlr3.Runtime.pdb
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\zxing.pdb
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\zxing.xml
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\zxing.presentation.pdb
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\zxing.presentation.xml
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\bin\System.Web.Http.WebHost.xml
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\obj\Debug\SN_API.dll
+C:\Users\V1041643\Desktop\up3\webapi\SN_API\obj\Debug\SN_API.pdb
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\roslyn\csc.exe
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\roslyn\vbc.exe
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\roslyn\VBCSCompiler.exe
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\SN_API.dll.config
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\SN_API.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\SN_API.pdb
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\Antlr3.Runtime.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\Microsoft.Owin.Cors.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\Microsoft.Owin.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\Microsoft.Owin.Security.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\Newtonsoft.Json.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\Owin.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\Swashbuckle.Core.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Net.Http.Formatting.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Web.Cors.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Web.Helpers.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Web.Http.Cors.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Web.Http.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Web.Http.Owin.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Web.Http.WebHost.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Web.Mvc.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Web.Optimization.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Web.Razor.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Web.WebPages.Deployment.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Web.WebPages.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Web.WebPages.Razor.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\WebActivatorEx.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\WebGrease.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\zxing.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\zxing.presentation.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\Microsoft.Owin.xml
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\Microsoft.Owin.Cors.xml
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\Microsoft.Owin.Security.xml
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\Newtonsoft.Json.xml
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Net.Http.Formatting.xml
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Web.Http.xml
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Web.Http.Cors.xml
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Web.Http.Owin.xml
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Web.Helpers.xml
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Web.Mvc.xml
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Web.Optimization.xml
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Web.Razor.xml
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Web.WebPages.xml
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Web.WebPages.Deployment.xml
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Web.WebPages.Razor.xml
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\Antlr3.Runtime.pdb
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\zxing.pdb
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\zxing.xml
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\zxing.presentation.pdb
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\zxing.presentation.xml
+C:\Users\V1041643\Desktop\New folder\SN_API\bin\System.Web.Http.WebHost.xml
+C:\Users\V1041643\Desktop\New folder\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+C:\Users\V1041643\Desktop\New folder\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+C:\Users\V1041643\Desktop\New folder\SN_API\obj\Debug\SN_API.dll
+C:\Users\V1041643\Desktop\New folder\SN_API\obj\Debug\SN_API.pdb
+C:\Users\V1041643\Desktop\New folder\SN_API\obj\Debug\SN_API.csproj.AssemblyReference.cache
+D:\web\SN_API\bin\roslyn\csc.exe
+D:\web\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\web\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\web\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\web\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\web\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\web\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\web\SN_API\bin\roslyn\System.Collections.Immutable.dll
+D:\web\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+D:\web\SN_API\bin\roslyn\vbc.exe
+D:\web\SN_API\bin\roslyn\VBCSCompiler.exe
+D:\web\SN_API\bin\roslyn\VBCSCompiler.exe.config
+D:\web\SN_API\bin\SN_API.dll.config
+D:\web\SN_API\bin\SN_API.dll
+D:\web\SN_API\bin\SN_API.pdb
+D:\web\SN_API\bin\Antlr3.Runtime.dll
+D:\web\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\web\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\web\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+D:\web\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+D:\web\SN_API\bin\Microsoft.Owin.Cors.dll
+D:\web\SN_API\bin\Microsoft.Owin.dll
+D:\web\SN_API\bin\Microsoft.Owin.Security.dll
+D:\web\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\web\SN_API\bin\Microsoft.Web.Infrastructure.dll
+D:\web\SN_API\bin\Newtonsoft.Json.dll
+D:\web\SN_API\bin\Owin.dll
+D:\web\SN_API\bin\Swashbuckle.Core.dll
+D:\web\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\web\SN_API\bin\System.Net.Http.Formatting.dll
+D:\web\SN_API\bin\System.Web.Cors.dll
+D:\web\SN_API\bin\System.Web.Helpers.dll
+D:\web\SN_API\bin\System.Web.Http.Cors.dll
+D:\web\SN_API\bin\System.Web.Http.dll
+D:\web\SN_API\bin\System.Web.Http.Owin.dll
+D:\web\SN_API\bin\System.Web.Http.WebHost.dll
+D:\web\SN_API\bin\System.Web.Mvc.dll
+D:\web\SN_API\bin\System.Web.Optimization.dll
+D:\web\SN_API\bin\System.Web.Razor.dll
+D:\web\SN_API\bin\System.Web.WebPages.Deployment.dll
+D:\web\SN_API\bin\System.Web.WebPages.dll
+D:\web\SN_API\bin\System.Web.WebPages.Razor.dll
+D:\web\SN_API\bin\WebActivatorEx.dll
+D:\web\SN_API\bin\WebGrease.dll
+D:\web\SN_API\bin\zxing.dll
+D:\web\SN_API\bin\zxing.presentation.dll
+D:\web\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\web\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\web\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+D:\web\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+D:\web\SN_API\bin\Microsoft.Owin.xml
+D:\web\SN_API\bin\Microsoft.Owin.Cors.xml
+D:\web\SN_API\bin\Microsoft.Owin.Security.xml
+D:\web\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\web\SN_API\bin\Newtonsoft.Json.xml
+D:\web\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\web\SN_API\bin\System.Net.Http.Formatting.xml
+D:\web\SN_API\bin\System.Web.Http.xml
+D:\web\SN_API\bin\System.Web.Http.Cors.xml
+D:\web\SN_API\bin\System.Web.Http.Owin.xml
+D:\web\SN_API\bin\System.Web.Helpers.xml
+D:\web\SN_API\bin\System.Web.Mvc.xml
+D:\web\SN_API\bin\System.Web.Optimization.xml
+D:\web\SN_API\bin\System.Web.Razor.xml
+D:\web\SN_API\bin\System.Web.WebPages.xml
+D:\web\SN_API\bin\System.Web.WebPages.Deployment.xml
+D:\web\SN_API\bin\System.Web.WebPages.Razor.xml
+D:\web\SN_API\bin\Antlr3.Runtime.pdb
+D:\web\SN_API\bin\zxing.pdb
+D:\web\SN_API\bin\zxing.xml
+D:\web\SN_API\bin\zxing.presentation.pdb
+D:\web\SN_API\bin\zxing.presentation.xml
+D:\web\SN_API\bin\System.Web.Http.WebHost.xml
+D:\web\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+D:\web\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+D:\web\SN_API\obj\Debug\SN_API.dll
+D:\web\SN_API\obj\Debug\SN_API.pdb
+E:\HPP\5.0\webapi\SN_API\bin\roslyn\csc.exe
+E:\HPP\5.0\webapi\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\HPP\5.0\webapi\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\HPP\5.0\webapi\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\HPP\5.0\webapi\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\HPP\5.0\webapi\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\HPP\5.0\webapi\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\HPP\5.0\webapi\SN_API\bin\roslyn\System.Collections.Immutable.dll
+E:\HPP\5.0\webapi\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+E:\HPP\5.0\webapi\SN_API\bin\roslyn\vbc.exe
+E:\HPP\5.0\webapi\SN_API\bin\roslyn\VBCSCompiler.exe
+E:\HPP\5.0\webapi\SN_API\bin\roslyn\VBCSCompiler.exe.config
+E:\HPP\5.0\webapi\SN_API\bin\SN_API.dll.config
+E:\HPP\5.0\webapi\SN_API\bin\SN_API.dll
+E:\HPP\5.0\webapi\SN_API\bin\SN_API.pdb
+E:\HPP\5.0\webapi\SN_API\bin\Antlr3.Runtime.dll
+E:\HPP\5.0\webapi\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\HPP\5.0\webapi\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\HPP\5.0\webapi\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+E:\HPP\5.0\webapi\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+E:\HPP\5.0\webapi\SN_API\bin\Microsoft.Owin.Cors.dll
+E:\HPP\5.0\webapi\SN_API\bin\Microsoft.Owin.dll
+E:\HPP\5.0\webapi\SN_API\bin\Microsoft.Owin.Security.dll
+E:\HPP\5.0\webapi\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+E:\HPP\5.0\webapi\SN_API\bin\Microsoft.Web.Infrastructure.dll
+E:\HPP\5.0\webapi\SN_API\bin\Newtonsoft.Json.dll
+E:\HPP\5.0\webapi\SN_API\bin\Owin.dll
+E:\HPP\5.0\webapi\SN_API\bin\Swashbuckle.Core.dll
+E:\HPP\5.0\webapi\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\HPP\5.0\webapi\SN_API\bin\System.Net.Http.Formatting.dll
+E:\HPP\5.0\webapi\SN_API\bin\System.Web.Cors.dll
+E:\HPP\5.0\webapi\SN_API\bin\System.Web.Helpers.dll
+E:\HPP\5.0\webapi\SN_API\bin\System.Web.Http.Cors.dll
+E:\HPP\5.0\webapi\SN_API\bin\System.Web.Http.dll
+E:\HPP\5.0\webapi\SN_API\bin\System.Web.Http.Owin.dll
+E:\HPP\5.0\webapi\SN_API\bin\System.Web.Http.WebHost.dll
+E:\HPP\5.0\webapi\SN_API\bin\System.Web.Mvc.dll
+E:\HPP\5.0\webapi\SN_API\bin\System.Web.Optimization.dll
+E:\HPP\5.0\webapi\SN_API\bin\System.Web.Razor.dll
+E:\HPP\5.0\webapi\SN_API\bin\System.Web.WebPages.Deployment.dll
+E:\HPP\5.0\webapi\SN_API\bin\System.Web.WebPages.dll
+E:\HPP\5.0\webapi\SN_API\bin\System.Web.WebPages.Razor.dll
+E:\HPP\5.0\webapi\SN_API\bin\WebActivatorEx.dll
+E:\HPP\5.0\webapi\SN_API\bin\WebGrease.dll
+E:\HPP\5.0\webapi\SN_API\bin\zxing.dll
+E:\HPP\5.0\webapi\SN_API\bin\zxing.presentation.dll
+E:\HPP\5.0\webapi\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\HPP\5.0\webapi\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+E:\HPP\5.0\webapi\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+E:\HPP\5.0\webapi\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+E:\HPP\5.0\webapi\SN_API\bin\Microsoft.Owin.xml
+E:\HPP\5.0\webapi\SN_API\bin\Microsoft.Owin.Cors.xml
+E:\HPP\5.0\webapi\SN_API\bin\Microsoft.Owin.Security.xml
+E:\HPP\5.0\webapi\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+E:\HPP\5.0\webapi\SN_API\bin\Newtonsoft.Json.xml
+E:\HPP\5.0\webapi\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\HPP\5.0\webapi\SN_API\bin\System.Net.Http.Formatting.xml
+E:\HPP\5.0\webapi\SN_API\bin\System.Web.Http.xml
+E:\HPP\5.0\webapi\SN_API\bin\System.Web.Http.Cors.xml
+E:\HPP\5.0\webapi\SN_API\bin\System.Web.Http.Owin.xml
+E:\HPP\5.0\webapi\SN_API\bin\System.Web.Helpers.xml
+E:\HPP\5.0\webapi\SN_API\bin\System.Web.Mvc.xml
+E:\HPP\5.0\webapi\SN_API\bin\System.Web.Optimization.xml
+E:\HPP\5.0\webapi\SN_API\bin\System.Web.Razor.xml
+E:\HPP\5.0\webapi\SN_API\bin\System.Web.WebPages.xml
+E:\HPP\5.0\webapi\SN_API\bin\System.Web.WebPages.Deployment.xml
+E:\HPP\5.0\webapi\SN_API\bin\System.Web.WebPages.Razor.xml
+E:\HPP\5.0\webapi\SN_API\bin\Antlr3.Runtime.pdb
+E:\HPP\5.0\webapi\SN_API\bin\zxing.pdb
+E:\HPP\5.0\webapi\SN_API\bin\zxing.xml
+E:\HPP\5.0\webapi\SN_API\bin\zxing.presentation.pdb
+E:\HPP\5.0\webapi\SN_API\bin\zxing.presentation.xml
+E:\HPP\5.0\webapi\SN_API\bin\System.Web.Http.WebHost.xml
+E:\HPP\5.0\webapi\SN_API\obj\Debug\SN_API.csproj.AssemblyReference.cache
+E:\HPP\5.0\webapi\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+E:\HPP\5.0\webapi\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+E:\HPP\5.0\webapi\SN_API\obj\Debug\SN_API.dll
+E:\HPP\5.0\webapi\SN_API\obj\Debug\SN_API.pdb
+D:\Kiệm\KIỆM\web\SN_API\bin\roslyn\csc.exe
+D:\Kiệm\KIỆM\web\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Kiệm\KIỆM\web\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Kiệm\KIỆM\web\SN_API\bin\roslyn\System.Collections.Immutable.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\roslyn\vbc.exe
+D:\Kiệm\KIỆM\web\SN_API\bin\roslyn\VBCSCompiler.exe
+D:\Kiệm\KIỆM\web\SN_API\bin\roslyn\VBCSCompiler.exe.config
+D:\Kiệm\KIỆM\web\SN_API\bin\SN_API.dll.config
+D:\Kiệm\KIỆM\web\SN_API\bin\SN_API.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\SN_API.pdb
+D:\Kiệm\KIỆM\web\SN_API\bin\Antlr3.Runtime.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\Microsoft.Owin.Cors.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\Microsoft.Owin.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\Microsoft.Owin.Security.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\Microsoft.Web.Infrastructure.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\Newtonsoft.Json.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\Owin.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\Swashbuckle.Core.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Net.Http.Formatting.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Web.Cors.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Web.Helpers.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Web.Http.Cors.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Web.Http.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Web.Http.Owin.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Web.Http.WebHost.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Web.Mvc.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Web.Optimization.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Web.Razor.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Web.WebPages.Deployment.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Web.WebPages.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Web.WebPages.Razor.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\WebActivatorEx.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\WebGrease.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\zxing.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\zxing.presentation.dll
+D:\Kiệm\KIỆM\web\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Kiệm\KIỆM\web\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Kiệm\KIỆM\web\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+D:\Kiệm\KIỆM\web\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+D:\Kiệm\KIỆM\web\SN_API\bin\Microsoft.Owin.xml
+D:\Kiệm\KIỆM\web\SN_API\bin\Microsoft.Owin.Cors.xml
+D:\Kiệm\KIỆM\web\SN_API\bin\Microsoft.Owin.Security.xml
+D:\Kiệm\KIỆM\web\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Kiệm\KIỆM\web\SN_API\bin\Newtonsoft.Json.xml
+D:\Kiệm\KIỆM\web\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Net.Http.Formatting.xml
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Web.Http.xml
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Web.Http.Cors.xml
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Web.Http.Owin.xml
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Web.Helpers.xml
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Web.Mvc.xml
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Web.Optimization.xml
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Web.Razor.xml
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Web.WebPages.xml
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Web.WebPages.Deployment.xml
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Web.WebPages.Razor.xml
+D:\Kiệm\KIỆM\web\SN_API\bin\Antlr3.Runtime.pdb
+D:\Kiệm\KIỆM\web\SN_API\bin\zxing.pdb
+D:\Kiệm\KIỆM\web\SN_API\bin\zxing.xml
+D:\Kiệm\KIỆM\web\SN_API\bin\zxing.presentation.pdb
+D:\Kiệm\KIỆM\web\SN_API\bin\zxing.presentation.xml
+D:\Kiệm\KIỆM\web\SN_API\bin\System.Web.Http.WebHost.xml
+D:\Kiệm\KIỆM\web\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+D:\Kiệm\KIỆM\web\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+D:\Kiệm\KIỆM\web\SN_API\obj\Debug\SN_API.dll
+D:\Kiệm\KIỆM\web\SN_API\obj\Debug\SN_API.pdb
+D:\Kiệm\KIỆM\web\SN_API\obj\Debug\SN_API.csproj.AssemblyReference.cache
+E:\NIC-HPP\5.0\webapi\SN_API\bin\roslyn\csc.exe
+E:\NIC-HPP\5.0\webapi\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\NIC-HPP\5.0\webapi\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\NIC-HPP\5.0\webapi\SN_API\bin\roslyn\System.Collections.Immutable.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\roslyn\vbc.exe
+E:\NIC-HPP\5.0\webapi\SN_API\bin\roslyn\VBCSCompiler.exe
+E:\NIC-HPP\5.0\webapi\SN_API\bin\roslyn\VBCSCompiler.exe.config
+E:\NIC-HPP\5.0\webapi\SN_API\bin\SN_API.dll.config
+E:\NIC-HPP\5.0\webapi\SN_API\bin\SN_API.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\SN_API.pdb
+E:\NIC-HPP\5.0\webapi\SN_API\bin\Antlr3.Runtime.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\Microsoft.Owin.Cors.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\Microsoft.Owin.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\Microsoft.Owin.Security.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\Microsoft.Web.Infrastructure.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\Newtonsoft.Json.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\Owin.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\Swashbuckle.Core.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Net.Http.Formatting.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Web.Cors.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Web.Helpers.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Web.Http.Cors.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Web.Http.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Web.Http.Owin.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Web.Http.WebHost.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Web.Mvc.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Web.Optimization.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Web.Razor.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Web.WebPages.Deployment.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Web.WebPages.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Web.WebPages.Razor.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\WebActivatorEx.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\WebGrease.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\zxing.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\zxing.presentation.dll
+E:\NIC-HPP\5.0\webapi\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\NIC-HPP\5.0\webapi\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+E:\NIC-HPP\5.0\webapi\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+E:\NIC-HPP\5.0\webapi\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+E:\NIC-HPP\5.0\webapi\SN_API\bin\Microsoft.Owin.xml
+E:\NIC-HPP\5.0\webapi\SN_API\bin\Microsoft.Owin.Cors.xml
+E:\NIC-HPP\5.0\webapi\SN_API\bin\Microsoft.Owin.Security.xml
+E:\NIC-HPP\5.0\webapi\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+E:\NIC-HPP\5.0\webapi\SN_API\bin\Newtonsoft.Json.xml
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Net.Http.Formatting.xml
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Web.Http.xml
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Web.Http.Cors.xml
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Web.Http.Owin.xml
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Web.Helpers.xml
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Web.Mvc.xml
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Web.Optimization.xml
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Web.Razor.xml
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Web.WebPages.xml
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Web.WebPages.Deployment.xml
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Web.WebPages.Razor.xml
+E:\NIC-HPP\5.0\webapi\SN_API\bin\Antlr3.Runtime.pdb
+E:\NIC-HPP\5.0\webapi\SN_API\bin\zxing.pdb
+E:\NIC-HPP\5.0\webapi\SN_API\bin\zxing.xml
+E:\NIC-HPP\5.0\webapi\SN_API\bin\zxing.presentation.pdb
+E:\NIC-HPP\5.0\webapi\SN_API\bin\zxing.presentation.xml
+E:\NIC-HPP\5.0\webapi\SN_API\bin\System.Web.Http.WebHost.xml
+E:\NIC-HPP\5.0\webapi\SN_API\obj\Debug\SN_API.csproj.AssemblyReference.cache
+E:\NIC-HPP\5.0\webapi\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+E:\NIC-HPP\5.0\webapi\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+E:\NIC-HPP\5.0\webapi\SN_API\obj\Debug\SN_API.dll
+E:\NIC-HPP\5.0\webapi\SN_API\obj\Debug\SN_API.pdb
+E:\5.000\webapi\SN_API\bin\roslyn\csc.exe
+E:\5.000\webapi\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\5.000\webapi\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\5.000\webapi\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\5.000\webapi\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\5.000\webapi\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\5.000\webapi\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\5.000\webapi\SN_API\bin\roslyn\System.Collections.Immutable.dll
+E:\5.000\webapi\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+E:\5.000\webapi\SN_API\bin\roslyn\vbc.exe
+E:\5.000\webapi\SN_API\bin\roslyn\VBCSCompiler.exe
+E:\5.000\webapi\SN_API\bin\roslyn\VBCSCompiler.exe.config
+E:\5.000\webapi\SN_API\bin\SN_API.dll.config
+E:\5.000\webapi\SN_API\bin\SN_API.dll
+E:\5.000\webapi\SN_API\bin\SN_API.pdb
+E:\5.000\webapi\SN_API\bin\Antlr3.Runtime.dll
+E:\5.000\webapi\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\5.000\webapi\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\5.000\webapi\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+E:\5.000\webapi\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+E:\5.000\webapi\SN_API\bin\Microsoft.Owin.Cors.dll
+E:\5.000\webapi\SN_API\bin\Microsoft.Owin.dll
+E:\5.000\webapi\SN_API\bin\Microsoft.Owin.Security.dll
+E:\5.000\webapi\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+E:\5.000\webapi\SN_API\bin\Microsoft.Web.Infrastructure.dll
+E:\5.000\webapi\SN_API\bin\Newtonsoft.Json.dll
+E:\5.000\webapi\SN_API\bin\Owin.dll
+E:\5.000\webapi\SN_API\bin\Swashbuckle.Core.dll
+E:\5.000\webapi\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\5.000\webapi\SN_API\bin\System.Net.Http.Formatting.dll
+E:\5.000\webapi\SN_API\bin\System.Web.Cors.dll
+E:\5.000\webapi\SN_API\bin\System.Web.Helpers.dll
+E:\5.000\webapi\SN_API\bin\System.Web.Http.Cors.dll
+E:\5.000\webapi\SN_API\bin\System.Web.Http.dll
+E:\5.000\webapi\SN_API\bin\System.Web.Http.Owin.dll
+E:\5.000\webapi\SN_API\bin\System.Web.Http.WebHost.dll
+E:\5.000\webapi\SN_API\bin\System.Web.Mvc.dll
+E:\5.000\webapi\SN_API\bin\System.Web.Optimization.dll
+E:\5.000\webapi\SN_API\bin\System.Web.Razor.dll
+E:\5.000\webapi\SN_API\bin\System.Web.WebPages.Deployment.dll
+E:\5.000\webapi\SN_API\bin\System.Web.WebPages.dll
+E:\5.000\webapi\SN_API\bin\System.Web.WebPages.Razor.dll
+E:\5.000\webapi\SN_API\bin\WebActivatorEx.dll
+E:\5.000\webapi\SN_API\bin\WebGrease.dll
+E:\5.000\webapi\SN_API\bin\zxing.dll
+E:\5.000\webapi\SN_API\bin\zxing.presentation.dll
+E:\5.000\webapi\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\5.000\webapi\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+E:\5.000\webapi\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+E:\5.000\webapi\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+E:\5.000\webapi\SN_API\bin\Microsoft.Owin.xml
+E:\5.000\webapi\SN_API\bin\Microsoft.Owin.Cors.xml
+E:\5.000\webapi\SN_API\bin\Microsoft.Owin.Security.xml
+E:\5.000\webapi\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+E:\5.000\webapi\SN_API\bin\Newtonsoft.Json.xml
+E:\5.000\webapi\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\5.000\webapi\SN_API\bin\System.Net.Http.Formatting.xml
+E:\5.000\webapi\SN_API\bin\System.Web.Http.xml
+E:\5.000\webapi\SN_API\bin\System.Web.Http.Cors.xml
+E:\5.000\webapi\SN_API\bin\System.Web.Http.Owin.xml
+E:\5.000\webapi\SN_API\bin\System.Web.Helpers.xml
+E:\5.000\webapi\SN_API\bin\System.Web.Mvc.xml
+E:\5.000\webapi\SN_API\bin\System.Web.Optimization.xml
+E:\5.000\webapi\SN_API\bin\System.Web.Razor.xml
+E:\5.000\webapi\SN_API\bin\System.Web.WebPages.xml
+E:\5.000\webapi\SN_API\bin\System.Web.WebPages.Deployment.xml
+E:\5.000\webapi\SN_API\bin\System.Web.WebPages.Razor.xml
+E:\5.000\webapi\SN_API\bin\Antlr3.Runtime.pdb
+E:\5.000\webapi\SN_API\bin\zxing.pdb
+E:\5.000\webapi\SN_API\bin\zxing.xml
+E:\5.000\webapi\SN_API\bin\zxing.presentation.pdb
+E:\5.000\webapi\SN_API\bin\zxing.presentation.xml
+E:\5.000\webapi\SN_API\bin\System.Web.Http.WebHost.xml
+E:\5.000\webapi\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+E:\5.000\webapi\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+E:\5.000\webapi\SN_API\obj\Debug\SN_API.dll
+E:\5.000\webapi\SN_API\obj\Debug\SN_API.pdb
+E:\5.000\webapi\SN_API\obj\Debug\SN_API.csproj.AssemblyReference.cache
+D:\Kiệm\webapi\SN_API\bin\roslyn\csc.exe
+D:\Kiệm\webapi\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Kiệm\webapi\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Kiệm\webapi\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Kiệm\webapi\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Kiệm\webapi\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Kiệm\webapi\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Kiệm\webapi\SN_API\bin\roslyn\System.Collections.Immutable.dll
+D:\Kiệm\webapi\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+D:\Kiệm\webapi\SN_API\bin\roslyn\vbc.exe
+D:\Kiệm\webapi\SN_API\bin\roslyn\VBCSCompiler.exe
+D:\Kiệm\webapi\SN_API\bin\roslyn\VBCSCompiler.exe.config
+D:\Kiệm\webapi\SN_API\bin\SN_API.dll.config
+D:\Kiệm\webapi\SN_API\bin\SN_API.dll
+D:\Kiệm\webapi\SN_API\bin\SN_API.pdb
+D:\Kiệm\webapi\SN_API\bin\Antlr3.Runtime.dll
+D:\Kiệm\webapi\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Kiệm\webapi\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Kiệm\webapi\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+D:\Kiệm\webapi\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+D:\Kiệm\webapi\SN_API\bin\Microsoft.Owin.Cors.dll
+D:\Kiệm\webapi\SN_API\bin\Microsoft.Owin.dll
+D:\Kiệm\webapi\SN_API\bin\Microsoft.Owin.Security.dll
+D:\Kiệm\webapi\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Kiệm\webapi\SN_API\bin\Microsoft.Web.Infrastructure.dll
+D:\Kiệm\webapi\SN_API\bin\Newtonsoft.Json.dll
+D:\Kiệm\webapi\SN_API\bin\Owin.dll
+D:\Kiệm\webapi\SN_API\bin\Sfc.Library.HttpClient.dll
+D:\Kiệm\webapi\SN_API\bin\Swashbuckle.Core.dll
+D:\Kiệm\webapi\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\Kiệm\webapi\SN_API\bin\System.Net.Http.Formatting.dll
+D:\Kiệm\webapi\SN_API\bin\System.Web.Cors.dll
+D:\Kiệm\webapi\SN_API\bin\System.Web.Helpers.dll
+D:\Kiệm\webapi\SN_API\bin\System.Web.Http.Cors.dll
+D:\Kiệm\webapi\SN_API\bin\System.Web.Http.dll
+D:\Kiệm\webapi\SN_API\bin\System.Web.Http.Owin.dll
+D:\Kiệm\webapi\SN_API\bin\System.Web.Http.WebHost.dll
+D:\Kiệm\webapi\SN_API\bin\System.Web.Mvc.dll
+D:\Kiệm\webapi\SN_API\bin\System.Web.Optimization.dll
+D:\Kiệm\webapi\SN_API\bin\System.Web.Razor.dll
+D:\Kiệm\webapi\SN_API\bin\System.Web.WebPages.Deployment.dll
+D:\Kiệm\webapi\SN_API\bin\System.Web.WebPages.dll
+D:\Kiệm\webapi\SN_API\bin\System.Web.WebPages.Razor.dll
+D:\Kiệm\webapi\SN_API\bin\WebActivatorEx.dll
+D:\Kiệm\webapi\SN_API\bin\WebGrease.dll
+D:\Kiệm\webapi\SN_API\bin\zxing.dll
+D:\Kiệm\webapi\SN_API\bin\zxing.presentation.dll
+D:\Kiệm\webapi\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Kiệm\webapi\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Kiệm\webapi\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+D:\Kiệm\webapi\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+D:\Kiệm\webapi\SN_API\bin\Microsoft.Owin.xml
+D:\Kiệm\webapi\SN_API\bin\Microsoft.Owin.Cors.xml
+D:\Kiệm\webapi\SN_API\bin\Microsoft.Owin.Security.xml
+D:\Kiệm\webapi\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Kiệm\webapi\SN_API\bin\Newtonsoft.Json.xml
+D:\Kiệm\webapi\SN_API\bin\Sfc.Library.HttpClient.pdb
+D:\Kiệm\webapi\SN_API\bin\Sfc.Library.HttpClient.dll.config
+D:\Kiệm\webapi\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\Kiệm\webapi\SN_API\bin\System.Net.Http.Formatting.xml
+D:\Kiệm\webapi\SN_API\bin\System.Web.Http.xml
+D:\Kiệm\webapi\SN_API\bin\System.Web.Http.Cors.xml
+D:\Kiệm\webapi\SN_API\bin\System.Web.Http.Owin.xml
+D:\Kiệm\webapi\SN_API\bin\System.Web.Helpers.xml
+D:\Kiệm\webapi\SN_API\bin\System.Web.Mvc.xml
+D:\Kiệm\webapi\SN_API\bin\System.Web.Optimization.xml
+D:\Kiệm\webapi\SN_API\bin\System.Web.Razor.xml
+D:\Kiệm\webapi\SN_API\bin\System.Web.WebPages.xml
+D:\Kiệm\webapi\SN_API\bin\System.Web.WebPages.Deployment.xml
+D:\Kiệm\webapi\SN_API\bin\System.Web.WebPages.Razor.xml
+D:\Kiệm\webapi\SN_API\bin\Antlr3.Runtime.pdb
+D:\Kiệm\webapi\SN_API\bin\zxing.pdb
+D:\Kiệm\webapi\SN_API\bin\zxing.xml
+D:\Kiệm\webapi\SN_API\bin\zxing.presentation.pdb
+D:\Kiệm\webapi\SN_API\bin\zxing.presentation.xml
+D:\Kiệm\webapi\SN_API\bin\System.Web.Http.WebHost.xml
+D:\Kiệm\webapi\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+D:\Kiệm\webapi\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+D:\Kiệm\webapi\SN_API\obj\Debug\SN_API.dll
+D:\Kiệm\webapi\SN_API\obj\Debug\SN_API.pdb
+D:\Kiệm\webapi\SN_API\obj\Debug\SN_API.csproj.AssemblyReference.cache
+D:\NIC Source\5.0\webapi\SN_API\bin\roslyn\csc.exe
+D:\NIC Source\5.0\webapi\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\NIC Source\5.0\webapi\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\NIC Source\5.0\webapi\SN_API\bin\roslyn\System.Collections.Immutable.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\roslyn\vbc.exe
+D:\NIC Source\5.0\webapi\SN_API\bin\roslyn\VBCSCompiler.exe
+D:\NIC Source\5.0\webapi\SN_API\bin\roslyn\VBCSCompiler.exe.config
+D:\NIC Source\5.0\webapi\SN_API\bin\SN_API.dll.config
+D:\NIC Source\5.0\webapi\SN_API\bin\SN_API.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\SN_API.pdb
+D:\NIC Source\5.0\webapi\SN_API\bin\Antlr3.Runtime.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\Microsoft.Owin.Cors.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\Microsoft.Owin.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\Microsoft.Owin.Security.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\Microsoft.Web.Infrastructure.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\Newtonsoft.Json.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\Owin.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\Swashbuckle.Core.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Net.Http.Formatting.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Web.Cors.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Web.Helpers.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Web.Http.Cors.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Web.Http.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Web.Http.Owin.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Web.Http.WebHost.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Web.Mvc.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Web.Optimization.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Web.Razor.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Web.WebPages.Deployment.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Web.WebPages.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Web.WebPages.Razor.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\WebActivatorEx.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\WebGrease.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\zxing.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\zxing.presentation.dll
+D:\NIC Source\5.0\webapi\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\NIC Source\5.0\webapi\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\NIC Source\5.0\webapi\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+D:\NIC Source\5.0\webapi\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+D:\NIC Source\5.0\webapi\SN_API\bin\Microsoft.Owin.xml
+D:\NIC Source\5.0\webapi\SN_API\bin\Microsoft.Owin.Cors.xml
+D:\NIC Source\5.0\webapi\SN_API\bin\Microsoft.Owin.Security.xml
+D:\NIC Source\5.0\webapi\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\NIC Source\5.0\webapi\SN_API\bin\Newtonsoft.Json.xml
+D:\NIC Source\5.0\webapi\SN_API\bin\Sfc.Library.HttpClient.pdb
+D:\NIC Source\5.0\webapi\SN_API\bin\Sfc.Library.HttpClient.dll.config
+D:\NIC Source\5.0\webapi\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Net.Http.Formatting.xml
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Web.Http.xml
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Web.Http.Cors.xml
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Web.Http.Owin.xml
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Web.Helpers.xml
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Web.Mvc.xml
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Web.Optimization.xml
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Web.Razor.xml
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Web.WebPages.xml
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Web.WebPages.Deployment.xml
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Web.WebPages.Razor.xml
+D:\NIC Source\5.0\webapi\SN_API\bin\Antlr3.Runtime.pdb
+D:\NIC Source\5.0\webapi\SN_API\bin\zxing.pdb
+D:\NIC Source\5.0\webapi\SN_API\bin\zxing.xml
+D:\NIC Source\5.0\webapi\SN_API\bin\zxing.presentation.pdb
+D:\NIC Source\5.0\webapi\SN_API\bin\zxing.presentation.xml
+D:\NIC Source\5.0\webapi\SN_API\bin\System.Web.Http.WebHost.xml
+D:\NIC Source\5.0\webapi\SN_API\obj\Debug\SN_API.csproj.AssemblyReference.cache
+D:\NIC Source\5.0\webapi\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+D:\NIC Source\5.0\webapi\SN_API\obj\Debug\SN_API.csproj.CopyComplete
+D:\NIC Source\5.0\webapi\SN_API\obj\Debug\SN_API.dll
+D:\NIC Source\5.0\webapi\SN_API\obj\Debug\SN_API.pdb
+C:\Users\V1039443\Desktop\NIC-API\SN_API\obj\Debug\SN_API.csproj.AssemblyReference.cache
+C:\Users\V1039443\Desktop\NIC-API\SN_API\obj\Debug\SN_API.csproj.CoreCompileInputs.cache
+C:\Users\V1039443\Desktop\NIC-API\SN_API\obj\Debug\SN_API.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\obj\Debug\SN_API.pdb
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\roslyn\csc.exe
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\roslyn\vbc.exe
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\roslyn\VBCSCompiler.exe
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\SN_API.dll.config
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\SN_API.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\SN_API.pdb
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Antlr3.Runtime.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Microsoft.Owin.Cors.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Microsoft.Owin.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Microsoft.Owin.Security.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Newtonsoft.Json.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Owin.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Swashbuckle.Core.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Net.Http.Formatting.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Web.Cors.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Web.Helpers.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Web.Http.Cors.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Web.Http.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Web.Http.Owin.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Web.Http.WebHost.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Web.Mvc.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Web.Optimization.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Web.Razor.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Web.WebPages.Deployment.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Web.WebPages.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Web.WebPages.Razor.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\WebActivatorEx.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\WebGrease.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\zxing.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\zxing.presentation.dll
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Microsoft.Owin.xml
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Microsoft.Owin.Cors.xml
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Microsoft.Owin.Security.xml
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Newtonsoft.Json.xml
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Sfc.Library.HttpClient.pdb
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Sfc.Library.HttpClient.dll.config
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Net.Http.Formatting.xml
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Web.Http.xml
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Web.Http.Cors.xml
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Web.Http.Owin.xml
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Web.Helpers.xml
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Web.Mvc.xml
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Web.Optimization.xml
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Web.Razor.xml
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Web.WebPages.xml
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Web.WebPages.Deployment.xml
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Web.WebPages.Razor.xml
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\Antlr3.Runtime.pdb
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\zxing.pdb
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\zxing.xml
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\zxing.presentation.pdb
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\zxing.presentation.xml
+C:\Users\V1039443\Desktop\NIC-API\SN_API\bin\System.Web.Http.WebHost.xml
+C:\Users\V1039443\Desktop\NIC-API\SN_API\obj\Debug\SN_API.csproj.CopyComplete

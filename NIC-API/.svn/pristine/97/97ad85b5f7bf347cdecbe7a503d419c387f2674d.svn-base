@@ -1,0 +1,756 @@
+﻿using SN_API.Models;
+using SN_API.Models.Config;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
+using System.Web;
+using System.Web.Http;
+using System.Web.Http.Cors;
+using System.Web.Mvc;
+
+namespace SN_API.Controllers.Config
+{
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
+    public class GeneralConfigController : ApiController
+    {
+
+        #region Make_Weight ConfirmMSN
+        [System.Web.Http.Route("GetConfigMake_WeightContent")]
+        [System.Web.Http.HttpPost]
+        public async Task<HttpResponseMessage> GetConfigMake_WeightContent(ParameterConfig model)
+        {
+            string strGetData = "";
+            if (string.IsNullOrEmpty(model.MODEL_NAME))
+            {
+                strGetData = $" select A.PRG_NAME,A.VR_CLASS,A.VR_NAME,A.VR_VALUE,A.VR_DESC,ROWIDTOCHAR(ROWID) ID from SFIS1.C_PARAMETER_INI A WHERE PRG_NAME = 'MakeWeight' and VR_CLASS = 'CONFIRMSN' and ROWNUM < 20 ";
+            }
+            else
+            {
+                strGetData = $" select A.PRG_NAME,A.VR_CLASS,A.VR_NAME,A.VR_VALUE,A.VR_DESC,ROWIDTOCHAR(ROWID) ID from SFIS1.C_PARAMETER_INI A WHERE PRG_NAME = 'MakeWeight' and VR_CLASS = 'CONFIRMSN' and  UPPER(A.VR_VALUE) LIKE '%{model.MODEL_NAME.ToUpper()}%' ";
+            }
+            DataTable dtCheck = DBConnect.GetData(strGetData, model.database_name);
+            if (dtCheck.Rows.Count == 0)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "fail" });
+            }
+            else
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtCheck });
+            }
+        }
+        [System.Web.Http.Route("ConfigMake_WeightModel")]
+        [System.Web.Http.HttpPost]
+        public async Task<HttpResponseMessage> ConfigMake_WeightModel(ParameterConfig model)
+        {
+            string strGetData = "select DISTINCT MODEL_NAME from SFIS1.C_MODEL_DESC_T" +
+                " MINUS " +
+                "select DISTINCT VR_VALUE as MODEL_NAME from SFIS1.C_PARAMETER_INI WHERE PRG_NAME = 'MakeWeight' and VR_CLASS = 'CONFIRMSN'";
+            DataTable dtCheck = DBConnect.GetData(strGetData, model.database_name);
+            return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtCheck });
+        }
+
+        [System.Web.Http.Route("DeleteMake_weightConfig")]
+        [System.Web.Http.HttpPost]
+        public async Task<HttpResponseMessage> DeleteMake_weightConfig(ParameterConfig model)
+        {
+            //check privilege
+            string strPrivilege = $" SELECT * FROM  sfis1.C_PRIVILEGE  where PRG_NAME='CONFIG'  AND FUN = 'PQE_NIC' AND EMP='{model.EMP}'";
+            if (DBConnect.GetData(strPrivilege, model.database_name).Rows.Count <= 0)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "privilege" });
+            }
+
+            string strDelete = $" delete from SFIS1.C_PARAMETER_INI where ROWID = '{model.ID}'";
+            try
+            {
+                DBConnect.ExecuteNoneQuery(strDelete, model.database_name);
+                StringBuilder sbLog = new StringBuilder();
+                sbLog.Append(" INSERT INTO sfism4.r_system_log_t (EMP_NO,PRG_NAME,ACTION_TYPE,ACTION_DESC) ");
+                sbLog.Append(" VALUES ( ");
+                sbLog.Append($" '{model.EMP}', ");
+                sbLog.Append($" 'CONFIG', ");
+                sbLog.Append($" 'DELETE', ");
+                sbLog.Append($"  'MAKE_WEIGHT--CONFIRMSN MODEL_NAME: {model.MODEL_NAME}; IP:{AuthorizationController.UserIP()}; TABLE: SFIS1.C_PARAMETER_INI' ");
+                sbLog.Append(" ) ");
+
+                string strInsertLog = sbLog.ToString();
+                DBConnect.ExecuteNoneQuery(strInsertLog, model.database_name);
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok" });
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = ex.Message });
+            }
+        }
+
+        [System.Web.Http.Route("InsertUpdateMake_weightConfig")]
+        [System.Web.Http.HttpPost]
+        public async Task<HttpResponseMessage> InsertUpdateMake_weightConfig(ParameterConfig model)
+        {
+            StringBuilder sb = new StringBuilder();
+            StringBuilder sbLog = new StringBuilder();
+            string actionString = " ";
+            string modify = " ";
+            try
+            {
+                //check exist
+                string strCheckexist = $"select * from sfis1.C_PARAMETER_INI  where PRG_NAME = 'MakeWeight' and VR_CLASS = 'CONFIRMSN' and upper(VR_VALUE) = '{model.MODEL_NAME.ToUpper()}' ";
+                if (DBConnect.GetData(strCheckexist, model.database_name).Rows.Count <= 0)
+                {
+                    //check privilege
+                    string strPrivilege = $" SELECT * FROM  sfis1.C_PRIVILEGE  where PRG_NAME='CONFIG'  AND FUN = 'PQE_NIC' AND EMP='{model.EMP}'";
+                    if (DBConnect.GetData(strPrivilege, model.database_name).Rows.Count <= 0)
+                    {
+                        return Request.CreateResponse(HttpStatusCode.OK, new { result = "privilege" });
+                    }
+
+                    //not exist => insert
+                    actionString = "INSERT";
+                    sb.Append("INSERT into");
+                    sb.Append($" SFIS1.C_PARAMETER_INI VALUES(");
+                    sb.Append($" 'MakeWeight','CONFIRMSN','SI','{model.MODEL_NAME}','{model.MODEL_NAME}','{model.EMP}--'||SYSDATE||'--{AuthorizationController.UserIP()}'");
+                    sb.Append($" ) ");
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, new { result = "fail" });
+                }
+
+                //insert log
+                sbLog.Append(" INSERT INTO sfism4.r_system_log_t (EMP_NO,PRG_NAME,ACTION_TYPE,ACTION_DESC) ");
+                sbLog.Append(" VALUES ( ");
+                sbLog.Append($" '{model.EMP}', ");
+                sbLog.Append($" 'CONFIG', ");
+                sbLog.Append($" '{actionString}', ");
+                sbLog.Append($"  'MAKE_WEIGHT--CONFIRMSN MODEL_NAME: {model.MODEL_NAME}; IP:{AuthorizationController.UserIP()}; TABLE: SFIS1.C_PARAMETER_INI' ");
+                sbLog.Append(" ) ");
+
+                string strInsertUpdate = sb.ToString();
+                string strInsertLog = sbLog.ToString();
+                DBConnect.ExecuteNoneQuery(strInsertUpdate, model.database_name);
+                DBConnect.ExecuteNoneQuery(strInsertLog, model.database_name);
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok" });
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = ex.Message });
+            }
+        }
+        #endregion
+
+        #region PACK_CTN_ISBRACKET
+        [System.Web.Http.Route("GetATT")]
+        [System.Web.Http.HttpPost]
+        public async Task<HttpResponseMessage> GetATT(ParameterConfig model)
+        {
+            string strGetData = "";
+            List<string> listoutput = new  List<string>();
+            if (string.IsNullOrEmpty(model.EMP))
+            {
+                strGetData = $" SELECT TRIM (REGEXP_SUBSTR (txt,'[^|]+',1,LEVEL)) output FROM (select sfis1.z_pkg.get_data('','GET_ATT') txt from dual) CONNECT BY INSTR (txt,'|',1,LEVEL - 1) > 0  ";
+            }
+            else
+            {
+                strGetData = $" SELECT TRIM (REGEXP_SUBSTR (txt,'[^|]+',1,LEVEL)) output FROM (select sfis1.z_pkg.get_data('{model.EMP}','GET_ATT') txt from dual) CONNECT BY INSTR (txt,'|',1,LEVEL - 1) > 0 ";
+            }
+            DataTable dtCheck = DBConnect.GetData(strGetData, model.database_name);
+            foreach (DataRow row in dtCheck.Rows)
+            {
+                listoutput.Add(row[0].ToString());
+            }
+            if (dtCheck.Rows.Count == 0)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "fail" });
+            }
+            else
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtCheck,output = listoutput[0] });
+            }
+        }
+        [System.Web.Http.Route("GetConfigPACK_CTN_ISBRACKETContent")]
+        [System.Web.Http.HttpPost]
+        public async Task<HttpResponseMessage> GetConfigPACK_CTN_ISBRACKETContent(ParameterConfig model)
+        {
+            string strGetData = "";
+            if (string.IsNullOrEmpty(model.MODEL_NAME))
+            {
+                strGetData = $" select A.ATTRIBUTE_NAME AS VR_NAME,A.TYPE_VALUE as MODEL_NAME,A.VERSION,A.ATTRIBUTE_VALUE AS VR_VALUE,A.ATTRIBUTE_DESC1 AS DATA1,A.ATTRIBUTE_DESC2 AS DATA2,A.EMP_NO,A.INPUT_TIME,ROWIDTOCHAR(ROWID) ID from SFIS1.C_MODEL_ATTR_CONFIG_T A WHERE ATTRIBUTE_NAME = '{model.VR_NAME}' and ROWNUM < 20 ";
+                if (string.IsNullOrEmpty(model.VR_NAME))
+                {
+                    strGetData = $" select A.ATTRIBUTE_NAME AS VR_NAME,A.TYPE_VALUE as MODEL_NAME,A.VERSION,A.ATTRIBUTE_VALUE AS VR_VALUE,A.ATTRIBUTE_DESC1 AS DATA1,A.ATTRIBUTE_DESC2 AS DATA2,A.EMP_NO,A.INPUT_TIME,ROWIDTOCHAR(ROWID) ID from SFIS1.C_MODEL_ATTR_CONFIG_T A WHERE ATTRIBUTE_NAME IN (" +
+                        $"SELECT OUTPUT FROM (SELECT TRIM (REGEXP_SUBSTR (txt,'[^|]+',1,LEVEL)) output FROM (select sfis1.z_pkg.get_data('V1047047','GET_ATT') txt from dual) CONNECT BY INSTR (txt,'|',1,LEVEL - 1) > 0 ORDER BY output ASC) WHERE ROWNUM = 1) and ROWNUM < 20";
+                }
+            }
+            else
+            {
+                strGetData = $"select A.ATTRIBUTE_NAME AS VR_NAME,A.TYPE_VALUE as MODEL_NAME,A.VERSION,A.ATTRIBUTE_VALUE AS VR_VALUE,A.ATTRIBUTE_DESC1 AS DATA1,A.ATTRIBUTE_DESC2 AS DATA2,A.EMP_NO,A.INPUT_TIME,ROWIDTOCHAR(ROWID) ID from SFIS1.C_MODEL_ATTR_CONFIG_T A WHERE ATTRIBUTE_NAME = '{model.VR_NAME}' and  " +
+                    $" (Upper(A.TYPE_VALUE) LIKE '%{model.MODEL_NAME.ToUpper()}%' or Upper(A.ATTRIBUTE_VALUE) LIKE '%{model.MODEL_NAME.ToUpper()}%')  AND ROWNUM < 20 ";
+            }
+            DataTable dtCheck = DBConnect.GetData(strGetData, model.database_name);
+            if (dtCheck.Rows.Count == 0)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "fail" });
+            }
+            else
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtCheck });
+            }
+        }
+        [System.Web.Http.Route("ConfigPACK_CTN_ISBRACKETModel")]
+        [System.Web.Http.HttpPost]
+        public async Task<HttpResponseMessage> ConfigPACK_CTN_ISBRACKETModel(ParameterConfig model)
+        {
+            string strGetData = "select DISTINCT MODEL_NAME from SFIS1.C_MODEL_DESC_T";
+            DataTable dtCheck = DBConnect.GetData(strGetData, model.database_name);
+            return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtCheck });
+        }
+
+        [System.Web.Http.Route("DeletePACK_CTN_ISBRACKET")]
+        [System.Web.Http.HttpPost]
+        public async Task<HttpResponseMessage> DeletePACK_CTN_ISBRACKET(ParameterConfig model)
+        {
+            //check privilege
+            string strPrivilege = $" SELECT * FROM  sfis1.C_PRIVILEGE  where PRG_NAME='CONFIG'  AND FUN = 'ATTRIBUTE_CONFIG_DELETE' AND EMP='{model.EMP}'";
+            if (DBConnect.GetData(strPrivilege, model.database_name).Rows.Count <= 0)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "privilege" });
+            }
+
+            string strDelete = $" delete from SFIS1.C_MODEL_ATTR_CONFIG_T where ROWID = '{model.ID}'";
+            try
+            {
+                DBConnect.ExecuteNoneQuery(strDelete, model.database_name);
+                StringBuilder sbLog = new StringBuilder();
+                sbLog.Append(" INSERT INTO sfism4.r_system_log_t (EMP_NO,PRG_NAME,ACTION_TYPE,ACTION_DESC) ");
+                sbLog.Append(" VALUES ( ");
+                sbLog.Append($" '{model.EMP}', ");
+                sbLog.Append($" 'CONFIG', ");
+                sbLog.Append($" 'DELETE', ");
+                sbLog.Append($"  'C_MODEL_ATTR_CONFIG_T ATTRIBUTE_VALUE: {model.VR_NAME}; MODEL_NAME: {model.MODEL_NAME}; IP:{AuthorizationController.UserIP()}; TABLE: SFIS1.C_MODEL_ATTR_CONFIG_T' ");
+                sbLog.Append(" ) ");
+
+                string strInsertLog = sbLog.ToString();
+                DBConnect.ExecuteNoneQuery(strInsertLog, model.database_name);
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok" });
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = ex.Message });
+            }
+        }
+
+        [System.Web.Http.Route("InsertUpdatePACK_CTN_ISBRACKET")]
+        [System.Web.Http.HttpPost]
+        public async Task<HttpResponseMessage> InsertUpdatePACK_CTN_ISBRACKET(ParameterConfig model)
+        {
+            StringBuilder sb = new StringBuilder();
+            StringBuilder sbLog = new StringBuilder();
+            string actionString = " ";
+            string modify = " ";
+            try
+            {
+                if(model.VR_NAME.Trim() == "LABEL_QTY")
+                {
+                    model.CONFIRM = "WAITING CONFIRM";
+                }
+                //check exist
+                string strCheckexist = $"select * from sfis1.C_MODEL_ATTR_CONFIG_T  where ATTRIBUTE_NAME = '{model.VR_NAME.ToUpper()}' AND ";
+                if (string.IsNullOrEmpty(model.VERSION))
+                {
+                    strCheckexist = strCheckexist + "VERSION is null";
+                }
+                else
+                {
+                    strCheckexist = strCheckexist + $"VERSION = '{model.VERSION}'";
+                }
+                strCheckexist = strCheckexist +$"  and upper(TYPE_VALUE) = '{model.MODEL_NAME.ToUpper()}' ";
+                if (DBConnect.GetData(strCheckexist, model.database_name).Rows.Count <= 0)
+                {
+
+                    if (!string.IsNullOrEmpty(model.ID))
+                    {
+                        return Request.CreateResponse(HttpStatusCode.OK, new { result = "notupdate" });
+                    }
+                    //not exist => insert
+                    actionString = "INSERT";
+                    sb.Append("INSERT into");
+                    sb.Append($" SFIS1.C_MODEL_ATTR_CONFIG_T(TYPE_NAME,TYPE_VALUE,VERSION,ATTRIBUTE_NAME,ATTRIBUTE_VALUE,ATTRIBUTE_DESC1,ATTRIBUTE_DESC2,EMP_NO,INPUT_TIME,MODEL_NAME) VALUES(");
+                    sb.Append($" 'MODEL_NAME','{model.MODEL_NAME}','{model.VERSION}','{model.VR_NAME}','{model.VR_VALUE}','{model.DATA1}','{model.DATA2}','{model.EMP}',SYSDATE,'{model.CONFIRM}'");
+                    sb.Append($" ) ");
+                }
+                else
+                {
+                    if (string.IsNullOrEmpty(model.ID))
+                    {
+                        return Request.CreateResponse(HttpStatusCode.OK, new { result = "fail" });
+                    }
+                    //existed => update
+                    actionString = "UPDATE";
+                    sb.Append(" UPDATE SFIS1.C_MODEL_ATTR_CONFIG_T ");
+                    sb.Append(" SET ");
+                    sb.Append($" TYPE_VALUE = '{model.MODEL_NAME}' ,"); //MODEL_CODE
+                    sb.Append($" VERSION = '{model.VERSION}', ");
+                    sb.Append($" ATTRIBUTE_VALUE = '{model.VR_VALUE}', ");
+                    sb.Append($" ATTRIBUTE_DESC1 = '{model.DATA1}', ");
+                    sb.Append($" ATTRIBUTE_DESC2 = '{model.DATA2}', ");
+                    sb.Append($" EMP_NO = '{model.EMP}', ");
+                    sb.Append($" MODEL_NAME = '{model.CONFIRM}', ");
+                    sb.Append($" INPUT_TIME = SYSDATE ");
+                    sb.Append($" WHERE ROWID = '{model.ID}' "); //ID
+
+                    modify = " UPDATE: ";
+                    string query = $"select TYPE_VALUE,VERSION,ATTRIBUTE_VALUE,ATTRIBUTE_DESC1,ATTRIBUTE_DESC2 from SFIS1.C_MODEL_ATTR_CONFIG_T WHERE ROWID = '{model.ID}' ";
+                    DataTable dtModifly = DBConnect.GetData(query, model.database_name);
+                    foreach (DataRow row in dtModifly.Rows)
+                    {
+                        if (row[0].ToString() != model.MODEL_NAME)
+                        {
+                            modify += $" TYPE_VALUE: {row[0].ToString()};";
+                        }
+                        if (row[0].ToString() != model.VERSION)
+                        {
+                            modify += $" VERSION: {row[0].ToString()};";
+                        }
+                        if (row[0].ToString() != model.VR_VALUE)
+                        {
+                            modify += $" ATTRIBUTE_VALUE: {row[0].ToString()};";
+                        }
+                        if (row[0].ToString() != model.DATA1)
+                        {
+                            modify += $" ATTRIBUTE_DESC1: {row[0].ToString()};";
+                        }
+                        if (row[0].ToString() != model.DATA2)
+                        {
+                            modify += $" ATTRIBUTE_DESC2: {row[0].ToString()};";
+                        }
+                    }
+
+                }
+
+                //insert log
+                sbLog.Append(" INSERT INTO sfism4.r_system_log_t (EMP_NO,PRG_NAME,ACTION_TYPE,ACTION_DESC) ");
+                sbLog.Append(" VALUES ( ");
+                sbLog.Append($" '{model.EMP}', ");
+                sbLog.Append($" 'CONFIG', ");
+                sbLog.Append($" '{actionString}', ");
+                sbLog.Append($"  'C_MODEL_ATTR_CONFIG_T--{model.VR_NAME} MODEL_NAME: {model.MODEL_NAME}; {modify}; IP:{AuthorizationController.UserIP()}; TABLE: SFIS1.C_MODEL_ATTR_CONFIG_T' ");
+                sbLog.Append(" ) ");
+
+                string strInsertUpdate = sb.ToString();
+                string strInsertLog = sbLog.ToString();
+                DBConnect.ExecuteNoneQuery(strInsertUpdate, model.database_name);
+                DBConnect.ExecuteNoneQuery(strInsertLog, model.database_name);
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok" });
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = ex.Message });
+            }
+        }
+        #endregion
+
+        #region ROAST_OUT--ROAST_IN MODEL TELIT
+        [System.Web.Http.Route("GetConfigRoast_timeContent")]
+        [System.Web.Http.HttpPost]
+        public async Task<HttpResponseMessage> GetConfigRoast_timeContent(Roast_timeElement model)
+        {
+            string strGetData = "";
+            if (string.IsNullOrEmpty(model.MODEL_NAME))
+            {
+                strGetData = $" select A.MODEL_NAME,A.DEFAULT_GROUP,A.END_GROUP,A.CONTROL_TIME,A.EDIT_TIME,A.EDIT_EMP,ROWIDTOCHAR(ROWID) ID from SFIS1.C_ROAST_TIME_CONTROL_T A WHERE ROWNUM < 20 ";
+            }
+            else
+            {
+                strGetData = $" select A.MODEL_NAME,A.DEFAULT_GROUP,A.END_GROUP,A.CONTROL_TIME,A.EDIT_TIME,A.EDIT_EMP,ROWIDTOCHAR(ROWID) ID from SFIS1.C_ROAST_TIME_CONTROL_T A WHERE UPPER(A.MODEL_NAME) = '{model.MODEL_NAME.ToUpper()}' ";
+            }
+            DataTable dtCheck = DBConnect.GetData(strGetData, model.database_name);
+            if (dtCheck.Rows.Count == 0)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "fail" });
+            }
+            else
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtCheck });
+            }
+        }
+
+        [System.Web.Http.Route("ConfigRoast_timeModel")]
+        [System.Web.Http.HttpPost]
+        public async Task<HttpResponseMessage> ConfigRoast_timeModel(Roast_timeElement model)
+        {
+            string strGetData = "select DISTINCT MODEL_NAME from SFIS1.C_MODEL_DESC_T WHERE MODEL_SERIAL = 'Cinterion'";
+
+            string strDefault = $" select DISTINCT DEFAULT_GROUP from SFIS1.C_ROAST_TIME_CONTROL_T";
+
+            DataTable dtCheck = DBConnect.GetData(strGetData, model.database_name);
+            DataTable dtDefault = DBConnect.GetData(strDefault, model.database_name);
+            return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtCheck, dtDefault = dtDefault });
+        }       
+        [System.Web.Http.Route("GetEndGroupModel")]
+        [System.Web.Http.HttpPost]
+        public async Task<HttpResponseMessage> GetEndGroupModel(Roast_timeElement model)
+        {
+            string strEnd = $" select DISTINCT END_GROUP from SFIS1.C_ROAST_TIME_CONTROL_T where DEFAULT_GROUP = '{model.DEFAULT_GROUP.ToUpper()}'";
+            DataTable dtEnd = DBConnect.GetData(strEnd, model.database_name);
+            return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok",  dtEnd = dtEnd });
+        }
+
+
+        [System.Web.Http.Route("InsertUpdateRoast_time")]
+        [System.Web.Http.HttpPost]
+        public async Task<HttpResponseMessage> InsertUpdateRoast_time(Roast_timeElement model)
+        {
+            StringBuilder sb = new StringBuilder();
+            StringBuilder sbLog = new StringBuilder();
+            string actionString = " ";
+            string modify = " ";
+            try
+            {
+
+                //check privilege
+                string strPrivilege = $" SELECT * FROM  sfis1.C_PRIVILEGE  where PRG_NAME='CONFIG'  AND FUN = 'PQE_TELIT' AND EMP='{model.EMP}'";
+                if (DBConnect.GetData(strPrivilege, model.database_name).Rows.Count <= 0)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, new { result = "privilege" });
+                }
+                //check exist
+                string strCheckexist = $"select a.* from sfis1.C_ROAST_TIME_CONTROL_T a where upper(a.model_name) = '{model.MODEL_NAME.ToUpper()}'" +
+                    $" AND DEFAULT_GROUP = '{model.DEFAULT_GROUP.ToUpper()}' AND END_GROUP = '{model.END_GROUP.ToUpper()}' ";
+                if (DBConnect.GetData(strCheckexist, model.database_name).Rows.Count <= 0)
+                {
+                    //not exist => insert
+                    actionString = "INSERT";
+                    sb.Append("INSERT into");
+                    sb.Append($" SFIS1.C_ROAST_TIME_CONTROL_T VALUES(");
+                    sb.Append($" '{model.MODEL_NAME}','{model.DEFAULT_GROUP}','{model.END_GROUP}','{model.CONTROL_TIME}',");
+                    sb.Append($" SYSDATE,'{model.EMP}','','','','',''");
+                    sb.Append($" ) ");
+
+                }
+                else
+                {
+                    //check privilege
+                    string checkexist = $"select * from sfis1.C_ROAST_TIME_CONTROL_T where ROWID='{model.ID}'";
+                    if (DBConnect.GetData(checkexist, model.database_name).Rows.Count <= 0)
+                    {
+                        return Request.CreateResponse(HttpStatusCode.OK, new { result = "notexist" });
+                    }
+
+                    //existed => update
+                    actionString = "UPDATE";
+                    sb.Append("UPDATE");
+                    sb.Append($" SFIS1.C_ROAST_TIME_CONTROL_T");
+                    sb.Append($" SET ");
+                    sb.Append($" MODEL_NAME = '{model.MODEL_NAME}', DEFAULT_GROUP = '{model.DEFAULT_GROUP}', END_GROUP = '{model.END_GROUP}',");
+                    sb.Append($" CONTROL_TIME = '{model.CONTROL_TIME}', EDIT_TIME = SYSDATE, EDIT_EMP = '{model.EMP}'");
+                    sb.Append($" WHERE ROWID = '{model.ID}'");
+
+
+                    modify = " UPDATE: ";
+                    string query = $"select MODEL_NAME,DEFAULT_GROUP,END_GROUP,CONTROL_TIME from sfis1.C_ROAST_TIME_CONTROL_T WHERE ROWID = '{model.ID}' ";
+                    DataTable dtModifly = DBConnect.GetData(query, model.database_name);
+                    foreach (DataRow row in dtModifly.Rows)
+                    {
+                        if (row[0].ToString() != model.MODEL_NAME)
+                        {
+                            modify += $" MODEL_NAME: {row[0].ToString()};";
+                        }
+                        if (row[1].ToString() != model.DEFAULT_GROUP)
+                        {
+                            modify += $" DEFAULT_GROUP: {row[1].ToString()};";
+                        }
+                        if (row[2].ToString() != model.END_GROUP)
+                        {
+                            modify += $" END_GROUP: {row[2].ToString()};";
+                        }
+                        if (row[3].ToString() != model.CONTROL_TIME)
+                        {
+                            modify += $" CONTROL_TIME: {row[3].ToString()};";
+                        }
+                    }
+
+                }
+
+                //insert log
+                sbLog.Append(" INSERT INTO sfism4.r_system_log_t (EMP_NO,PRG_NAME,ACTION_TYPE,ACTION_DESC) ");
+                sbLog.Append(" VALUES ( ");
+                sbLog.Append($" '{model.EMP}', ");
+                sbLog.Append($" 'CONFIG', ");
+                sbLog.Append($" '{actionString}', ");
+                sbLog.Append($"  'ROAST_TIME MODEL_NAME: {model.MODEL_NAME};{modify}; IP:{AuthorizationController.UserIP()}; TABLE: SFIS1.C_ROAST_TIME_CONTROL_T' ");
+                sbLog.Append(" ) ");
+
+                string strInsertUpdate = sb.ToString();
+                string strInsertLog = sbLog.ToString();
+                DBConnect.ExecuteNoneQuery(strInsertUpdate, model.database_name);
+                DBConnect.ExecuteNoneQuery(strInsertLog, model.database_name);
+                string strSite = $"select * from sfis1.C_MODEL_SITE_T a where upper(a.model_name) = '{model.MODEL_NAME.ToUpper()}'";
+                if (DBConnect.GetData(strSite, model.database_name).Rows.Count <= 0)
+                {
+                    string insertSite = $"insert into sfis1.C_MODEL_SITE_T values ('{model.MODEL_NAME.ToUpper()}','Thales',SYSDATE,'{model.EMP}') ";
+                    DBConnect.ExecuteNoneQuery(insertSite, model.database_name);
+                }
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok" });
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = ex.Message });
+            }
+        }
+
+        #endregion
+
+        #region Route_BomController
+        // GET: Route_Bom
+        [System.Web.Http.Route("Setup_Route_Bom")]
+        [System.Web.Http.HttpPost]
+        public async Task<HttpResponseMessage> Setup_Route_Bom(Mofix model)
+        {
+            string strGetData = "";
+            if (!string.IsNullOrEmpty(model.MO_NUMBER))
+            {
+                strGetData = String.Format("select  TYPE_VALUE as MO_NUMBER,  ATTRIBUTE_DESC1 AS ROUTE_NAME,ATTRIBUTE_DESC2 AS BOM_NO, EMP_NO, INPUT_TIME AS TIME, ROWID ID" +
+                    "  from SFIS1.C_MODEL_ATTR_CONFIG_T where ATTRIBUTE_NAME='SETUP_ROUTE_BOM' and TYPE_VALUE like '%{0}%' ", model.MO_NUMBER.ToUpper());
+            }
+            else
+            {
+                strGetData = String.Format("select  TYPE_VALUE as MO_NUMBER,  ATTRIBUTE_DESC1 AS ROUTE_NAME,ATTRIBUTE_DESC2 AS BOM_NO, EMP_NO, INPUT_TIME AS TIME, ROWID ID" +
+                    "  from SFIS1.C_MODEL_ATTR_CONFIG_T where ATTRIBUTE_NAME='SETUP_ROUTE_BOM' ");
+            }
+
+
+
+            DataTable dtCheck = DBConnect.GetData(strGetData, model.database_name);
+
+            if (dtCheck.Rows.Count == 0)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "fail" });
+            }
+            else
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtCheck });
+            }
+        }
+
+        [System.Web.Http.Route("UpdateRoute_Bom")]
+        [System.Web.Http.HttpPost]
+        public async Task<HttpResponseMessage> UpdateRoute_Bom(Mofix model)
+        {
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                StringBuilder sbLog = new StringBuilder();
+                string strPrivilege = "";
+                string modify = " ";
+                //check exist
+                string strCheckExist = $"  select * from SFIS1.C_MODEL_ATTR_CONFIG_T where ATTRIBUTE_NAME='SETUP_ROUTE_BOM' and TYPE_VALUE = '{model.MO_NUMBER.Trim()}' ";
+                string actionString = " ";
+                if (DBConnect.GetData(strCheckExist, model.database_name).Rows.Count <= 0)
+                {
+                    //check privilege
+                    strPrivilege = $" SELECT * FROM  sfis1.C_PRIVILEGE  where PRG_NAME='CONFIG'  AND FUN = 'SETUP_ROUTE_BOM' AND EMP='{model.EMP}'";
+                    if (DBConnect.GetData(strPrivilege, model.database_name).Rows.Count <= 0)
+                    {
+                        return Request.CreateResponse(HttpStatusCode.OK, new { result = "privilege" });
+                    }
+
+                    //not exist => insert
+                    actionString = "INSERT";
+                    sb.Append("INSERT into");
+                    sb.Append($" SFIS1.C_MODEL_ATTR_CONFIG_T(TYPE_NAME,TYPE_VALUE,ATTRIBUTE_NAME,");
+                    sb.Append($"ATTRIBUTE_DESC1,ATTRIBUTE_DESC2,EMP_NO,INPUT_TIME)");
+                    sb.Append($" VALUES(");
+                    sb.Append($" 'MO_NUMBER','{model.MO_NUMBER}','SETUP_ROUTE_BOM',");
+                    sb.Append($" '{model.ROUTE_NAME}','{model.BOM_NO}','{model.EMP}',SYSDATE");
+                    sb.Append($" ) ");
+                }
+                else
+                {
+                    //check privilege
+                    strPrivilege = $"  SELECT * FROM  sfis1.C_PRIVILEGE  where PRG_NAME='CONFIG'  AND FUN = 'SETUP_ROUTE_BOM' AND EMP='{model.EMP}'";
+                    if (DBConnect.GetData(strPrivilege, model.database_name).Rows.Count <= 0)
+                    {
+                        return Request.CreateResponse(HttpStatusCode.OK, new { result = "privilege" });
+                    }
+                    //existed => update
+                    actionString = "UPDATE";
+                    sb.Append(" UPDATE SFIS1.C_MODEL_ATTR_CONFIG_T ");
+                    sb.Append(" SET ");
+                    sb.Append($" TYPE_VALUE = '{model.MO_NUMBER}' ,"); //MODEL_CODE
+                    sb.Append($" ATTRIBUTE_DESC1 = '{model.ROUTE_NAME}', ");
+                    sb.Append($" ATTRIBUTE_DESC2 = '{model.BOM_NO}' ");
+                    sb.Append($" WHERE ROWID = '{model.ID}' "); //ID
+
+                    modify = " UPDATE: ";
+                    string query = $"select ATTRIBUTE_DESC1,ATTRIBUTE_DESC2 from SFIS1.C_MODEL_ATTR_CONFIG_T WHERE ROWID = '{model.ID}' ";
+                    DataTable dtModifly = DBConnect.GetData(query, model.database_name);
+                    foreach (DataRow row in dtModifly.Rows)
+                    {
+                        if (row[0].ToString() != model.ROUTE_NAME)
+                        {
+                            modify += $" ROUTE_NAME: {row[0].ToString()};";
+                        }
+                        if (row[1].ToString() != model.BOM_NO)
+                        {
+                            modify += $" BOM_NO: {row[1].ToString()};";
+                        }
+                    }
+
+                }
+                sbLog.Append(" INSERT INTO sfism4.r_system_log_t (EMP_NO,PRG_NAME,ACTION_TYPE,ACTION_DESC) ");
+                sbLog.Append(" VALUES ( ");
+                sbLog.Append($" '{model.EMP}', ");
+                sbLog.Append($" 'CONFIG', ");
+                sbLog.Append($" '{actionString}', ");
+                sbLog.Append($"  'SETUP_ROUTE_BOM MO_NUMBER: {model.MO_NUMBER}; {modify}; IP:{AuthorizationController.UserIP()}; TABLE: SFIS1.C_MODEL_ATTR_CONFIG_T' ");
+                sbLog.Append(" ) ");
+                string strInsertLog = sbLog.ToString();
+                string strInserUpdate = sb.ToString();
+                DBConnect.ExecuteNoneQuery(strInserUpdate, model.database_name);  //Execute insert update config 6
+                DBConnect.ExecuteNoneQuery(strInsertLog, model.database_name);  //Execute insert log
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok" });
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = ex.Message });
+            }
+        }
+
+        [System.Web.Http.Route("DeleteRoute_Bom")]
+        [System.Web.Http.HttpPost]
+        public async Task<HttpResponseMessage> DeleteRoute_Bom(Mofix model)
+        {
+            //check privilege
+            string strPrivilege = $" SELECT * FROM  sfis1.C_PRIVILEGE  where PRG_NAME='CONFIG'  AND FUN = 'SETUP_ROUTE_BOM' AND EMP='{model.EMP}'";
+            if (DBConnect.GetData(strPrivilege, model.database_name).Rows.Count <= 0)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "privilege" });
+            }
+
+            string strDelete = $" delete from SFIS1.C_MODEL_ATTR_CONFIG_T where ROWID = '{model.ID}'";
+            try
+            {
+                DBConnect.ExecuteNoneQuery(strDelete, model.database_name);
+                StringBuilder sbLog = new StringBuilder();
+                sbLog.Append(" INSERT INTO sfism4.r_system_log_t (EMP_NO,PRG_NAME,ACTION_TYPE,ACTION_DESC) ");
+                sbLog.Append(" VALUES ( ");
+                sbLog.Append($" '{model.EMP}', ");
+                sbLog.Append($" 'CONFIG', ");
+                sbLog.Append($" 'DELETE', ");
+                sbLog.Append($"  'SETUP_ROUTE_BOM MO_NUMBER: {model.MO_NUMBER}; ATTRIBUTE_DESC1: {model.ROUTE_NAME}; ATTRIBUTE_DESC2: {model.BOM_NO}; IP:{AuthorizationController.UserIP()}; TABLE: SFIS1.C_MODEL_ATTR_CONFIG_T' ");
+                sbLog.Append(" ) ");
+
+                string strInsertLog = sbLog.ToString();
+                DBConnect.ExecuteNoneQuery(strInsertLog, model.database_name);
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok" });
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = ex.Message });
+            }
+        }
+
+        [System.Web.Http.Route("GetAllRoute_Bom")]
+        [System.Web.Http.HttpPost]
+        public async Task<HttpResponseMessage> GetAllRoute_Bom(Mofix model)
+        {
+            string strGetData = $" SELECT ROUTE_NAME  FROM table(SFIS1.Z_PKG.get_route('{model.MO_NUMBER}')) order by route_index ";
+            string strGetData1 = $" SELECT BOM_NO FROM table(SFIS1.Z_PKG.get_bomno('{model.MO_NUMBER}')) order by BOM_INDEX ";
+            DataTable dtCheck = DBConnect.GetData(strGetData, model.database_name);
+            DataTable dtCheck1 = DBConnect.GetData(strGetData1, model.database_name);
+            return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtCheck, data1 = dtCheck1 });
+        }
+        #endregion
+
+        #region Confirm LABEL_QTY
+
+        [System.Web.Http.Route("GetLABEL_QTY")]
+        [System.Web.Http.HttpPost]
+        public async Task<HttpResponseMessage> GetLABEL_QTY(ParameterConfig model)
+        {
+            string strGetData = "";
+            if (!string.IsNullOrEmpty(model.MODEL_NAME))
+            {
+                strGetData = String.Format("select a.Type_name,a.TYPE_VALUE,a.VERSION,a.ATTRIBUTE_NAME,a.ATTRIBUTE_VALUE,a.ATTRIBUTE_DESC1,a.ATTRIBUTE_DESC2," +
+                    " a.EMP_NO,a.INPUT_TIME,a.MODEL_NAME as IS_CONFIRM,a.QTY AS EMP_CONFIRM,a.SET_TIME,A.ROWID AS ID from SFIS1.C_MODEL_ATTR_CONFIG_T A " +
+                    " where A.ATTRIBUTE_NAME = 'LABEL_QTY' AND UPPER(A.TYPE_VALUE) = '{0}' ", model.MODEL_NAME.ToUpper());
+            }
+            else
+            {
+                strGetData = String.Format("select a.Type_name,a.TYPE_VALUE,a.VERSION,a.ATTRIBUTE_NAME,a.ATTRIBUTE_VALUE,a.ATTRIBUTE_DESC1,a.ATTRIBUTE_DESC2," +
+                    " a.EMP_NO,a.INPUT_TIME,a.MODEL_NAME as IS_CONFIRM,a.QTY AS EMP_CONFIRM,a.SET_TIME,A.ROWID AS ID from SFIS1.C_MODEL_ATTR_CONFIG_T A " +
+                    " where A.ATTRIBUTE_NAME = 'LABEL_QTY' AND ROWNUM < 20 ");
+            }
+
+            DataTable dtCheck = DBConnect.GetData(strGetData, model.database_name);
+
+            if (dtCheck.Rows.Count == 0)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "fail" });
+            }
+            else
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtCheck });
+            }
+        }
+
+        [System.Web.Http.Route("ConfirmLabelqty")]
+        [System.Web.Http.HttpPost]
+        public async Task<HttpResponseMessage> ConfirmLabelqty(ParameterConfig model)
+        {
+            StringBuilder sb = new StringBuilder();
+            StringBuilder sbLog = new StringBuilder();
+            string actionString = " ";
+            string modify = " ";
+            try
+            {
+                //check privilege
+                string strPrivilege = $" SELECT * FROM  sfis1.C_PRIVILEGE  where PRG_NAME='CONFIG'  AND FUN = 'PQE_NIC' AND EMP='{model.EMP}'";
+                if (DBConnect.GetData(strPrivilege, model.database_name).Rows.Count <= 0)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, new { result = "privilege" });
+                }
+
+                if (model.ID == "" || model.ID == null)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, new { result = "not_exist" });
+                }
+
+                //existed => update
+                actionString = "UPDATE";
+                sb.Append("UPDATE");
+                sb.Append($" SFIS1.C_MODEL_ATTR_CONFIG_T");
+                sb.Append($" SET ");
+                sb.Append($" MODEL_NAME = '{model.CONFIRM}', EMP_NO = '{model.EMP}', SET_TIME = to_char(sysdate,'YYYY/DD/MM HH24:MI:SS') ");
+                sb.Append($" WHERE ROWID = '{model.ID}'");
+
+
+
+                //insert log
+                sbLog.Append(" INSERT INTO sfism4.r_system_log_t (EMP_NO,PRG_NAME,ACTION_TYPE,ACTION_DESC) ");
+                sbLog.Append(" VALUES ( ");
+                sbLog.Append($" '{model.EMP}', ");
+                sbLog.Append($" 'CONFIG', ");
+                sbLog.Append($" '{actionString}', ");
+                sbLog.Append($"  'CONFIRM LABEL_QTY MODEL_NAME: {model.MODEL_NAME},VERSION_CODE: {model.MODEL_NAME}; IS_CONFIRM: {model.CONFIRM}; IP:{AuthorizationController.UserIP()}; TABLE: SFIS1.C_MODEL_ATTR_CONFIG_T' ");
+                sbLog.Append(" ) ");
+
+                string strInsertUpdate = sb.ToString();
+                string strInsertLog = sbLog.ToString();
+                DBConnect.ExecuteNoneQuery(strInsertUpdate, model.database_name);
+                DBConnect.ExecuteNoneQuery(strInsertLog, model.database_name);
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok" });
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = ex.Message });
+            }
+        }
+        #endregion
+    }
+}
