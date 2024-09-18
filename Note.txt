@@ -48,12 +48,12 @@ yarn config set https-proxy http://V0990938:JBCjg97h@10.220.3.16:3128
 yarn config set proxy http://V1039442:foxconn20!!@10.220.3.16:3128
 yarn config set https-proxy http://V1039442:foxconn20!!@10.220.3.16:3128
 NPM:
-npm config set proxy http://V0990938:JBCjg97h@10.220.3.16:3128
-npm config set https-proxy http://V0990938:JBCjg97h@10.220.3.16:3128
+npm config set proxy http://V1039442:foxconn20!!@10.220.3.16:3128
+npm config set https-proxy http://V1039442:foxconn20!!@10.220.3.16:3128
 
 --Git
-git config --global http.proxy http://username:password@proxyserver:port
-git config --global http.proxy https://username:password@proxyserver:port
+git config --global http.proxy http://V1039442:foxconn20!!@10.220.3.16:3128
+git config --global https-proxy http://V1039442:foxconn20!!@10.220.3.16:3128
 
 -->> copy file bang cmd: 
 robocopy "C:\Program Files (x86)\Common Files\Borland Shared" "C:\Program Files\Common Files\Borland Shared" /e
