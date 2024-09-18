@@ -26,6 +26,8 @@ git clone https://github.com/username/repository.git
 - git commit -m "Initial commit"
  - git remote add origin https://github.com/thinvu2/Vuejs
 - git remote -v
+Keo thay doi tu remote voi tuy chon cho phep lich su khong lien quan:
+- git pull origin main --allow-unrelated-histories
 - git push origin main
 
 -- Doi ten nhanh cuc bo:

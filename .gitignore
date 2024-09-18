@@ -1,0 +1,8 @@
+System Volume Information/
+$RECYCLE.BIN/
+node_modules/
+.svn/
+*.zip
+*.svn-base
+*.db
+.svn/
