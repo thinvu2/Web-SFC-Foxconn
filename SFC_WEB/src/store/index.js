@@ -15,10 +15,10 @@ export default createStore({
         //apiAddress : "http://10.224.81.154/api/",
         //const apiAddress = "http://10.225.35.123/myapi/";
 
-       apiAddress: "https://sfcnic-cns.myfiinet.com/websfcapi",
+       //apiAddress: "https://sfcnic-cns.myfiinet.com/websfcapi",
         //apiAddress: "https://10.220.96.220:8080/websfcapi",
         //apiAddress: 'http://10.220.96.223:8080/webquerysfcapi',
-       // apiAddress: "http://localhost:55829/",
+       apiAddress: "http://localhost:55829/",
 
         language: 'En',
         isShowModal: false,
