@@ -70,5 +70,23 @@ namespace SN_API.Controllers
                 return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtCheck });
             }
         }
+
+        [System.Web.Http.Route("GetEmp_ClassName")]
+        [System.Web.Http.HttpPost]
+        public async Task<HttpResponseMessage> GetEmp_ClassName(ConfigElement model)
+        {
+            string strGetData = $" SELECT * FROM SFIS1.C_EMP_DESC_T where (CLASS_NAME like '%FTI%' or CLASS_NAME like '%BFIH%') and EMP_NO = '{model.emp_no}' ";
+            //  string strGetData = $"select * from table(PKG_RETURN_TABLE.F_GETLISTRESOURCE('{model.emp_no}')) ";
+
+            DataTable dtCheck = DBConnect.GetData(strGetData, model.database_name);
+            if (dtCheck.Rows.Count == 0)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "fail" });
+            }
+            else
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtCheck });
+            }
+        }
     }
 }

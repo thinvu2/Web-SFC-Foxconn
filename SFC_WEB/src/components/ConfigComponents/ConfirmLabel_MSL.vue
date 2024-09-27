@@ -357,7 +357,7 @@ export default {
         //this.model.IS_CONFIRM = detail.IS_CONFIRM;  
     },
     BackToParent() {
-      this.$router.push({ path: "/Home/PQE_NIC" });
+      this.$router.push({ path: "/Home/PQE_TELIT" });
     },
 
     async CheckPrivilege() {

@@ -21,14 +21,14 @@
         <li>
           <h6 class="text-white">
             <i class="fa fa-phone pull-left"></i><strong>Phone:</strong> (535)
-            31531
+            31529
           </h6>
         </li>
         <li>
           <h6 class="text-white">
             <i class="fa fa-globe pull-left"></i>
             <strong>Website:</strong>
-            <a href="https://sfcnic.efoxconn.com/">https://sfcnic.efoxconn.com/</a>
+            <a href="https://sfcnic-cns.myfiinet.com/">https://sfcnic-cns.myfiinet.com/</a>
           </h6>
         </li>
       </ul>

@@ -3,7 +3,7 @@
     <div class="div-top">{{
                     $store.state.language == "En"
                       ? "All applications"
-                      : "Kho ứng dụng"
+                      : "Kho ?ng d?ng"
                   }}</div>
     <div class="div-app col-md-12 row">
       <template v-if="CheckEmp == false">

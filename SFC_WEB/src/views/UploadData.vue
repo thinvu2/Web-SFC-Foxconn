@@ -233,10 +233,6 @@ methods: {
         Swal.fire("", "Please select a file first.", "warning");
         return;
       }
-      if (this.ListDataTable.length > 1000) {
-        Swal.fire("", "Can't update more than 1000 rows.", "warning");
-        return;
-      }
       if (this.value === 'UPDATERTRSN' && JSON.stringify(this.ListDataRSNTRSN) !== JSON.stringify(this.ListDataTableHeader)) {
         Swal.fire("", "The updated data format is incorrect.", "warning");
         return;
@@ -269,6 +265,7 @@ methods: {
           }),
         };
         try {
+          console.log("MAX?:" + payload);
           const response = await Repository.getRepo("ImportExcel", payload);
           if (response.status === 200) {
             const data = response.data;
@@ -378,7 +375,7 @@ body {
 }
 
 .header{
-  background-color: #3d9941;
+  background-color: #53ad58;
 }
 
 .header-rainbow {
@@ -389,11 +386,11 @@ body {
   font-family:arial black;
   font-size:3rem;
   background-image:
-  linear-gradient(to right, rgb(76, 171, 235), rgb(241, 159, 6), rgb(243, 243, 6), rgb(9, 216, 9), rgb(30, 30, 240), rgb(110, 8, 184), rgb(238, 110, 238), rgb(228, 35, 35));
+  linear-gradient(to right, rgb(76, 171, 235), rgb(241, 159, 6), rgb(243, 243, 6), rgb(8, 202, 8), rgb(30, 30, 240), rgb(110, 8, 184), rgb(238, 110, 238), rgb(228, 35, 35));
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: rainbow-animation 240s linear infinite;
+  /* animation: rainbow-animation 240s linear infinite; */
 }
 @keyframes rainbow-animation{
   to{

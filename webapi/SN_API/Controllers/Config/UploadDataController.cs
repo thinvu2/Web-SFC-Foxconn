@@ -19,6 +19,25 @@ namespace SN_API.Controllers.Config
     [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class UploadController : ApiController
     {
+        [Route("QuerySPDM_SN")]
+        [HttpPost]
+        public async Task<HttpResponseMessage> QuerySPDM_SN(UploadDataElement model)
+        {
+            string strGetData = $" select * from sfism4.r_spdm_sn where SERIAL_NUMBER = '{model.CHECK_BFIH_DN}' or SHIPPING_SN = '{model.CHECK_BFIH_DN}' or MODEL_NAME = '{model.CHECK_BFIH_DN}' ";
+            //  string strGetData = $"select * from table(PKG_RETURN_TABLE.F_GETLISTRESOURCE('{model.emp_no}')) ";
+
+            DataTable dtCheck = DBConnect.GetData(strGetData, model.database_name);
+            if (dtCheck.Rows.Count == 0)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "fail" });
+            }
+            else
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtCheck });
+            }
+
+
+        }
         [Route("QueryDnNo")]
         [HttpPost]
         public async Task<HttpResponseMessage> QueryDnNo(UploadDataElement model)
@@ -155,6 +174,10 @@ namespace SN_API.Controllers.Config
                                 total++;
                                 await HandleWAIBAOTRSN(item, databaseAp);
                                 break;
+                            case "SPDM_SN":
+                                total++;
+                                await HandleSPDM_SN(item, databaseName);
+                                break;
                             default:
                                 exists++;
                                 continue;
@@ -170,7 +193,7 @@ namespace SN_API.Controllers.Config
                         else
                         {
                             error++;
-                            if (value == "UPDATERTRSN" || value == "UPDATERSNDETAIL")
+                            if (value == "UPDATERTRSN" || value == "UPDATERSNDETAIL"|| value == "SPDM_SN")
                             {
                                 string serialNumber = item["SERIAL_NUMBER"]?.ToString();
                                 if (string.IsNullOrEmpty(serialNumber))
@@ -210,7 +233,7 @@ namespace SN_API.Controllers.Config
                 var seqNo = item["SEQNO"]?.ToString();
                 string checkQuery = "SELECT count(*) FROM SFISM4.R_SN_TRSN_LINK_T WHERE SERIAL_NUMBER = :serialNumber ";
                 string query = $@" INSERT INTO SFISM4.R_SN_TRSN_LINK_T (MO_NUMBER, SERIAL_NUMBER, TRSN, TRCODE, PANEL_NO, LINK_TIME, SEQNO) 
-                    VALUES (:moNumber, :serialNumber, :trsn, :trCode, :panelNo, TO_DATE(:linkTime, 'YYYY/MM/DD HH24:MI:SS'), :seqNo)";
+                    VALUES (:moNumber, :serialNumber, :trsn, :trCode, :panelNo, TO_DATE(:linkTime, 'DD/MM/YYYY HH24:MI:SS'), :seqNo)";
 
                 var connectionString = new GetString().Get()[databaseName];
                 using (var connection = new OracleConnection(connectionString))
@@ -271,11 +294,11 @@ namespace SN_API.Controllers.Config
                 var wipGroup = item["WIP_GROUP"]?.ToString();
                 var shipNo = item["SHIP_NO"]?.ToString();
 
-                string checkQuery = "SELECT count(*) FROM SFISM4.R_SN_DETAIL_T WHERE SERIAL_NUMBER = :serialNumber and GROUP_NAME = :groupName and IN_STATION_TIME = to_date(:inStationTime, 'YYYY/MM/DD HH24:MI:SS') ";
+                string checkQuery = "SELECT count(*) FROM SFISM4.R_SN_DETAIL_T WHERE SERIAL_NUMBER = :serialNumber and GROUP_NAME = :groupName and IN_STATION_TIME = to_date(:inStationTime, 'DD/MM/YYYY HH24:MI:SS') ";
                 string query = $@" INSERT INTO SFISM4.R_SN_DETAIL_T (
                     SERIAL_NUMBER, MO_NUMBER, MODEL_NAME, VERSION_CODE, LINE_NAME, GROUP_NAME, IN_STATION_TIME, IN_LINE_TIME, PALLET_NO, CARTON_NO, TRAY_NO, SHIP_NO, WIP_GROUP) 
-                    VALUES (:serialNumber, :moNumber, :modelName, :versionCode, :lineName, :groupName, TO_DATE(:inStationTime, 'YYYY/MM/DD HH24:MI:SS'),
-                     TO_DATE(:inLineTime, 'YYYY/MM/DD HH24:MI:SS'), :palletNo, :cartonNo, :trayNo, :shipNo, :wipGroup)";
+                    VALUES (:serialNumber, :moNumber, :modelName, :versionCode, :lineName, :groupName, TO_DATE(:inStationTime, 'DD/MM/YYYY HH24:MI:SS'),
+                     TO_DATE(:inLineTime, 'DD/MM/YYYY HH24:MI:SS'), :palletNo, :cartonNo, :trayNo, :shipNo, :wipGroup)";
 
                 var connectionString = new GetString().Get()[databaseName];
                 using (var connection = new OracleConnection(connectionString))
@@ -350,7 +373,7 @@ namespace SN_API.Controllers.Config
 
                 string query = $@" INSERT INTO MES4.R_WAIBAO_TR_CODE_DETAIL (
                     TR_CODE, STATION, STATION_FLAG, WO, P_NO, SLOT_NO, FEEDER_NO, TR_SN, KP_NO, MFR_KP_NO, MFR_CODE, DATE_CODE, LOT_CODE, PROCESS_FLAG, WORK_TIME, DATA1, DATA2) 
-                    VALUES (:trCode, :station, :stationFlag, :wo, :pNo, :slotNo, :feederNo, :trSn, :kpNo, :mfrKpNo, :mfrCode, :dateCode, :lotCode, :processFlag, TO_DATE(:workTime, 'YYYY/MM/DD HH24:MI:SS'), :data1, :data2)";
+                    VALUES (:trCode, :station, :stationFlag, :wo, :pNo, :slotNo, :feederNo, :trSn, :kpNo, :mfrKpNo, :mfrCode, :dateCode, :lotCode, :processFlag, TO_DATE(:workTime, 'DD/MM/YYYY HH24:MI:SS'), :data1, :data2)";
 
                 var connectionString = new GetString().Get()[databaseAp];
                 using (var connection = new OracleConnection(connectionString))
@@ -404,7 +427,7 @@ namespace SN_API.Controllers.Config
 
                 string query = $@" INSERT INTO MES4.R_WAIBAO_TR_PRODUCT_DETAIL (
                     WO, P_SN, TR_CODE, PROCESS_FLAG, WORK_TIME, STATION, DATA1, DATA2, LIST_TRSN) 
-                    VALUES (:wo, :pSn, :trCode, :processFlag, TO_DATE(:workTime, 'YYYY/MM/DD HH24:MI:SS'), :station, :data1, :data2, :listTrsn)";
+                    VALUES (:wo, :pSn, :trCode, :processFlag, TO_DATE(:workTime, 'DD/MM/YYYY HH24:MI:SS'), :station, :data1, :data2, :listTrsn)";
 
                 var connectionString = new GetString().Get()[databaseAp];
                 using (var connection = new OracleConnection(connectionString))
@@ -459,7 +482,7 @@ namespace SN_API.Controllers.Config
 
                 string query = $@" INSERT INTO MES4.R_WAIBAO_TR_SN_DETAIL (
                     TR_SN, OUTSIDE_SN, WO, CUST_KP_NO, MFR_KP_NO, MFR_CODE, DATE_CODE, LOT_CODE, QTY, EXT_QTY, FEEDER_NO, SLOT_NO, START_TIME, END_TIME, STATION, DATA1, DATA2) 
-                    VALUES (:trSn, :outsideSn, :wo, :custKpNo, :mfrKpNo, :mfrCode, :dateCode, :lotCode, :qty, :extQty, :feederNo, :slotNo, TO_DATE(:startTime, 'YYYY/MM/DD HH24:MI:SS'), TO_DATE(:endTime, 'YYYY/MM/DD HH24:MI:SS'), :station, :data1, :data2)";
+                    VALUES (:trSn, :outsideSn, :wo, :custKpNo, :mfrKpNo, :mfrCode, :dateCode, :lotCode, :qty, :extQty, :feederNo, :slotNo, TO_DATE(:startTime, 'DD/MM/YYYY HH24:MI:SS'), TO_DATE(:endTime, 'DD/MM/YYYY HH24:MI:SS'), :station, :data1, :data2)";
 
                 var connectionString = new GetString().Get()[databaseAp];
                 using (var connection = new OracleConnection(connectionString))
@@ -485,6 +508,72 @@ namespace SN_API.Controllers.Config
                         command.Parameters.Add(new OracleParameter("station", station));
                         command.Parameters.Add(new OracleParameter("data1", data1));
                         command.Parameters.Add(new OracleParameter("data2", data2));
+
+                        await command.ExecuteNonQueryAsync();
+                        Debug.WriteLine($"Executed query: {query}");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error: {ex.Message}");
+                Debug.WriteLine($"Stack Trace: {ex.StackTrace}");
+                throw;
+            }
+        }
+        private async Task HandleSPDM_SN(JToken item, string databaseAp)
+        {
+            try
+            {
+                var sn = item["SERIAL_NUMBER"]?.ToString();
+                var ssn = item["SHIPPING_SN"]?.ToString();
+                var model = item["MODEL_NAME"]?.ToString();
+                var asicpart = item["ASIC_PART"]?.ToString();
+                var board = item["BOARD"]?.ToString();
+                var component = item["COMPONENT_REPLACED"]?.ToString();
+                var datareplace = item["DATE_REPLACED"]?.ToString();
+                var failed = item["FAILED_LOGFILE"]?.ToString();
+                var firsttest = item["FIRST_TEST_FAILURE"]?.ToString();
+                var nextstep = item["NEXT_STEP"]?.ToString();
+                var serversign = item["SERVER_SIGN_TRANSACTIONID"]?.ToString();
+                var factory = item["FACTORY_RESULT"]?.ToString();
+                var data1 = item["DATA1"]?.ToString() == null ? "" : item["DATA1"]?.ToString();
+                var data2 = item["DATA2"]?.ToString() == null ? "" : item["DATA2"]?.ToString();
+                var data3 = item["DATA3"]?.ToString() == null ? "" : item["DATA3"]?.ToString();
+                var data4 = item["DATA4"]?.ToString() == null ? "" : item["DATA4"]?.ToString();
+
+                string query = $@" INSERT INTO sfism4.r_spdm_sn (Serial_number,shipping_sn,model_name,asic_part,board,component_replaced,date_replaced,
+                    failed_logfile,first_test_failure,next_step,server_sign_transactionid,factory_result,data1,data2,data3,data4) 
+                    VALUES (:serial_number, :shipping_sn, :model_name, :asic_part,:board, :component_replaced,TO_DATE(:date_replaced, 'DD/MM/YYYY HH24:MI:SS'),
+                    :failed_logfile,:first_test_failure,:next_step,:server_sign_transactionid, :factory_result, :data1, :data2, :data3, :data4)";
+
+                //string qwue1 = $@"INSERT INTO sfism4.r_spdm_sn (Serial_number,shipping_sn,model_name,asic_part,board,component_replaced,date_replaced,
+                //    failed_logfile,first_test_failure,next_step,server_sign_transactionid,factory_result,data1,data2,data3,data4) 
+                //    VALUES ('{sn}','{ssn}','{model}','{asicpart}','{board}','{component}',TO_DATE('{datareplace}', 'DD/MM/YYYY HH24:MI:SS'),'{failed}','{firsttest}','{nextstep}',
+                //    '{serversign}','{factory}','{data1}','{data2}','{data3}','{data4}')";
+
+                var connectionString = new GetString().Get()[databaseAp];
+                using (var connection = new OracleConnection(connectionString))
+                {
+                    await connection.OpenAsync();
+                    using (var command = new OracleCommand(query, connection))
+                    {
+                        command.Parameters.Add(new OracleParameter("serial_number", sn));
+                        command.Parameters.Add(new OracleParameter("shipping_sn", ssn));
+                        command.Parameters.Add(new OracleParameter("model_name", model));
+                        command.Parameters.Add(new OracleParameter("asic_part", asicpart));
+                        command.Parameters.Add(new OracleParameter("board", board));
+                        command.Parameters.Add(new OracleParameter("component_replaced", component));
+                        command.Parameters.Add(new OracleParameter("date_replaced", datareplace));
+                        command.Parameters.Add(new OracleParameter("failed_logfile", failed));
+                        command.Parameters.Add(new OracleParameter("first_test_failure", firsttest));
+                        command.Parameters.Add(new OracleParameter("next_step", nextstep));
+                        command.Parameters.Add(new OracleParameter("server_sign_transactionid", serversign));
+                        command.Parameters.Add(new OracleParameter("factory_result", factory));
+                        command.Parameters.Add(new OracleParameter("data1", data1));
+                        command.Parameters.Add(new OracleParameter("data2", data2));
+                        command.Parameters.Add(new OracleParameter("data3", data3));
+                        command.Parameters.Add(new OracleParameter("data4", data4));
 
                         await command.ExecuteNonQueryAsync();
                         Debug.WriteLine($"Executed query: {query}");

@@ -2986,8 +2986,6 @@ E:\5.0\webapi\SN_API\bin\Microsoft.Owin.Cors.xml
 E:\5.0\webapi\SN_API\bin\Microsoft.Owin.Security.xml
 E:\5.0\webapi\SN_API\bin\Microsoft.Owin.Security.OAuth.xml
 E:\5.0\webapi\SN_API\bin\Newtonsoft.Json.xml
-E:\5.0\webapi\SN_API\bin\Sfc.Library.HttpClient.pdb
-E:\5.0\webapi\SN_API\bin\Sfc.Library.HttpClient.dll.config
 E:\5.0\webapi\SN_API\bin\System.IdentityModel.Tokens.Jwt.xml
 E:\5.0\webapi\SN_API\bin\System.Net.Http.Formatting.xml
 E:\5.0\webapi\SN_API\bin\System.Web.Http.xml

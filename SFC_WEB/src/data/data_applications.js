@@ -42,7 +42,7 @@ var dataApplications = [
         Style: "background-color: #DA552F; border: 3px solid #bc3610; box-shadow: 2px 2px 2px #919191; "   
     },
     {
-        Name: 'MODEL DEST T2',
+        Name: 'MODEL DESC T2',
         Route: "/Home/ModelDestT2",
         Image: "assets/img/repair.png",
         Style: "background-color: #473080; border: 3px solid #584d8e; box-shadow: 2px 2px 2px #919191; "  
@@ -110,8 +110,8 @@ var dataApplications = [
     {
         Name: 'PQE_NIC',
         Route: "/Home/PQE_NIC",
-        Image: "assets/img/susan.png",
-        Style: "background-color: rgb(255 0 0); border: 3px solid rgb(255 255 255); box-shadow: 2px 2px 2px #919191; "
+        Image: "assets/img/PQE.png",
+        Style: "background-color: rgb(217 190 96); border: 3px solid rgb(255 255 255); box-shadow: 2px 2px 2px #919191; "
     }, 
     {
         Name: 'PQE_TELIT',

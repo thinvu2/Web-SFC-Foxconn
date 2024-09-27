@@ -7,7 +7,7 @@ namespace SN_API.Models.Config
 {
     public class Config76Element
     {
-        //public string ID { get; set; }
+        public string ID { get; set; }
         //public string EMP { get; set; }
         //public string database_name { get; set; }
         //public string MODEL_TYPE { get; set; }

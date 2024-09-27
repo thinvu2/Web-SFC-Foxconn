@@ -124,6 +124,7 @@
             class="form-control form-control-sm text-element"
             id="validationDefault02"
             v-model="model.MODEL_NAME"
+            autocomplete="off"
             required
           />
         </div>
@@ -222,7 +223,6 @@
             type="text"
             class="form-control form-control-sm text-element"
             id="validationDefault01"
-            readonly
             v-model="model.DEFAULT_GROUP"
             required
           />
@@ -233,7 +233,6 @@
             type="text"
             class="form-control form-control-sm text-element"
             id="validationDefault02"
-            readonly
             v-model="model.END_GROUP"
             required
           />
@@ -245,6 +244,7 @@
             class="form-control form-control-sm text-element"
             id="validationDefault02"
             v-model="model.MODEL_TYPE"
+            autocomplete="off"
             required
           />
         </div>
@@ -695,7 +695,7 @@ export default {
     }
     button {
       border-radius: 0 10px 10px 0;
-      padding: 0 20px;
+      padding: 6px 20px;
       background: #ff7a1c;
       color: #fff;
       box-sizing: 0;

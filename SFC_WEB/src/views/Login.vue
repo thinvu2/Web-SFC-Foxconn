@@ -208,11 +208,11 @@ export default {
           localStorage.password = this.password;
           localStorage.empname = data.emp_name;
           if (window.location.protocol == "http:") {
-            window.location.href = window.location.origin + "/#/";
+            window.location.href = window.location.origin + "/#/Home/Applications/";
           } else {
             window.location.href = window.location.origin;
           }
-        } else 
+        } else
         {
           if (this.$store.state.language == "En") {
             this.state_alert = "Wrong username or password";

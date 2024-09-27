@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\V1047047\Desktop\apooo\apiservices\SN_API\bin\app.publish\</_PublishTargetUrl>
+    <History>True|2024-06-28T01:13:32.0737733Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>05/09/2024 18:16:07</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>05/09/2024 18:16:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/09/2024 18:16:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.IdentityModel.JsonWebTokens.dll">
+      <publishTime>05/09/2024 18:16:03</publishTime>
+    </File>
+    <File Include="bin/Microsoft.IdentityModel.Logging.dll">
+      <publishTime>05/09/2024 18:16:02</publishTime>
+    </File>
+    <File Include="bin/Microsoft.IdentityModel.Tokens.dll">
+      <publishTime>05/09/2024 18:16:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Cors.dll">
+      <publishTime>05/09/2024 18:16:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>05/09/2024 18:16:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>05/09/2024 18:16:05</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>05/09/2024 18:15:54</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>05/09/2024 18:16:05</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>05/09/2024 18:16:10</publishTime>
+    </File>
+    <File Include="bin/Oracle.ManagedDataAccess.dll">
+      <publishTime>05/09/2024 18:15:43</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>05/09/2024 18:16:06</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/09/2024 18:16:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/09/2024 18:16:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/09/2024 18:16:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/09/2024 18:16:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/09/2024 18:16:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/09/2024 18:16:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/09/2024 18:16:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/09/2024 18:16:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/09/2024 18:16:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/09/2024 18:16:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/09/2024 18:16:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/09/2024 18:16:03</publishTime>
+    </File>
+    <File Include="bin/Sfc.Core.dll">
+      <publishTime>05/09/2024 18:15:45</publishTime>
+    </File>
+    <File Include="bin/Sfc.Library.HttpClient.dll">
+      <publishTime>05/09/2024 18:15:44</publishTime>
+    </File>
+    <File Include="bin/SN_API.dll">
+      <publishTime>06/28/2024 08:13:30</publishTime>
+    </File>
+    <File Include="bin/SN_API.pdb">
+      <publishTime>06/28/2024 08:13:30</publishTime>
+    </File>
+    <File Include="bin/Swashbuckle.Core.dll">
+      <publishTime>05/09/2024 18:16:06</publishTime>
+    </File>
+    <File Include="bin/System.IdentityModel.Tokens.Jwt.dll">
+      <publishTime>05/09/2024 18:15:54</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>05/09/2024 18:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.Cors.dll">
+      <publishTime>05/09/2024 18:16:06</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>05/09/2024 18:16:06</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.Cors.dll">
+      <publishTime>05/09/2024 18:16:03</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>05/09/2024 18:15:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.Owin.dll">
+      <publishTime>05/09/2024 18:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>05/09/2024 18:16:07</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>05/09/2024 18:16:07</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>05/09/2024 18:16:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>05/09/2024 18:16:05</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>05/09/2024 18:16:06</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>05/09/2024 18:16:06</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>05/09/2024 18:16:06</publishTime>
+    </File>
+    <File Include="bin/WebActivatorEx.dll">
+      <publishTime>05/09/2024 18:16:05</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>05/09/2024 18:16:06</publishTime>
+    </File>
+    <File Include="bin/zxing.dll">
+      <publishTime>05/09/2024 18:16:00</publishTime>
+    </File>
+    <File Include="bin/zxing.pdb">
+      <publishTime>05/09/2024 18:16:00</publishTime>
+    </File>
+    <File Include="bin/zxing.presentation.dll">
+      <publishTime>05/09/2024 18:16:00</publishTime>
+    </File>
+    <File Include="bin/zxing.presentation.pdb">
+      <publishTime>05/09/2024 18:16:00</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>05/09/2024 18:15:45</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>05/09/2024 18:15:45</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>05/09/2024 18:15:45</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>05/09/2024 18:15:32</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>05/09/2024 18:15:31</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>05/09/2024 18:15:31</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>05/09/2024 18:15:31</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>05/09/2024 18:15:31</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/09/2024 18:15:31</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>05/09/2024 18:15:47</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>05/09/2024 18:15:31</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>05/09/2024 18:15:31</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>05/09/2024 18:15:31</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>05/09/2024 18:15:31</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>05/09/2024 18:15:31</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/28/2024 08:13:31</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
