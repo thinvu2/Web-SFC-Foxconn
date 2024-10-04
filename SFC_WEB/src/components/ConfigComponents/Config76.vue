@@ -8,9 +8,9 @@
       <div class="div-config-name row">
         <span>NPI MO Config(76):</span>
       </div>
-      <div class="div-back" @click="GoToFA()">
+      <!-- <div class="div-back" @click="GoToFA()">
         <Icon icon="chevron-right" class="back-icon sidenav-icon" />
-      </div>
+      </div> -->
     </div>
    
   
@@ -26,7 +26,7 @@
           :placeholder="
             $store.state.language == 'En'
               ? 'Enter Mo number...'
-              : 'Nhập công lệnh...'
+              : 'Nh?p c獼g l?nh...'
           "
         />
         <button @click="QuerySearch()" class="btn">
@@ -34,12 +34,12 @@
         </button>
 
       </div>
-  <div class="div-button1">
+  <!-- <div class="div-button1">
           <button @click="GotoRoute('/Home/ConfigApp/Config76_')" 
           class="btn btn-success" style="border : 1px" >
           {{ $store.state.language == "En" ? "Config FA" : "Config FA" }}
         </button>
-        </div>
+        </div> -->
        
     </div>
     
@@ -50,10 +50,10 @@
             <thead>
               <tr>
                 <th style="width: 1px">
-                  {{ $store.state.language == "En" ? "Delete" : "Xóa" }}
+                  {{ $store.state.language == "En" ? "Delete" : "X鏇" }}
                 </th>
                 <th style="width: 1px">
-                  {{ $store.state.language == "En" ? "Edit" : "Sửa" }}
+                  {{ $store.state.language == "En" ? "Edit" : "S?a" }}
                 </th>
                 <template v-for="(item, index) in DataTableHeader" :key="index">
                   <th v-if="item != 'ID'">
@@ -130,9 +130,10 @@
         </svg>
       </button>
     </div>
+    <div>
     <div class="div-bellow">
       <div class="form-row">
-        <div class="col-md-3 mb-3">
+        <div class="col-md-4 mb-4">
           <label for="validationDefault02">MO_NUMBER</label>
           <DropdownSearch
             class="form-control form-control-sm text-element col-md-3"
@@ -144,38 +145,23 @@
           />
         </div>
 
-       <div class="col-md-3 mb-3">
-          <label for="validationDefault02">TA VERSION</label>
-          <input
-            type="text"
-            readonly="true"
+       <div class="col-md-4 mb-4">
+          <label for="validationDefault02">GROUP_NAME</label>
+          <DropdownSearch
+            type="model"
+            :listAll="ListGroup"
+            @update-selected-item="UpdateGroupReceive"
             class="form-control form-control-sm text-element"
             id="validationDefault01"
             v-model="model.GROUP_NAME"
+            textPlaceHolder="Enter group name"
             required
           />
         </div>
-        <!-- <div class="col-md-3 mb-3">
-          <label for="validationDefault02">FA_NUMBER</label>
-           <textarea class="pa5 ma3" v-model="model.FA_NUMBER"
-            rows="3" cols="300"
-             style="width:240px;  font-weight: bold;"
-                :maxlength="1000"
-            ></textarea>
-        </div>
-        <div class="col-md-3 mb-3">
-          <label for="validationDefault02">FA_VERSION</label>
-         
-            <textarea class="pa5 ma3" v-model="model.FA_VERSION"
-            rows="3" cols="300"
-             style="width:250px;  font-weight: bold;"
-                :maxlength="1000"
-            ></textarea>
-        </div> -->
-        
       </div>
+              
       <div class="form-row">        
-        <div class="col-md-3 mb-3">
+        <div class="col-md-4 mb-3">
       
          <label for="Yes">
             <input type="radio" name="radio" value="PASS"  id="Yes"  :checked="model.STATUS=='PASS'"
@@ -186,7 +172,7 @@
        
                
         </div>
-        <div class="col-md-3 mb-3">
+        <div class="col-md-4 mb-3">
 
            <label for="No">
             <input type="radio" name="radio"  value="NG" id="No" :checked="model.STATUS=='NG'"
@@ -196,6 +182,7 @@
 
         </div>
     
+      </div>
       </div>
 
       <div v-show="show">
@@ -222,7 +209,9 @@
           </table>
         </template>
        </div> 
-    </div>
+
+    </div>    
+    
   </div>
 </template>
 <script>
@@ -260,6 +249,7 @@ export default {
     
       },
       ListModel: [],
+      ListGroup:[],
       searchText: "",
     };
   },
@@ -286,6 +276,7 @@ export default {
   mounted() {
     this.CheckPrivilege();
     this.GetModel();
+    this.GetGroup_Name();
   },
   methods: {
 
@@ -308,6 +299,10 @@ export default {
       this.GetFA_INFOR();
 
     },
+    
+    UpdateGroupReceive(value) {
+      this.model.GROUP_NAME = value;  
+    },
     async GetModel() {
       var payload = {
         database_name: localStorage.databaseName,
@@ -317,59 +312,23 @@ export default {
         this.ListModel.push(element.MO_NUMBER);
       });
     },
-    async GetTA_Ver() {
-      var payload = {
-        database_name: localStorage.databaseName,
-        MO_NUMBER : this.model.MO_NUMBER
-      };
-      this.model.GROUP_NAME    =''; 
-      var { data } = await Repository.getRepo("Config76GetTA_VerByMO", payload);
-      this.ListColumn=[];
-      this.ListColumn = data.data;
-      if (typeof this.ListColumn!= "undefined") {
-       
-          data.data.forEach((element) => {
-          this.model.GROUP_NAME= "TA_VER: "+element.VN
-          });
-        
-      }
-    },
-
-    async GetFA_INFOR() {
-      var payload = {
-        database_name: localStorage.databaseName,
-        MO_NUMBER : this.model.MO_NUMBER
-      };
-
     
-      var { data } = await Repository.getRepo("Config76GetFA_byMO", payload);
-      this.DataTableFA = [];
-      this.DataTableFA = data.data;
-
-      // console.log(data.data);
-      if (typeof this.DataTableFA != "undefined") {
-        if (this.DataTableFA.length != 0) {
-          this.show=true;
-          this.DataTableFAHeader = Object.keys(this.DataTableFA[0]);
-          this.DataTableFAHeader.forEach((element) => {
-            this.columnName.push({
-              label: element,
-              field: element,
-            });
-          });
-        }
-        else 
-        {
-          this.show=false;
-        }
-      }
+    async GetGroup_Name() {
+      var payload = {
+        database_name: localStorage.databaseName,
+      };
+      var { data } = await Repository.getRepo("GetConfigFAContent", payload);
+      data.data.forEach((element) => {
+        this.ListGroup.push(element.VALUE);
+      });
     },
+
     async SaveData() {
       if (this.model.MO_NUMBER == "" || this.model.GROUP_NAME == "") {
         if (localStorage.language == "En") {
           this.$swal("", "Empty fields MO_NUMBER, GROUP_NAME , STATUS (PASS/NG) ", "error");
         } else {
-          this.$swal("", "Không được bỏ trống MO_NUMBER, GROUP_NAME , STATUS (PASS/NG)", "error");
+          this.$swal("", "Kh獼g du?c b? tr?ng MO_NUMBER, GROUP_NAME , STATUS (PASS/NG)", "error");
         }
       } else {
         if(this.status=="")
@@ -383,8 +342,8 @@ export default {
             titleValue = "Are you sure edit?";
             textValue = "Once OK, data will be updated!";
           } else {
-            titleValue = "Chắc chắn sửa?";
-            textValue = "Dữ liệu sẽ được cập nhật";
+            titleValue = "Ch?c ch?n s?a?";
+            textValue = "D? li?u s? du?c c?p nh?t";
           }
           this.$swal({
             title: titleValue,
@@ -403,14 +362,14 @@ export default {
               if (localStorage.language == "En") {
                 this.$swal("", "Not privilege", "error");
               } else {
-                this.$swal("", "Bạn không có quyền thêm sửa", "error");
+                this.$swal("", "B?n kh獼g c?quy?n th瘱 s?a", "error");
               }
             } else if (data.result == "ok") {
               await this.QuerySearch();
               if (localStorage.language == "En") {
                 this.$swal("", "Apply successfully", "success");
               } else {
-                this.$swal("", "Cập nhật thành công", "success");
+                this.$swal("", "C?p nh?t th跣h c獼g", "success");
               }
             } else {
               this.$swal("", data.result, "error");
@@ -428,8 +387,8 @@ export default {
         textValue =
           "Once deleted, you will not be able to recover this record!";
       } else {
-        titleValue = "Chắc chắn xóa?";
-        textValue = "Sau khi xóa sẽ không thể khôi phục!";
+        titleValue = "Ch?c ch?n x鏇?";
+        textValue = "Sau khi x鏇 s? kh獼g th? kh灁 ph?c!";
       }
       this.$swal({
         title: titleValue,
@@ -452,13 +411,13 @@ export default {
           if (localStorage.language == "En") {
             this.$swal("", "Apply successfully", "success");
           } else {
-            this.$swal("", "Cập nhật thành công", "success");
+            this.$swal("", "C?p nh?t th跣h c獼g", "success");
           }
         } else if (data.result == "privilege") {
           if (localStorage.language == "En") {
             this.$swal("", "Not privilege", "error");
           } else {
-            this.$swal("", "Bạn không có quyền xóa", "error");
+            this.$swal("", "B?n kh獼g c?quy?n x鏇", "error");
           }
         } else {
           this.$swal("", data.result, "error");
@@ -469,32 +428,15 @@ export default {
      this.model.MO_NUMBER="";
       this.model.GROUP_NAME="" ;
       this.status="";
-      
-       this.DataTableFAHeader=[];
-      this.DatatableFA=[];
-      this.show=false;
-
-     /* if (typeof this.DataTableFA != "undefined") {
-        if (this.DataTableFA.length != 0) {
-          this.DataTableFAHeader = Object.keys(this.DataTableFA[0]);
-          this.DataTableFAHeader.forEach((element) => {
-            this.columnName.push(
-              {
-              label: element,
-              field: element,
-            });
-          });
-        }
-      }*/
-     
+      this.$store.state.listSelectDualModel=[];
+      this.show=false;     
     },
     ShowDetail(detail) {
  
       this.model.MO_NUMBER = detail.MO_NUMBER;
       this.model.GROUP_NAME = detail.GROUP_NAME;
       /// this.model.STATUS = detail.ITEM_CODE;
-      this.model.FA_NUMBER = detail.FA_NUMBER;
-      this.model.FA_VERSION = detail.FA_VERSION;
+      this.GetGroupOfEmNo(detail.MO_NUMBER);
 
       ///console.log(detail.STATUS);
 
@@ -509,8 +451,10 @@ export default {
       this.model.STATUS="NG";
     }
      // this.model.ITEM_TYPE = detail.ITEM_TYPE;
-    this.GetFA_INFOR();
+
     },
+    
+
     BackToParent() {
       this.$router.push({ path: "/Home/ConfigApp" });
     },
@@ -738,6 +682,46 @@ export default {
       font-weight: 555;
     }
   }
+}
+.btn_select_item {
+  font-size: 13px;
+  margin-top: 0px;
+  border-radius: 10px 10px 0 0;
+  background-color: #024873;
+  color: #fff;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+.div_select_item {
+  height: 60px;
+  ul {
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #9e9e9e;
+    padding: 0;
+    width: 100%;
+    height: 150px;
+    overflow: auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: #a0d0ff;
+    li {
+      background-color: #a0d0ff;
+      width: 100%;
+      font-weight: bold;
+    }
+    li:hover {
+      background-color: #59aaf7;
+      color: #fff;
+    }
+  }
+}
+.li_selected {
+  padding-left: 40px;
+}
+.lb_checked {
+  color: #efef8d !important;
 }
 
 .active .trucksicons {

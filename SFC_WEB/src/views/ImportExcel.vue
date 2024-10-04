@@ -350,7 +350,7 @@ body {
 }
 
 .header{
-  background-color: #3d9941;
+  background-color: #5fad63;
 }
 
 .header-rainbow {
@@ -361,11 +361,11 @@ body {
   font-family:arial black;
   font-size:3rem;
   background-image:
-  linear-gradient(to right, rgb(76, 171, 235), rgb(241, 159, 6), rgb(243, 243, 6), rgb(9, 216, 9), rgb(30, 30, 240), rgb(110, 8, 184), rgb(238, 110, 238), rgb(228, 35, 35));
+  linear-gradient(to right, rgb(76, 171, 235), rgb(241, 159, 6), rgb(243, 243, 6), rgb(7, 182, 7), rgb(30, 30, 240), rgb(110, 8, 184), rgb(238, 110, 238), rgb(228, 35, 35));
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: rainbow-animation 240s linear infinite;
+  /* animation: rainbow-animation 240s linear infinite; */
 }
 @keyframes rainbow-animation{
   to{

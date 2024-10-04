@@ -207,12 +207,12 @@ export default {
           localStorage.username = this.username;
           localStorage.password = this.password;
           localStorage.empname = data.emp_name;
-          if (window.location.protocol == "http:") {
-            window.location.href = window.location.origin + "/#/";
-          } else {
-            window.location.href = window.location.origin;
-          }
-        } else 
+          // if (window.location.protocol == "http:") {
+          //   window.location.href = window.location.origin + "/#/Home/Applications/";
+          // } else {
+            window.location.href = window.location.origin + "/#/Home/Applications/";
+          // }
+        } else
         {
           if (this.$store.state.language == "En") {
             this.state_alert = "Wrong username or password";

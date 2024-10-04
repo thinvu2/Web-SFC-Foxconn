@@ -1,2 +1,7 @@
 node_modules/
+dist/
 .svn/
+*.suo
+*.dll
+*.pdb
+*.cache

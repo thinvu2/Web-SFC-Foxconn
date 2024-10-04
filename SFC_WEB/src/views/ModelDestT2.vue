@@ -618,7 +618,7 @@ export default {
     }
     button {
       border-radius: 0 10px 10px 0;
-      padding: 0 20px;
+      padding: 6px 20px;
       background: #ff7a1c;
       color: #fff;
       box-sizing: 0;

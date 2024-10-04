@@ -1,6 +1,6 @@
 runas/user:vngz\V1013676 cmd
 
-Foxconn160507...
+Foxconn160507..
 
 runas/user:vngz\V0957268 cmd
 Foxconn2024)*

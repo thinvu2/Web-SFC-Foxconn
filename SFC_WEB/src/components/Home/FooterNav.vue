@@ -12,8 +12,8 @@
         <div class="pt-3">
           <span class="footer-text font-weight-semibold">{{
             $store.state.language == "En"
-              ? "Copyright of © IT Shopfloor Vietnam. Phone: (535) 31531"
-              : "Bản quyền thuộc về © IT Shopfloor Vietnam. Phone: (535) 31531"
+              ? "@Copyright IT Shopfloor Vietnam. Phone: (535) 31529"
+              : "Bản quyền thuộc IT Shopfloor Vietnam. Phone: (535) 31529"
           }}</span>
         </div>
         <div>

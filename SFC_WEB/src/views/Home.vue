@@ -16,8 +16,7 @@
       <!-- footer content -->
       <footer>
         <div class="pull-right">
-          © Copyright 2022 IT Shopfloor Vietnam. All Rights Reserved. (535)
-          31531
+          @Copyright 2025 IT Shopfloor Vietnam. All Rights Reserved. (535) 31529
         </div>
         <div class="clearfix"></div>
       </footer>

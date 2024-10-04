@@ -1043,7 +1043,7 @@ namespace SN_API.Controllers
                     sql = " select * FROM SFISM4.R_data_input_t where SSN1 in (" + inputvalue + ")";
                     break;
                 case "REPAIR_DATA":
-                    sql = " select * FROM SFISM4.R_REPAIR_T where SERIAL_NUMBER  in (" + inputvalue + ") ";
+                    sql = " select SERIAL_NUMBER, MO_NUMBER, MODEL_NAME, TEST_TIME, TEST_CODE, TEST_STATION, TEST_GROUP, TEST_SECTION, TEST_LINE, TESTER, REPAIRER, REPAIR_TIME, REASON_CODE, REPAIR_STATION, REPAIR_GROUP, REPAIR_SECTION, REPAIR_STATUS, DUTY_STATION, DUTY_TYPE, ERROR_ITEM_CODE, ITEM_DESC, RECORD_TYPE, SECTION_FLAG, MACHINE, SUPPLIER, SUPPLIER_MODEL, DATE_CODE, MEMO, SOLDER_COUNT, DATECODE as  LOT_CODE, DESCRIP, TEST_VALUE, LOCATION_CODE, ATE_STATION_NO, T_WORK_SECTION, T_CLASS, T_CLASS_DATE, R_WORK_SECTION, R_CLASS, R_CLASS_DATE, EC_EXT, MOVE_FLAG FROM SFISM4.R_REPAIR_T where SERIAL_NUMBER  in (" + inputvalue + ") ";
                     break;
                 case "LINK_DATA(SN)":
                     sql = " select * FROM SFISM4.R_WIP_KEYPARTS_T where serial_number in (" + inputvalue + ") ";
@@ -1836,25 +1836,6 @@ namespace SN_API.Controllers
                 dt2 = DBConnect.GetData(_queryString_, valueInput.database);
                 dt = DBConnect.GetData(_queryString1, valueInput.database);
                 return Request.CreateResponse(HttpStatusCode.OK, new { data = dt, data1 = dt2, query = _queryString1, result = "ok" });
-
-                //if (inputvalue.Contains("@"))
-                //{
-                //string _queryString_ = "select A.SERIAL_NUMBER,A.MO_NUMBER,A.MODEL_NAME,A.TEST_TIME,C.WIP_GROUP,A.TEST_CODE,B.ERROR_DESC,B.ERROR_DESC2,A.ERROR_ITEM_CODE,A.REASON_CODE,A.REPAIRER,A.REPAIR_TIME,A.REPAIR_STATION,A.TEST_GROUP,A.LOCATION_CODE,A.TEST_STATION,A.TEST_SECTION,A.TEST_LINE,A.TESTER,A.REPAIR_GROUP,A.REPAIR_SECTION,A.REPAIR_STATUS,A.DUTY_STATION,A.DUTY_TYPE,A.ITEM_DESC,A.RECORD_TYPE,A.SECTION_FLAG,A.MACHINE,A.SUPPLIER,A.SUPPLIER_MODEL,A.DATE_CODE,A.MEMO,A.SOLDER_COUNT,A.DATECODE,A.DESCRIP,A.TEST_VALUE,A.ATE_STATION_NO,A.T_WORK_SECTION,A.T_CLASS,A.T_CLASS_DATE,A.R_WORK_SECTION,A.R_CLASS,A.R_CLASS_DATE,A.EC_EXT,A.MOVE_FLAG from  (select * from sfism4.R109 " +
-                //   " union " +
-                //   " select * from SFISM4.R_REPAIR_T_BAK ) A, SFIS1.C_ERROR_CODE_T B ,SFISM4.R107 C WHERE (C.SERIAL_NUMBER in  (" + inputvalue + ") OR C.SHIPPING_SN in  (" + inputvalue + ") ) AND  A.TEST_CODE = B.ERROR_CODE(+) AND A.SERIAL_NUMBER = C.SERIAL_NUMBER ";
-                //dt = DBConnect.GetData(_queryString_, valueInput.database);
-                //string _queryString1 = "select distinct SERIAL_NUMBER,SECTION_FLAG,MO_NUMBER,MODEL_NAME,TYPE,VERSION_CODE,LINE_NAME,SECTION_NAME,GROUP_NAME,WIP_GROUP,STATION_NAME,LOCATION,STATION_SEQ,ERROR_FLAG,TO_CHAR (IN_STATION_TIME, 'yyyy/mm/dd hh24:mi:ss') IN_STATION_TIME,TO_CHAR (IN_LINE_TIME, 'yyyy/mm/dd hh24:mi:ss') IN_LINE_TIME,OUT_LINE_TIME,SHIPPING_SN,WORK_FLAG,FINISH_FLAG,ENC_CNT,SPECIAL_ROUTE,PALLET_NO,CONTAINER_NO,QA_NO,QA_RESULT,SCRAP_FLAG,NEXT_STATION,CUSTOMER_NO,BOM_NO,BILL_NO,TRACK_NO,PO_NO,KEY_PART_NO,CARTON_NO,WARRANTY_DATE,REWORK_NO,REPAIR_CNT,EMP_NO,PO_LINE,PALLET_FULL_FLAG,PMCC,GROUP_NAME_CQC,MO_NUMBER_OLD,ERP_MO,ATE_STATION_NO,MSN,IMEI,JOB,MCARTON_NO,SO_NUMBER,SO_LINE,STOCK_NO,TRAY_NO,SHIP_NO,SHIPPING_SN2 from sfism4.R117 where " + valueInput.field + " in (" + inputvalue + ") " + _group_name_condition + "  order by in_station_time asc  ";
-                //return Request.CreateResponse(HttpStatusCode.OK, new { data = dt, data1 = dt2, query = _queryString1, result = "ok" });
-                //}
-                //else
-                //// hau add export smt error
-                //{
-                //    string _queryString_ = "select * from  table(PKG_RETURN_TABLE.F_GET_SMT_ER_LINK('" + listInput[0].input + "')) ";
-                //    dt2 = DBConnect.GetData(_queryString_, valueInput.database);
-                //    string _queryString1 = "select * from  table(PKG_RETURN_TABLE.F_GET_SMT_ER_NOT_LINK('" + listInput[0].input + "')) ";
-                //    dt = DBConnect.GetData(_queryString1, valueInput.database);
-                //    return Request.CreateResponse(HttpStatusCode.OK, new { data = dt, data1 = dt2, query = _queryString1, result = "ok" });
-                //}
 
             }
             else
@@ -3040,75 +3021,113 @@ namespace SN_API.Controllers
                 string _sql = "";
                 if (value.model_serial == "SONY")
                 {
-                    _sql = string.Format(@"select SUBLOCATION SUB,b.*,
-                case   
-               when(sysdate - TIME) * 24 > 12  then 'GREEN'  
-               when(sysdate - TIME) * 24 between 10 and 12  then 'YELLOW'  
-               when(sysdate - TIME) * 24 between 0 and 10  then 'RED'  
-               end as COLOR
-                from(  select SUBLOCATION1||SUBLOCATION  as SUBLOCATION From( select '01' sublocation from dual
-               union all
-               select '02' sublocation from dual
-               union all
-               select '03' sublocation from dual
-               union all
-               select '04' sublocation from dual
-               union all
-               select '05' sublocation from dual
-               union all
-               select '06' sublocation from dual
-               union all
-               select '07' sublocation from dual
-               union all
-               select '08' sublocation from dual
-               union all
-               select '09' sublocation from dual) a,
-               ( select 'A' sublocation1 from dual
-               union all
-               select 'B' sublocation1 from dual
-               union all
-               select 'C' sublocation1 from dual
-               union all
-               select 'D' sublocation1 from dual
-               union all
-               select 'E' sublocation1 from dual
-               union all
-               select 'F' sublocation1 from dual
-               union all
-               select 'G' sublocation1 from dual
-               union all
-               select 'H' sublocation1 from dual
-               union all
-               select 'I' sublocation1 from dual
-               union all
-               select 'j' sublocation1 from dual
-               union all
-               select 'K' sublocation1 from dual
-               union all
-               select 'L' sublocation1 from dual
-               union all
-               select 'M' sublocation1 from dual 
-               union all
-               select 'N' sublocation1 from dual
-               union all
-               select 'O' sublocation1 from dual
-               union all
-               select 'P' sublocation1 from dual))  a
-               left join
-              ( select distinct LOCATION,MODEL_NAME, max(IN_STATION_TIME) time, sum(qty) qty, count(*) TRAY  
-              from SFISM4.R_ROIN_T where WORK_FLAG = 0 and LOCATION like 'BAKE%' group by  LOCATION,MODEL_NAME ) b
-              on substr(LOCATION,length(LOCATION) -2, length(LOCATION)) = sublocation ORDER BY sub");
+                    _sql = string.Format(@"SELECT DISTINCT sub,LOCATION,MODEL_NAME,MAX(TIME) TIME,SUM(qty)  qty,SUM(tray) tray,CONTROL_TIME,time_out,color
+FROM   (SELECT SUBLOCATION SUB,b.*,
+               CASE
+               WHEN CONTROL_TIME - ( ( SYSDATE - TIME ) * 24 ) > 0 THEN Round(CONTROL_TIME - ( ( SYSDATE - TIME ) * 24 ), 1)
+               WHEN CONTROL_TIME - ( ( SYSDATE - TIME ) * 24 ) <= 0 THEN 0
+               END         AS time_out,
+               CASE
+               WHEN( SYSDATE - TIME ) * 24 > CONTROL_TIME THEN 'GREEN'
+               WHEN( SYSDATE - TIME ) * 24 BETWEEN CONTROL_TIME * 0.9 AND CONTROL_TIME THEN 'YELLOW'
+               WHEN( SYSDATE - TIME ) * 24 < CONTROL_TIME * 0.9 THEN 'RED'
+               END         AS COLOR
+               FROM  (SELECT SUBLOCATION1
+                      ||SUBLOCATION AS SUBLOCATION
+               FROM  (SELECT '01' sublocation
+                      FROM   dual
+                      UNION ALL
+                      SELECT '02' sublocation
+                      FROM   dual
+                      UNION ALL
+                      SELECT '03' sublocation
+                      FROM   dual
+                      UNION ALL
+                      SELECT '04' sublocation
+                      FROM   dual
+                      UNION ALL
+                      SELECT '05' sublocation
+                      FROM   dual
+                      UNION ALL
+                      SELECT '06' sublocation
+                      FROM   dual
+                      UNION ALL
+                      SELECT '07' sublocation
+                      FROM   dual
+                      UNION ALL
+                      SELECT '08' sublocation
+                      FROM   dual
+                      UNION ALL
+                      SELECT '09' sublocation
+                      FROM   dual) a,
+                     (SELECT 'A' sublocation1
+                      FROM   dual
+                      UNION ALL
+                      SELECT 'B' sublocation1
+                      FROM   dual
+                      UNION ALL
+                      SELECT 'C' sublocation1
+                      FROM   dual
+                      UNION ALL
+                      SELECT 'D' sublocation1
+                      FROM   dual
+                      UNION ALL
+                      SELECT 'E' sublocation1
+                      FROM   dual
+                      UNION ALL
+                      SELECT 'F' sublocation1
+                      FROM   dual
+                      UNION ALL
+                      SELECT 'G' sublocation1
+                      FROM   dual
+                      UNION ALL
+                      SELECT 'H' sublocation1
+                      FROM   dual
+                      UNION ALL
+                      SELECT 'I' sublocation1
+                      FROM   dual
+                      UNION ALL
+                      SELECT 'j' sublocation1
+                      FROM   dual
+                      UNION ALL
+                      SELECT 'K' sublocation1
+                      FROM   dual
+                      UNION ALL
+                      SELECT 'L' sublocation1
+                      FROM   dual
+                      UNION ALL
+                      SELECT 'M' sublocation1
+                      FROM   dual
+                      UNION ALL
+                      SELECT 'N' sublocation1
+                      FROM   dual
+                      UNION ALL
+                      SELECT 'O' sublocation1
+                      FROM   dual
+                      UNION ALL
+                      SELECT 'P' sublocation1
+                      FROM   dual)) a
+              left join (SELECT DISTINCT a.LOCATION,a.MODEL_NAME,MAX(a.IN_STATION_TIME) TIME,SUM(a.qty)  qty,COUNT(*) TRAY,CONTROL_TIME
+              FROM   SFISM4.R_ROIN_T a,(SELECT * FROM   SFIS1.C_ROAST_TIME_CONTROL_T WHERE  DEFAULT_GROUP = 'ROAST_IN' AND end_group = 'ROAST_OUT') b
+              WHERE  a.model_name = b.model_name(+) AND WORK_FLAG = 0 AND LOCATION LIKE 'BAKE%' GROUP  BY LOCATION, a.MODEL_NAME, TRAY_NO, CONTROL_TIME) b
+              ON Substr(LOCATION, Length(LOCATION) - 2, Length(LOCATION)) = sublocation
+              ORDER  BY sub)GROUP  BY sub,LOCATION,MODEL_NAME,qty,tray,CONTROL_TIME,time_out,color ORDER  BY sub  ");
                 }
                 else
                 {
 
                     _sql = string.Format(@"select SUBLOCATION SUB,b.*,
+               CASE
+               WHEN CONTROL_TIME - ( ( SYSDATE - TIME ) * 24 ) > 0 THEN Round(CONTROL_TIME - ( ( SYSDATE - TIME ) * 24 ), 1)
+               WHEN CONTROL_TIME - ( ( SYSDATE - TIME ) * 24 ) <= 0 THEN 0
+               END         AS time_out,
                 case   
-                when(sysdate - TIME) * 24 > 24  then 'GREEN'  
-                when(sysdate - TIME) * 24 between 20 and 24  then 'YELLOW'  
-                when(sysdate - TIME) * 24 between 0 and 20  then 'RED' 
+                when(sysdate - TIME) * 24 > CONTROL_TIME  then 'GREEN'  
+                when(sysdate - TIME) * 24 between CONTROL_TIME*0.9 and CONTROL_TIME  then 'YELLOW'  
+                when(sysdate - TIME) * 24 < CONTROL_TIME*0.9 then 'RED' 
                end as COLOR
-                from(  select SUBLOCATION1||SUBLOCATION  as SUBLOCATION From( select '01' sublocation from dual
+               from(  select SUBLOCATION1||SUBLOCATION  as SUBLOCATION 
+               From( select '01' sublocation from dual
                union all
                select '02' sublocation from dual
                union all
@@ -3157,8 +3176,9 @@ namespace SN_API.Controllers
                union all
                select 'P' sublocation1 from dual))  a
                left join
-              ( select distinct LOCATION,MODEL_NAME, max(IN_STATION_TIME) time, sum(qty) qty, TRAY_NO TRAY 
-              from SFIS1.R_ROIN_T where WORK_FLAG = 0 and LOCATION like 'BAKE%' group by  LOCATION,MODEL_NAME,TRAY_NO  ) b
+              ( select distinct a.LOCATION,a.MODEL_NAME, max(a.IN_STATION_TIME) time,CONTROL_TIME, sum(a.qty) qty, a.TRAY_NO TRAY 
+              from SFIS1.R_ROIN_T a,(select * from SFIS1.C_ROAST_TIME_CONTROL_T where DEFAULT_GROUP='ROAST_IN' and end_group='ROAST_OUT') b where a.model_name=b.model_name(+) and
+              WORK_FLAG = 0 and LOCATION like 'BAKE%' group by  LOCATION,a.MODEL_NAME,TRAY_NO ,CONTROL_TIME  ) b
               on substr(LOCATION,length(LOCATION) -2, length(LOCATION)) = sublocation ORDER BY sub");
                 }
 

@@ -25,101 +25,40 @@ namespace SN_API.Controllers
         public async Task<HttpResponseMessage> GetConfig76Content(Config76Element model)
         {
             // check GWCPEII_CONFIG 
-          
-            if (CheckCPEII_Config(model.database_name))
+            string strGetData = "";
+            if (string.IsNullOrEmpty(model.MO_NUMBER))
             {
-                string strGetData = "";
-                if (string.IsNullOrEmpty(model.MO_NUMBER))
-                {
-                    strGetData = $"  select * from NPI_MO_CONFIG_CONTENT where rownum <=20 ";
-                }
-                else
-                {
-                    strGetData = $" select * from NPI_MO_CONFIG_CONTENT WHERE   UPPER(MO_NUMBER) LIKE '%{model.MO_NUMBER.ToUpper()}%' ";
-                }
-                DataTable dtCheck = DBConnect.GetData(strGetData, model.database_name);
-                if (dtCheck.Rows.Count == 0)
-                {
-                    return Request.CreateResponse(HttpStatusCode.OK, new { result = "fail" });
-                }
-                else
-                {
-                    return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtCheck });
-                }
-
-            }
-
-            else
-
-            {
-                string strGetData = "";
-                if (string.IsNullOrEmpty(model.MO_NUMBER))
-                {
-                    strGetData = $" select * from NPI_MO_CONFIG_CONTENT where rownum <=20 ";
-                }
-                else
-                {
-                    strGetData = $"  select * from NPI_MO_CONFIG_CONTENT   WHERE   UPPER(A.MO_NUMBER) LIKE '%{model.MO_NUMBER.ToUpper()}%' ";
-                }
-
-                DataTable dtCheck = DBConnect.GetData(strGetData, model.database_name);
-
-                if (dtCheck.Rows.Count == 0)
-                {
-                    return Request.CreateResponse(HttpStatusCode.OK, new { result = "fail" });
-                }
-                else
-                {
-                    return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtCheck });
-                }
-
-            }
-             
-            
-
-        }
-
-        public bool CheckCPEII_Config(string database_name)
-        {
-            string strCheckCPEII_CONFIG = "";
-            bool checkCPIEE;
-            strCheckCPEII_CONFIG = "select * from SFIS1.C_PARAMETER_INI  WHERE PRG_NAME='CONFIG'  AND VR_ITEM='GWCPEII_CONFIG' AND VR_DESC='TRUE' AND ROWNUM=1";
-
-            //  strPrivilege = $"  SELECT * FROM  sfis1.C_PRIVILEGE  where PRG_NAME='CONFIG'  AND FUN = 'LOCATION_EDIT' AND EMP='{model.EMP}'";
-            if (DBConnect.GetData(strCheckCPEII_CONFIG, database_name).Rows.Count > 0)
-            {
-                return true;
+                strGetData = $" select a.model_type MO_NUMBER,a.TYPE_FLAG GROUP_NAME,a.TYPE_DESC STATUS,a.EMP_NO,a.CREATE_DATE,a.rowid ID from sfis1.C_MODEL_CONFIRM_T a where a.type_name='NPIMOCONFIG' and rownum <=20 ";
             }
             else
             {
-                return false; 
+                strGetData = $"  select a.model_type MO_NUMBER,a.TYPE_FLAG GROUP_NAME,a.TYPE_DESC STATUS,a.EMP_NO,a.CREATE_DATE,a.rowid ID from sfis1.C_MODEL_CONFIRM_T a where a.type_name='NPIMOCONFIG' and   UPPER(a.model_type) LIKE '%{model.MO_NUMBER.ToUpper()}%' ";
             }
+            DataTable dtCheck = DBConnect.GetData(strGetData, model.database_name);
+
+            if (dtCheck.Rows.Count == 0)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "fail" });
+            }
+            else
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtCheck });
+            }
+
         }
 
         [System.Web.Http.Route("Config76GetAllMonumber")]
         [System.Web.Http.HttpPost]
         public async Task<HttpResponseMessage> Config76GetAllMonumber(Config76Element model)
         {
-            if(CheckCPEII_Config(model.database_name))
-            {
-                string strGetData = "select mo_number from sfism4.r105 where  close_flag='2' and model_name in(select model_name from sfis1.c104 where model_type like '%189%') AND mo_number not in(select distinct model_type from SFIS1.C_MODEL_CONFIRM_T) order by mo_create_date desc";
-                DataTable dtCheck = DBConnect.GetData(strGetData, model.database_name);
-                return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtCheck });
-            }
-
-            else
-
-            {
-                string strGetData = "select mo_number from sfism4.r105 where mo_type in('Pilot Run','Consigned','Rework') and close_flag='2' order by mo_create_date desc";
-                DataTable dtCheck = DBConnect.GetData(strGetData, model.database_name);
-                return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtCheck });
-            }
-          
+            string strGetData = "select mo_number from sfism4.r105 where 1 = 1 and MO_CREATE_DATE > to_date('2024','YYYY') order by mo_create_date desc";
+            DataTable dtCheck = DBConnect.GetData(strGetData, model.database_name);
+            return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtCheck });
         }
         /// <summary>
         /// CONFIG FA 
         /// </summary>
-     
+
 
         // GET: Config
         [System.Web.Http.Route("GetConfigFAContent")]
@@ -132,11 +71,13 @@ namespace SN_API.Controllers
             string strGetData = "";
             if (string.IsNullOrEmpty(model.MO_NUMBER))
             {
-                strGetData = $"  select * from SHOW_FA_CONFIG_BY_MO where rownum <=20 ";
+                strGetData = $"  select DISTINCT GROUP_NAME VALUE from SFIS1.C_GROUP_CONFIG_T where SUBSTR(group_name,1,2) NOT IN ('R_') order by GROUP_NAME ";
             }
             else
             {
-                strGetData = $" select * from SHOW_FA_CONFIG_BY_MO A WHERE ROWNUM < 20 AND UPPER(A.MO_NUMBER) LIKE '%{model.MO_NUMBER.ToUpper()}%' ";
+                strGetData = $@" select DISTINCT GROUP_NAME VALUE from SFIS1.C_GROUP_CONFIG_T where SUBSTR(group_name,1,2) NOT IN ('R_')  
+                            minis
+                            select TYPE_FLAG value from sfis1.C_MODEL_CONFIRM_T where type_name='NPIMOCONFIG' AND MO_NUMBER = '{model.MO_NUMBER.ToUpper()}' ";
             }
             DataTable dtCheck = DBConnect.GetData(strGetData, model.database_name);
 
@@ -182,29 +123,30 @@ namespace SN_API.Controllers
         {
 
             string strGetData = $" select MODEL_NAME  from SFISM4.r_bpcs_moplan_t where mo_number ='{model.MO_NUMBER}'";
-                DataTable dtCheck = DBConnect.GetData(strGetData, model.database_name);
-                return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtCheck });
-            
+            DataTable dtCheck = DBConnect.GetData(strGetData, model.database_name);
+            return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtCheck });
+
 
         }
-        
+
 
         [System.Web.Http.Route("InsertUpdateConfigFA")]
         [System.Web.Http.HttpPost]
-        public async Task<HttpResponseMessage> InsertUpdateConfigFA(ConfigFAElement model )
+        public async Task<HttpResponseMessage> InsertUpdateConfigFA(Config76Element model)
         {
             try
             {
                 StringBuilder sb = new StringBuilder();
                 StringBuilder sbLog = new StringBuilder();
                 string strPrivilege = "";
+                string modify = " ";
                 //check exist
-                string strCheckExist = $"  select MO_NUMBER from SHOW_FA_CONFIG_BY_MO where MO_NUMBER = '{model.MO_NUMBER}' ";
+                string strCheckExist = $"select * from sfis1.C_MODEL_CONFIRM_T where type_name='NPIMOCONFIG' and model_type = '{model.MO_NUMBER}' and upper(TYPE_FLAG) = '{model.GROUP_NAME.ToUpper()}' ";
                 string actionString = " ";
                 if (DBConnect.GetData(strCheckExist, model.database_name).Rows.Count <= 0)
                 {
                     //check privilege
-                    strPrivilege = $"  SELECT * FROM  sfis1.C_PRIVILEGE  where PRG_NAME='CONFIG'  AND FUN = 'CONFIG FA MO_ADD' AND EMP='{model.EMP}'";
+                    strPrivilege = $"  SELECT * FROM  sfis1.C_PRIVILEGE  where PRG_NAME='CONFIG'  AND FUN = 'NPI MO CONFIG_ADD' AND EMP='{model.EMP}'";
                     if (DBConnect.GetData(strPrivilege, model.database_name).Rows.Count <= 0)
                     {
                         return Request.CreateResponse(HttpStatusCode.OK, new { result = "privilege" });
@@ -212,14 +154,16 @@ namespace SN_API.Controllers
 
                     // not exist => insert
 
-                    sb.Append($" Begin  SFIS1.P_INSERT_CONFIG_FA_T( '{model.MO_NUMBER}','{model.FA_NUMBER}','{model.FA_NUMBER1}','{model.FA_NUMBER2}','{model.FA_NUMBER3}','{model.FA_NUMBER4}','{model.FA_VERSION}','{model.FA_VERSION1}','{model.FA_VERSION2}','{model.FA_VERSION3}','{model.FA_VERSION4}','{model.EMP}','INSERT'); end;");
+                    sb.Append($@" INSERT INTO SFIS1.C_MODEL_CONFIRM_T (MODEL_TYPE,TYPE_NAME,TYPE_FLAG,TYPE_DESC,EMP_NO,CREATE_DATE) VALUES 
+                                ('{model.MO_NUMBER}','NPIMOCONFIG','{model.GROUP_NAME}','{model.STATUS}','{model.EMP}',SYSDATE)");
+
 
                     actionString = "INSERT";
                 }
                 else
                 {
                     //check privilege
-                    strPrivilege = $"  SELECT * FROM  sfis1.C_PRIVILEGE  where PRG_NAME='CONFIG'  AND FUN = 'CONFIG FA MO_EDIT' AND EMP='{model.EMP}'";
+                    strPrivilege = $"  SELECT * FROM  sfis1.C_PRIVILEGE  where PRG_NAME='CONFIG'  AND FUN = 'NPI MO CONFIG_EDIT' AND EMP='{model.EMP}'";
                     if (DBConnect.GetData(strPrivilege, model.database_name).Rows.Count <= 0)
                     {
                         return Request.CreateResponse(HttpStatusCode.OK, new { result = "privilege" });
@@ -228,7 +172,18 @@ namespace SN_API.Controllers
                     //existed => update
                     actionString = "UPDATE";
 
-                    sb.Append($" Begin  SFIS1.P_INSERT_CONFIG_FA_T( '{model.MO_NUMBER}','{model.FA_NUMBER}','{model.FA_NUMBER1}','{model.FA_NUMBER2}','{model.FA_NUMBER3}','{model.FA_NUMBER4}','{model.FA_VERSION}','{model.FA_VERSION1}','{model.FA_VERSION2}','{model.FA_VERSION3}','{model.FA_VERSION4}','{model.EMP}','UPDATE'); end;");
+                    sb.Append($@" UPDATE SFIS1.C_MODEL_CONFIRM_T SET TYPE_DESC = '{model.STATUS}' where type_name='NPIMOCONFIG' and model_type = '{model.MO_NUMBER}' and upper(TYPE_FLAG) = '{model.GROUP_NAME.ToUpper()}' ");
+
+                    modify = " UPDATE: ";
+                    string query = $"select TYPE_DESC from SFIS1.C_MODEL_CONFIRM_T WHERE where type_name='NPIMOCONFIG' and model_type = '{model.MO_NUMBER}' and upper(TYPE_FLAG) = '{model.GROUP_NAME.ToUpper()}' ";
+                    DataTable dtModifly = DBConnect.GetData(query, model.database_name);
+                    foreach (DataRow row in dtModifly.Rows)
+                    {
+                        if (row[0].ToString() != model.STATUS)
+                        {
+                            modify += $" TYPE_DESC: {row[0].ToString()};";
+                        }
+                    }
 
                 }
                 sbLog.Append(" INSERT INTO sfism4.r_system_log_t (EMP_NO,PRG_NAME,ACTION_TYPE,ACTION_DESC) ");
@@ -236,7 +191,7 @@ namespace SN_API.Controllers
                 sbLog.Append($" '{model.EMP}', ");
                 sbLog.Append($" 'CONFIG', ");
                 sbLog.Append($" '{actionString}', ");
-                sbLog.Append($"  'ConfigFA : {model.MO_NUMBER}; IP:{AuthorizationController.UserIP()} ; TABLE: SFIS1.C_ERROR_CODE_T' ");
+                sbLog.Append($"  'NPI MO CONFIG : {model.MO_NUMBER}; {modify}; IP:{AuthorizationController.UserIP()} ; TABLE: SFIS1.C_MODEL_CONFIRM_T' ");
                 sbLog.Append(" ) ");
                 string strInsertLog = sbLog.ToString();
                 string strInserUpdate = sb.ToString();
@@ -255,15 +210,15 @@ namespace SN_API.Controllers
 
         [System.Web.Http.Route("DeleteConfigFA")]
         [System.Web.Http.HttpPost]
-        public async Task<HttpResponseMessage> DeleteConfigFA(ConfigFAElement model)
+        public async Task<HttpResponseMessage> DeleteConfigFA(Config76Element model)
         {
             //check privilege
-            string strPrivilege = $" SELECT * FROM  sfis1.C_PRIVILEGE  where PRG_NAME='CONFIG'  AND FUN = 'CONFIG FA MO_DELETE' AND EMP='{model.EMP}'";
+            string strPrivilege = $" SELECT * FROM  sfis1.C_PRIVILEGE  where PRG_NAME='CONFIG'  AND FUN = 'NPI MO CONFIG_DELETE' AND EMP='{model.EMP}'";
             if (DBConnect.GetData(strPrivilege, model.database_name).Rows.Count <= 0)
             {
                 return Request.CreateResponse(HttpStatusCode.OK, new { result = "privilege" });
             }
-            string strDelete = $" delete  from sfis1.c_config_fa_t where mo_number='{model.MO_NUMBER}' ";
+            string strDelete = $" delete  from sfis1.c_config_fa_t where mo_number='{model.ID}' ";
             try
             {
                 DBConnect.ExecuteNoneQuery(strDelete, model.database_name);
@@ -273,7 +228,7 @@ namespace SN_API.Controllers
                 sbLog.Append($" '{model.EMP}', ");
                 sbLog.Append($" 'CONFIG', ");
                 sbLog.Append($" 'DELETE', ");
-                sbLog.Append($"  'ConfigFA delete: {model.MO_NUMBER};IP:{AuthorizationController.UserIP()}; TABLE: SFIS1.C_ERROR_CODE_T' ");
+                sbLog.Append($"  'NPI MO CONFIG delete: {model.MO_NUMBER};IP:{AuthorizationController.UserIP()}; TABLE: SFIS1.C_MODEL_CONFIRM_T' ");
                 sbLog.Append(" ) ");
 
                 string strInsertLog = sbLog.ToString();
@@ -297,7 +252,7 @@ namespace SN_API.Controllers
                 StringBuilder sbLog = new StringBuilder();
                 string strPrivilege = "";
                 //check exist
-                string strCheckExist = $"  select model_type from sfis1.c_model_confirm_t where model_type = '{model.MO_NUMBER}' and type_name='NPIMOCONFIG' ";
+                string strCheckExist = $"  select model_type from sfis1.C_MODEL_CONFIRM_T where model_type = '{model.MO_NUMBER}' and type_name='NPIMOCONFIG' ";
                 string actionString = " ";
                 if (DBConnect.GetData(strCheckExist, model.database_name).Rows.Count <= 0)
                 {
@@ -354,17 +309,17 @@ namespace SN_API.Controllers
         public async Task<HttpResponseMessage> DeleteConfigTA_(Config76Element model)
         {
             StringBuilder sb = new StringBuilder();
-        
-          
+
+
             //check privilege
             string strPrivilege = $" SELECT * FROM  sfis1.C_PRIVILEGE  where PRG_NAME='CONFIG'  AND FUN = 'NPI MO CONFIG_DELETE' AND EMP='{model.EMP}'";
             if (DBConnect.GetData(strPrivilege, model.database_name).Rows.Count <= 0)
             {
                 return Request.CreateResponse(HttpStatusCode.OK, new { result = "privilege" });
             }
-          string   actionString = "UPDATE";
+            string actionString = "UPDATE";
 
-           
+
             sb.Append($" Begin  SFIS1.P_CONFIRM_TA_FA_T( '{model.MO_NUMBER}','{model.GROUP_NAME}','{model.STATUS}','{model.EMP}','DELETE'); end;");
             string strDelete = sb.ToString();
             try

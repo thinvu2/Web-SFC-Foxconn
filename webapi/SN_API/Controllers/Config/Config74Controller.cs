@@ -241,14 +241,7 @@ namespace SN_API.Controllers.Config
                     {
                         return Request.CreateResponse(HttpStatusCode.OK, new { result = $"GROUP NAME: {model.GROUP_NAME} khong ton tai trong he thong" });
                     }
-                    sql_check = $"select * from sfism4.r105 where mo_number = '{model.MODEL_NAME}'";
                     sb.Append($"UPDATE SFIS1.C_ETE_CONFIG_T SET  ");
-                    if (DBConnect.GetData(sql_check, model.database_name).Rows.Count > 0)
-                    {
-                        sb.Append($" CREATE_TIME= sysdate, ");
-                        sb.Append($" CURRENT_DATA= '0', ");
-                        sb.Append($" ERROR_CODE= '0', ");
-                    }
                     sb.Append($" CONDITION='{model.CONDITION}' ");
                     sb.Append("  WHERE ");
                     sb.Append($" MODEL_NAME='{model.MODEL_NAME}' and GROUP_NAME='{model.GROUP_NAME}' AND TYPE='{model.TYPE}' ");
@@ -273,6 +266,13 @@ namespace SN_API.Controllers.Config
                     }
                     else if (model.ACTION_TYPE == "UNLOCK")
                     {
+                        sql_check = $"select * from sfism4.r105 where mo_number = '{model.MODEL_NAME}'";
+                        if (DBConnect.GetData(sql_check, model.database_name).Rows.Count > 0)
+                        {
+                            sb.Append($" CREATE_TIME= sysdate, ");
+                            sb.Append($" CURRENT_DATA= '0', ");
+                            sb.Append($" ERROR_CODE= '0', ");
+                        }
                         sb.Append(" STATUS='' ");
                     }
                     sb.Append(" WHERE ");
