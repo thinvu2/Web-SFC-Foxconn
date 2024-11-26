@@ -25,11 +25,7 @@
           <h2>{{ empname }}</h2>
         </div>
       </div>
-      <!-- /menu profile quick info -->
-
       <br />
-
-      <!-- sidebar menu -->
       <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
         <div class="menu_section">
           <h3>{{ $store.state.language == "En" ? "General" : "Chung" }}</h3>
@@ -49,43 +45,16 @@
                 <span class="fa fa-chevron-right"></span
               ></router-link>
             </li>
-          </ul>
-        </div>
-      </div>
-      <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-        <div class="menu_section">
-          <ul class="nav side-menu">
             <li>
-              <a @click="logout()"
-                ><i class="fa fa-sign-out"></i
-                >{{ $store.state.language == "En" ? "Logout" : "Đăng xuất" }}
+              <router-link to="/Home/Qualcomm_Aplication">
+                <i class="fa fa-space-shuttle"></i>Qualcomm
                 <span class="fa fa-chevron-right"></span
-              ></a>
-              <ul class="nav child_menu">
-                <li><a href="fixed_sidebar.html">Fixed Sidebar</a></li>
-                <li><a href="fixed_footer.html">Fixed Footer</a></li>
-              </ul>
+              ></router-link>
             </li>
           </ul>
         </div>
       </div>
-      <!-- /sidebar menu -->
-      <!-- /menu footer buttons -->
-      <div class="sidebar-footer hidden-small">
-        <a data-toggle="tooltip" data-placement="top" title="Setting">
-          <i class="fa fa-gear"></i>
-        </a>
-        <a
-          data-toggle="tooltip"
-          data-placement="top"
-          title="FullScreen"
-          @click="MaximizeWindow()"
-        >
-          <i class="fa fa-expand"></i>
-        </a>
-        <a data-toggle="tooltip" data-placement="top" title="Lock">
-          <i class="fa fa-lock"></i>
-        </a>
+      <!-- <div class="sidebar-footer hidden-small">
         <a
           data-toggle="tooltip"
           data-placement="top"
@@ -94,8 +63,7 @@
         >
           <i class="fa fa-sign-out"></i>
         </a>
-      </div>
-      <!-- /menu footer buttons -->
+      </div> -->
     </div>
   </div>
 </template>
@@ -118,7 +86,6 @@ export default {
     this.listNav = data;
   },
   created() {
-    // console.log(this.$route.path+"--"+this.$route.path.length);
     for (let i = 0; i < this.listNav.length; i++) {
       for (let j = 0; j < this.listNav[i].NavList.length; j++) {
         if (
@@ -214,91 +181,25 @@ export default {
           this.index2
         ].selected = true;
       }
-
-      // this.listNav[index].NavList[index1].NavList[index2].selected = true;
     },
   },
 };
 </script>
 <style scoped lang="scss">
 .left_col {
-  background: #024873 !important;
+  background: #0a5381 !important;
   .nav_title {
-    background: #0b364f !important;
+    background: #0a5381 !important;
   }
   .sidebar-footer {
-    background: #0b364f !important;
+    background: #0a5381 !important;
   }
   z-index: 0;
 }
-.image-language {
-  height: 25px;
-  width: 25px;
-}
-.selected-link {
-  background: #e85f04;
-}
-.sidenav_text {
-  font-size: 13px;
-}
-.dropdown-toggle::after {
-  color: #ffff;
-  position: absolute !important;
-  right: 20px;
-  font-size: 25px;
-  /* margin-left: 100px !important; */
-}
-#layout-sidenav {
-  height: 100%;
-  background-image: linear-gradient(to right, #024873, #024873) !important;
-}
-.sidenav-item a:hover {
-  background: #d88856;
-}
-/* #layout-sidenav {
- 
-  height: auto;
-  /* position: relative;  
-    height: 100vh;
-    overflow-y: auto; */
-
-.left-menu {
-  background-image: linear-gradient(to right, #024873, #024873) !important;
-  color: #fffbf7 !important;
-  &:hover {
-    color: #1f1f1f;
+.side-menu li {
+  font-size: 18px;
+  &:hover{
+    background-color: #073e61;
   }
-  height: 100%;
 }
-.left-menu li a div {
-  color: #fffbf7;
-}
-.left-menu li a i {
-  color: #fffbf7;
-}
-.left-menu li a svg {
-  color: #fffbf7;
-}
-.sidenav-divider {
-  background: #fffbf7;
-}
-.sidenav-header {
-  font-size: 12px !important;
-  color: #fffbf7 !important;
-}
-.sidenav-toggle::after {
-  color: #fffbf7 !important;
-}
-/* .sidenav-toggle{
-  color: #FFF !important;
-  background: #FFF;
-} */
 </style>
-<style src="../../../public/template/vendors/bootstrap/dist/css/bootstrap.min.css"></style>
-<style src="../../../public/template/vendors/font-awesome/css/font-awesome.min.css"></style>
-<style src="../../../public/template/vendors/nprogress/nprogress.css"></style>
-<style src="../../../public/template/vendors/iCheck/skins/flat/green.css"></style>
-<style src="../../../public/template/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css"></style>
-<style src="../../../public/template/vendors/jqvmap/dist/jqvmap.min.css"></style>
-<style src="../../../public/template/vendors/bootstrap-daterangepicker/daterangepicker.css"></style>
-<style src="../../../public/template/build/css/custom.min.css"></style>

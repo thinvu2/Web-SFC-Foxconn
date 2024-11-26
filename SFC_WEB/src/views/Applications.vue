@@ -3,7 +3,7 @@
     <div class="div-top">{{
                     $store.state.language == "En"
                       ? "All applications"
-                      : "Kho ?ng d?ng"
+                      : "Kho ứng dụng"
                   }}</div>
     <div class="div-app col-md-12 row">
       <template v-if="CheckEmp == false">
@@ -51,25 +51,21 @@ export default {
       CheckEmp: false,
     };
   },
-  mounted() {    
+  mounted() {
     this.dataApp = dataApplications;
     this.dataAppIndia = data_applications_India;
     this.CheckEmpClass();
-    console.log(this.dataApp);
   },
   methods: {
     GotoRoute(route) {
       this.$router.push({ path: route });
     },
     async CheckEmpClass(){
-      var payload = {
+      let payload = {
         database_name: localStorage.databaseName,
         emp_no: localStorage.username,
       };
-
-      var {data } = await Repository.getRepo("GetEmp_ClassName", payload);
-      
-      console.log(data.data);
+      let {data } = await Repository.getRepo("GetEmp_ClassName", payload);
       if(data.result == "ok"){
         this.CheckEmp = true;
       }else{
@@ -79,7 +75,6 @@ export default {
   },
 };
 </script>
-
 <style scoped lang="scss">
 @media only screen and (hover: none) and (pointer: coarse) {
   .text-config-name {

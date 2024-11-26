@@ -57,7 +57,6 @@ export default {
       this.$router.push({ path: "/Home/Applications" });
     },
     async CheckAllPrivilege() {
-      console.log(this.dataList1)
       var payload = {
         database_name: localStorage.databaseName,
         emp_no: localStorage.username,
@@ -66,18 +65,12 @@ export default {
       var {data } = await Repository.getRepo("GetConfigPrivilge_Group", payload);
       this.dataList = [];
       this.dataList = data.data;
-      console.log(this.dataList);
-
-      
       if (this.dataList.length >0 )
-      {
-      
+      {    
         var payload1 = {
         database_name: localStorage.databaseName,
         emp_no: localStorage.username,
           };
-     
-
         var  data1  = await Repository.getRepo("GetConfigPrivilge_Group", payload1);
         this.dataCheckPrivilege = data1.data;
 
@@ -114,11 +107,7 @@ export default {
         }
       });
       }
-      //console.log("listconifg: "+this.dataList.length);
-      
     },
-
-
       async GetDatalist() {
       var payload = {
         database_name: localStorage.databaseName,
@@ -127,8 +116,6 @@ export default {
       var { data } = await Repository.getRepo("GetConfigPrivilge_Group", payload);
       this.dataList = [];
       this.dataList = data.data;
-
-      console.log(this.dataList);
       if (typeof this.dataList != "undefined") {
         if (this.dataList.length != 0) {
           this.dataList1.forEach((element) => {

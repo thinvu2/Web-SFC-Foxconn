@@ -9,8 +9,31 @@
       </div>
     </div>
     <div class="menu">
-      <router-link to="/Home/ConfigApp/Config7" id="Config7">EMPLOYEE</router-link>
-      <router-link to="/Home/ConfigApp/Privilege" id="Privilege">PRIVILEGE</router-link>
+      <router-link 
+        to="/Home/ConfigApp/Config7" 
+        id="Config7"
+        @mouseover = "isHovered = true"
+        @mouseleave = "isHovered = false"
+        >
+        EMPLOYEE
+      </router-link>
+
+      <router-link 
+        to="/Home/ConfigApp/Privilege" 
+        id="Privilege"
+        :class = "{ 'hovered' : isHovered }"
+        >
+        PRIVILEGE
+      </router-link>
+
+      <router-link 
+        to="/Home/ConfigApp/Ams_Privilege" 
+        id="Ams_Privilege"
+        @mouseover = "isHovered = true"
+        @mouseleave = "isHovered = false"
+        >
+        AMS_PRIVILEGE
+      </router-link>
     </div>
     <!-- grid-container -->
     <div id="grid-container">
@@ -23,8 +46,8 @@
               autocomplete="off"
               list="datalistOptions"
               id="datalistEmp"
-              @input="filterEmp"
-              @change="onEmpChange"
+              @input="filterEmp()"
+              @change="onEmpChange()"
             />
           </div>
           <datalist id="datalistOptions">
@@ -57,8 +80,8 @@
 
         <!-- Check list -->
         <div class="inputList">
-          <label for="inputList">Input list</label>
-          <input type="checkbox" id="inputList" v-model="valueInput" @click="ClearDefApp">
+          <label for="inputList">Input list emp</label>
+          <input type="checkbox" id="inputList" v-model="valueInput" @click="ClearDefApp()">
         </div>
         <!-- Copy Df -->
          <template v-if="valueInput === false">
@@ -81,8 +104,8 @@
           </datalist>
          </template>
          <template v-else>
-          <div class="copy-EmpDf">
-            <p style="display: inline-block;">Multiline EMP</p>
+          <div class="copy-List-EmpDf">
+            <!-- <p style="display: inline-block;">Multiline EMP</p> -->
             <button @click="onEmpChangeMultiple" type="submit">add</button>
             <textarea
               style="display: inline-block;" 
@@ -96,10 +119,10 @@
       <!-- check-box -->
       <div class="copyEmp">
         <label for="copyEmp">All privilege</label>
-        <input type="checkbox" id="copyEmp" v-model="value" @click="clearTable()">
+        <input type="checkbox" id="copyEmp" v-model="value" @change="activeGetEmp(value)" @click="clearTable()">
       </div>
       <!--select APlication  -->
-      <div class="not-defineApp" v-if="show">
+      <div class="not-defineApp" v-if="showFormTableAndSave">
         <label for="">Not Define Application</label>
         <select v-model="selectedNotDf" @change="selectNotDfApp" class="custom-select">
           <option v-for="(item, index) in  selectListNotDefineApp" v-bind:key ="index" class="custom-option">
@@ -107,7 +130,7 @@
           </option>
         </select>
       </div>
-      <div class="defineApp" v-if="show">
+      <div class="defineApp" v-if="showFormTableAndSave">
         <label for="">Define Application</label>
         <select v-model="selectedDf" @change ="selectDfApp" class="custom-select">
           <option v-for="(item, index) in selectListDefineApp" v-bind:key ="index" class="custom-option">
@@ -141,19 +164,17 @@
         </template>
       </div>
         <!-- Button save-->
-      <div class="moveAndSaveData" v-if="show">
-        <button class="notDefineButton" @click="moveSelectedItemsToDefinedApp">
-          <svg class="svg-inline--fa fa-angle-double-right fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-v-6887bfd2="">
-            <path class="" fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z">
-            </path>
+      <div class="moveAndSaveData" v-if="showFormTableAndSave">
+        <button class="moveNotDefineButton" @click="moveSelectedItemsToDefinedApp">
+          <svg class="svg-inline--fa fa-angle-double-right fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+            <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
           </svg>
         </button>
 
-        <button class="defineButton" @click="moveSelectedItemsToNotDefinedApp">
-          <svg class="svg-inline--fa fa-angle-double-left fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-v-6887bfd2="">
-            <path class="" fill="currentColor" d="M223.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L319.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L393.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34zm-192 34l136 136c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9L127.9 256l96.4-96.4c9.4-9.4 9.4-24.6 0-33.9L201.7 103c-9.4-9.4-24.6-9.4-33.9 0l-136 136c-9.5 9.4-9.5 24.6-.1 34z">
-            </path>
-        </svg>
+        <button class="moveDefineButton" @click="moveSelectedItemsToNotDefinedApp">
+          <svg class="svg-inline--fa fa-angle-double-left fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+            <path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+          </svg>
         </button>
         <button class="saveData" type="submit" @click="saveData()" title="Save">
           Save
@@ -207,7 +228,7 @@
         </template>
       </div>
         <!-- Radio button -->
-      <div class="radio-button" v-if="show">
+      <div class="radio-button" v-if="showFormTableAndSave">
           <h2> Picked: {{ picked }}</h2>
       <form>
       <label for="none">None:</label>
@@ -229,14 +250,15 @@ import Repository from "../../services/Repository";
 export default {
   data() {
     return {
+      isHovered: false,
       textListSearch: "",
-      show: false,
+      showFormTableAndSave: false,
       isDropdownVisible: false,
       textContent: "",
       searchText: "",
       selectedItem: null,
       isVisible: false,
-      ListEmp: [],
+      ListEmpAll: [],
       ListEmpCopyDf:[],
       ListEmpCopyNotDf:[],
       ListEmpMultiple:[],
@@ -282,13 +304,19 @@ export default {
       listHeader: [],
     };
   },
-  created() {
-    window.addEventListener("click", (e) => {
-      if (!this.$el.contains(e.target)) {
-        this.isVisible = false;
-      }
-    });
-  },
+  // watch: {
+  //   rangeVal(newVal){
+  //     if(this.value === true) {
+  //     }
+  //   }
+  // },
+  // created() {
+  //   window.addEventListener("click", (e) => {
+  //     if (!this.$el.contains(e.target)) {
+  //       this.isVisible = false;
+  //     }
+  //   });
+  // },
   computed: {
     limitedOptions() {
       return this.filteredOptions.slice(0, 4);
@@ -301,63 +329,75 @@ export default {
     }
   },
   mounted() {
-    this.GetEmp();
     this.GetEmpCopyDf();
-    this.GetEmpCopyNotDf();
+    this.GetEmpCopyNotDf()
   },
   methods: {
     async GetEmp() {
-      let payload = {
-        database_name: localStorage.databaseName,
-      };
-      let { data } = await Repository.getRepo("getEmpNo", payload);
-      this.ListEmp = data.data;
-      },
+      let databaseName = localStorage.databaseName;
+      try {
+        let { data } = await Repository.getApiServer(`getEmpNo?database_name=${databaseName}`);
+        this.ListEmpAll = data.data;
+      }catch(error){
+        if(error.response && error.response.data) {
+          this.$swal("", error.response.data.error, "error");
+        }else {
+          this.$swal ("", error.Message, "error")
+        }
+      }
+    },
     //copy-emp-Df
     async GetEmpCopyDf() {
-      let payload = {
-        database_name: localStorage.databaseName,
-      };
-      try{
-        let { data } = await Repository.getRepo("getEmpCopyDf", payload);
+      let databaseName =  localStorage.databaseName;
+      try {
+        let { data } = await Repository.getApiServer(`getEmpCopyDf?database_name=${databaseName}`);
         this.ListEmpCopyDf = data.data;
       }catch(error){
-        console.error("data: ", error);
+        if(error.response && error.response.data) {
+          this.$swal("", error.response.data.error, "error");
+        }else {
+          this.$swal ("", error.Message, "error")
+        }
       }
     },
     // Copy-Emp-NotDf
     async GetEmpCopyNotDf() {
-      let payload = {
-        database_name: localStorage.databaseName,
-      };
+      let databaseName = localStorage.databaseName;
       try{
-        let { data } = await Repository.getRepo("getEmpCopyNotDf", payload);
+        let { data } = await Repository.getApiServer(`getEmpCopyNotDf?database_name=${databaseName}`);
         this.ListEmpCopyNotDf = data.data;
       }catch(error){
-        console.error("data: ", error);
+        if(error.response && error.response.data) {
+          this.$swal("", error.response.data.error, "error");
+        }else {
+          this.$swal ("", error.Message, "error")
+        }
       }
     },
     //Emp-List
     async GetEmpList() {
-      let payload = {
-        database_name: localStorage.databaseName,
-        LISTINPUTEMP: this.LISTINPUTEMP,
-        valueInput: this.valueInput,
-      };
+      let databaseName = localStorage.databaseName;
+      let LISTINPUTEMP = this.LISTINPUTEMP;
+      let encodeLISTINPUTEMP = encodeURIComponent(LISTINPUTEMP);
       try{
-        let  response  = await Repository.getRepo("selectMultipleEmp", payload);
+        let  response  = await Repository.getApiServer(`selectMultipleEmp?database_name=${databaseName}&LISTINPUTEMP=${encodeLISTINPUTEMP}`);
         this.ListDefineApp = response.data.data;
         this.EMP = response.data.EMP;
         if(this.ListDefineApp.length > 0){
         this.ListDefineAppHeader = Object.keys(this.ListDefineApp[0]);
         }
       }catch(error){
-        console.error("data: ", error);
+        if(error.response && error.response.data) {
+          this.$swal("", error.response.data.error, "error");
+        }else {
+          this.$swal ("", error.Message, "error")
+        }
       }
     },
-    async filterEmp(){
+    //filter
+    async filterEmp() {
       const self = this;
-        this.filteredOptions = this.ListEmp.filter(function(option){
+        this.filteredOptions = this.ListEmpAll.filter(function(option){
           if(option && option.EMP_NO_NAME && self.model.EMP_NO_NAME)
           {
             return option.EMP_NO_NAME.toLowerCase().includes(self.model.EMP_NO_NAME.toLowerCase());
@@ -371,7 +411,7 @@ export default {
         this.filteredOptions.unshift(allOption);
       }
     },
-    async filterListEmpCopyDf(){
+    async filterListEmpCopyDf() {
       const self = this;
       this.filteredOptionsCopyDf = this.ListEmpCopyDf.filter(function(option){
         if(option && option.EMP_COPYDF && self.model.EMP_COPYDF){
@@ -380,8 +420,8 @@ export default {
         return false;
       });
     },
-    //NotDfCopy
-    async filterListEmpCopyNotDf(){
+    //filterNotDfCopy
+    async filterListEmpCopyNotDf() {
       const self = this;
       this.filteredOptionsCopyNotDf = this.ListEmpCopyNotDf.filter(function(option){
         if(option && option.EMP_COPYNOTDF && self.model.EMP_COPYNOTDF){
@@ -390,75 +430,82 @@ export default {
         return false;
       });
     },
-    async selectNotDefineApp(){
-      let payload = {
-        database_name: localStorage.databaseName,
-        EMP_NO_NAME: this.model.EMP_NO_NAME,
-        SPRG_NAME: this.selectedNotDf,
-        EMP_COPYNOTDF: this.model.EMP_COPYNOTDF,
-        VALUE: this.value,
-      };
+    async selectNotDefineApp() {
+      let databaseName = localStorage.databaseName;
+      let EMP_COPYNOTDF = this.model.EMP_COPYNOTDF;
+      let value = this.value;
       try{
-        let { data } = await Repository.getRepo("selectGetNotDefineApp", payload);
+        let { data } = await Repository.getApiServer(`selectGetNotDefineApp?database_name=${databaseName}&EMP_COPYNOTDF=${EMP_COPYNOTDF}&value=${value}`);
         this.selectListNotDefineApp = data.data;
       }catch(error){
-        console.error("data: ", error);
+        if(error.response && error.response.data) {
+          this.$swal("", error.response.data.error, "error");
+        }else {
+          this.$swal ("", error.Message, "error")
+        }
       }
     },
-    async selectDefineApp(){
-      let payload = {
-        database_name: localStorage.databaseName,
-        EMP_NO_NAME: this.model.EMP_NO_NAME,
-        DPRG_NAME: this.selectedDf,
-        EMP_COPYDF: this.model.EMP_COPYDF,
-        VALUE: this.value,
-        valueInput: this.valueInput,
-        LISTINPUTEMP: this.LISTINPUTEMP,
-      };
+    async selectDefineApp() {
+      let databaseName = localStorage.databaseName;
+      let EMP_NO_NAME  = this.model.EMP_NO_NAME;
+      let EMP_COPYDF = this.model.EMP_COPYDF;
+      let value = this.value;
+      let valueInput = this.valueInput;
+      let LISTINPUTEMP = this.LISTINPUTEMP;
+      let encodeLISTINPUTEMP = encodeURIComponent(LISTINPUTEMP);
       try{
-        let { data } = await Repository.getRepo("selectGetDefineApp", payload);
+        let { data } = await Repository.getApiServer(`selectGetDefineApp?database_name=${databaseName}&EMP_NO_NAME=${EMP_NO_NAME}&EMP_COPYDF=${EMP_COPYDF}&value=${value}&valueInput=${valueInput}&LISTINPUTEMP=${encodeLISTINPUTEMP}`);
         this.selectListDefineApp = data.data;
       }catch(error){
-        console.error("data: ", error);
+        if(error.response && error.response.data) {
+          this.$swal("", error.response.data.error, "error");
+        }else {
+          this.$swal ("", error.Message, "error")
+        }
       }
     },
-    async notDefineApp(){
-      let payload = {
-        database_name: localStorage.databaseName,
-        EMP_NO_NAME: this.model.EMP_NO_NAME,
-        SPRG_NAME: this.selectedNotDf,
-        EMP_COPYNOTDF: this.model.EMP_COPYNOTDF,
-        VALUE: this.value,
-      };
+    async notDefineApp() {
+      let databaseName = localStorage.databaseName;
+      let EMP_NO_NAME = this.model.EMP_NO_NAME;
+      let SPRG_NAME = this.selectedNotDf;
+      let EMP_COPYNOTDF = this.model.EMP_COPYNOTDF;
+      let value = this.value;
       try{
-        let { data } = await Repository.getRepo("getNotDefineApp", payload);
+        let { data } = await Repository.getApiServer(`getNotDefineApp?database_name=${databaseName}&EMP_NO_NAME=${EMP_NO_NAME}&SPRG_NAME=${SPRG_NAME}&EMP_COPYNOTDF=${EMP_COPYNOTDF}&value=${value}`);
         this.ListNotDefineApp = data.data;
         if(this.ListNotDefineApp.length > 0){
           this.ListNotDefineAppHeader = Object.keys(this.ListNotDefineApp[0]);
         }
       }catch(error){
-        console.error("data: ", error);
+        if(error.response && error.response.data) {
+          this.$swal("", error.response.data.error, "error");
+        }else {
+          this.$swal ("", error.Message, "error")
+        }
       }
     },
-    async defineApp(){
-      let payload = {
-        database_name: localStorage.databaseName,
-        EMP_NO_NAME: this.model.EMP_NO_NAME,
-        DPRG_NAME: this.selectedDf,
-        PRIVILEGE: this.model.PRIVILEGE,
-        EMP_COPYDF: this.model.EMP_COPYDF,
-        VALUE: this.value,
-        valueInput: this.valueInput,
-        LISTINPUTEMP: this.LISTINPUTEMP,
-      };
+    async defineApp() {
+      let databaseName = localStorage.databaseName;
+      let EMP_NO_NAME = this.model.EMP_NO_NAME;
+      let DPRG_NAME = this.selectedDf;
+      let PRIVILEGE = this.model.PRIVILEGE;
+      let EMP_COPYDF = this.model.EMP_COPYDF;
+      let value = this.value;
+      let valueInput = this.valueInput;
+      let LISTINPUTEMP = this.LISTINPUTEMP;
+      let encodeLISTINPUTEMP = encodeURIComponent(LISTINPUTEMP);
       try{
-        let { data } = await Repository.getRepo("getDefineApp", payload);
+        let { data } = await Repository.getApiServer(`getDefineApp?database_name=${databaseName}&EMP_NO_NAME=${EMP_NO_NAME}&DPRG_NAME=${DPRG_NAME}&PRIVILEGE=${PRIVILEGE}&EMP_COPYDF=${EMP_COPYDF}&value=${value}&valueInput=${valueInput}&LISTINPUTEMP=${encodeLISTINPUTEMP}`);
         this.ListDefineApp = data.data;
       if(this.ListDefineApp.length > 0 ){
         this.ListDefineAppHeader = Object.keys(this.ListDefineApp[0]);
       }
       }catch(error){
-        console.error("data: ", error);
+        if(error.response && error.response.data) {
+          this.$swal("", error.response.data.error, "error");
+        }else {
+          this.$swal ("", error.Message, "error")
+        }
       }
     },
     async saveData() {
@@ -474,8 +521,8 @@ export default {
         dangerMode: true,
       }).then(async (willSave) => {
           if (willSave.isConfirmed == false) return;
-          this.LISTGROUPDF = this.TEST
-          this.LISTGROUPNOTDF = this.TEST1
+          this.LISTGROUPDF = this.TEST;
+          this.LISTGROUPNOTDF = this.TEST1;
           let payload = {
             database_name: localStorage.databaseName,
             EMP_NO: localStorage.username,
@@ -488,109 +535,168 @@ export default {
             valueInput: this.valueInput,
             LISTEMP: this.EMP,
           };
-          try{
+          try {
             let { data }  = await Repository.getRepo("InsertDeleteDefineApp", payload);
-              if (data.result == "ok") {
-                  this.$swal("", "Successfully applied", "success");
-              } else {
-                  this.$swal("", data.result, "error");
-              } this.clearForm();
+            if (data.result == "ok") {
+                this.$swal("", "Successfully applied", "success")
+            } else {
+                this.$swal("", data.result, "error")
+            } 
+            this.clearForm();
           }catch(error){
-            this.$swal ("", error, "error");
+            if(error.response && error.response.data) {
+              this.$swal("", error.response.data.error, "error");
+            }else {
+              this.$swal ("", error.Message, "error")
+            }
           }
-      });
+      })
     },
-    onEmpChange(){
-    this.notDefineApp();
-    this.defineApp();
-    this.selectNotDefineApp();
-    this.selectDefineApp();
-    this.show = true;
-  },
-  onEmpChangeCopyDf(){
-    this.selectDefineApp();
-    this.defineApp();
-    this.show = true;
-  },
-  onEmpChangeCopyNotDf(){
-    this.selectNotDefineApp();
-    this.notDefineApp();
-  },
-  onEmpChangeMultiple(){
-    this.GetEmpList();
-    this.show = true;
-    this.selectDefineApp();
-    //this.defineApp();
-  },
-  selectNotDfApp(){
-    this.selectNotDefineApp();
-    this.notDefineApp();
-  },
-  selectDfApp(){
-    this.selectDefineApp();
-    this.defineApp();
-  },
-  moveSelectedItemsToDefinedApp() {
-    const selectedItems = this.ListNotDefineApp.filter(item => item.isSelected);
-    selectedItems.forEach(item => {
-      item.PRIVILEGE = this.picked;
-    });
-    this.ListDefineApp.push(...selectedItems);
-    this.TEST.push(...selectedItems);
-    this.ListNotDefineApp = this.ListNotDefineApp.filter(item => !item.isSelected);
-    selectedItems.forEach(item => {
-      item.isSelected = false;
-    });
-    return this.TEST;
-  },
-  moveSelectedItemsToNotDefinedApp(){
-    const selectedItems = this.ListDefineApp.filter(item => item.isSelected);
-    const initiallyInListDefineApp = selectedItems.filter(item => this.TEST1.includes(item) || !this.TEST.includes(item));
-    this.ListNotDefineApp.push(...selectedItems);
-    this.ListDefineApp = this.ListDefineApp.filter(item => !item.isSelected);
-    selectedItems.forEach(item =>{
-      item.isSelected = false;
-    });
-    this.TEST = this.TEST.filter(item => !selectedItems.includes(item));
-    this.TEST1.push(...initiallyInListDefineApp);
-  },
-  toggleSelect(item) {
-  item.isSelected = !item.isSelected;
-},
-  updatePrivilege(value){
-    this.ListDefineApp.forEach(item =>{
-      if(item.isSelected){
-        item.PRIVILEGE = value;
+    activeGetEmp(value) {
+      console.log("value: ", value);
+      if(value === true) {
+        this.GetEmp()
+        console.log("GetEmp");
       }
-    });
-  },
-  clearForm(){
-    this.TEST = [];
-    this.TEST1 = [];
-  },
-  clearTable(){
-    this.valueInput = false;
-    this.ListDefineApp = [];
-    this.ListDefineAppHeader = [];
-    this.ListNotDefineApp = [];
-    this.ListNotDefineAppHeader = [];
-    this.selectListDefineApp = [];
-    this.selectListNotDefineApp = [];
-    this.model.EMP_COPYDF = "";
-    this.model.EMP_COPYNOTDF = "";
-    this.model.EMP_NO_NAME = "";
-    this.show = false;
-    this.picked = "0";
-  },
-  ClearDefApp(){
-    this.ListDefineAppHeader = [];
-    this.ListDefineApp = [];
-  },
-  BackToParent() {
-    this.$router.push({ path: "/Home/ConfigApp" });
-  },
-  },
-};
+    },
+    onEmpChange() {
+      this.notDefineApp();
+      this.defineApp();
+      this.selectNotDefineApp();
+      this.selectDefineApp();
+      this.showFormTableAndSave = true
+    },
+    onEmpChangeCopyDf() {
+      this.selectDefineApp();
+      this.defineApp();
+      this.showFormTableAndSave = true
+    },
+    onEmpChangeCopyNotDf() {
+      this.selectNotDefineApp();
+      this.notDefineApp()
+    },
+    onEmpChangeMultiple() {
+      this.GetEmpList();
+      this.showFormTableAndSave = true;
+      this.selectDefineApp()
+    },
+    selectNotDfApp() {
+      this.selectNotDefineApp();
+      this.notDefineApp()
+    },
+    selectDfApp() {
+      this.selectDefineApp();
+      this.defineApp()
+    },
+    //move data not-define to define
+    moveSelectedItemsToDefinedApp() {
+      const selectedItems = this.ListNotDefineApp.filter(item => item.isSelected);
+      const initiallyInNotListDefineApp = selectedItems.filter(item => this.TEST.includes(item) || !this.TEST1.includes(item));
+      selectedItems.forEach(item => {
+        item.PRIVILEGE = this.picked;
+      });
+      //show header
+      this.ListDefineApp.push(...selectedItems);
+      if(this.ListDefineApp.length > 0 ){
+        this.ListDefineAppHeader = Object.keys(this.ListDefineApp[0]);
+      }
+      //this.TEST.push(...selectedItems);
+      this.ListNotDefineApp = this.ListNotDefineApp.filter(item => !item.isSelected);
+      selectedItems.forEach(item => {
+        item.isSelected = false;
+      });
+      this.TEST.push(...initiallyInNotListDefineApp);
+      this.TEST1 = this.TEST1.filter(item => !selectedItems.includes(item));
+    },
+    //move data define to not-define
+    moveSelectedItemsToNotDefinedApp() {
+      const selectedItems = this.ListDefineApp.filter(item => item.isSelected);
+      const initiallyInListDefineApp = selectedItems.filter(item => this.TEST1.includes(item) || !this.TEST.includes(item));
+      
+      this.ListDefineApp = this.ListDefineApp.filter(item => !item.isSelected);
+      selectedItems.forEach(item =>{
+        item.isSelected = false;
+      });
+      //show header
+      this.ListNotDefineApp.push(...selectedItems);
+      if(this.ListNotDefineApp.length > 0 ){
+        this.ListNotDefineAppHeader = Object.keys(this.ListNotDefineApp[0]);
+      }
+      this.TEST1.push(...initiallyInListDefineApp)
+      this.TEST = this.TEST.filter(item => !selectedItems.includes(item));
+    },
+    toggleSelect(item) {
+    item.isSelected = !item.isSelected
+    },
+    updatePrivilege(value){
+      this.ListDefineApp.forEach(item =>{
+        if(item.isSelected){
+          item.PRIVILEGE = value
+        }
+      })
+    },
+    clearForm() {
+      this.showFormTableAndSave = false;
+      this.LISTINPUTEMP = "";
+      this.ListDefineApp = [];
+      this.ListDefineAppHeader = [];
+      this.ListNotDefineApp = [];
+      this.ListNotDefineAppHeader = [];
+      this.selectListDefineApp = [];
+      this.selectListNotDefineApp = [];
+      this.picked = "2"
+      this.model.EMP_NO_NAME = '';
+      this.model.EMP_COPYNOTDF = '';
+      this.model.EMP_COPYDF = '';
+      this.LISTEMP = [];
+      this.LISTGROUPDF = [];
+      this.LISTGROUPNOTDF = [];
+      this.TEST = [];
+      this.TEST1 = []
+    },
+    clearTable() {
+      this.LISTINPUTEMP = "";
+      this.value = false;
+      this.valueInput = false;
+      this.ListDefineApp = [];
+      this.ListDefineAppHeader = [];
+      this.ListNotDefineApp = [];
+      this.ListNotDefineAppHeader = [];
+      this.selectListDefineApp = [];
+      this.selectListNotDefineApp = [];
+      this.model.EMP_COPYDF = "";
+      this.model.EMP_COPYNOTDF = "";
+      this.model.EMP_NO_NAME = "";
+      this.showFormTableAndSave = false;
+      this.picked = "2"
+      this.TEST = [];
+      this.TEST1 = []
+    },
+    ClearDefApp() {
+      this.showFormTableAndSave = false;
+      this.value = false;
+      this.LISTINPUTEMP = "";
+      this.ListDefineApp = [];
+      this.ListDefineAppHeader = [];
+      this.ListNotDefineApp = [];
+      this.ListNotDefineAppHeader = [];
+      this.selectListDefineApp = [];
+      this.selectListNotDefineApp = [];
+      this.picked = "2"
+      this.model.EMP_NO_NAME = '';
+      this.model.EMP_COPYNOTDF = '';
+      this.model.EMP_COPYDF = '';
+      this.LISTEMP = [];
+      this.LISTGROUPDF = [];
+      this.LISTGROUPNOTDF = [];
+      this.TEST = [];
+      this.TEST1 = []
+    },
+    BackToParent() {
+      this.$router.push({ path: "/Home/ConfigApp" })
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -602,9 +708,9 @@ export default {
 .div-config-name {
   margin-left: 20px;
   line-height: 50px;
-  span {
-    font-weight: 555;
-  }
+  // span {
+  //   font-weight: 555;
+  // }
 }
 .div-back {
   float: left;
@@ -627,31 +733,48 @@ export default {
 
 .menu {
   display: grid;
-  grid-template-columns: 150px 150px;
+  grid-template-columns: 150px 150px 150px;
   grid-template-rows: 50px;
   overflow: hidden;
   text-align: center;
   cursor: pointer;
-  font-weight: 555;
-  width: 300px;
+  font-weight: 400;
+  font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+  width: 450px;
   border: 1px solid rgb(82, 78, 78);
   border-radius: 5px;
+
   #Config7 {
     grid-column: 1 / 2;
-    background-color: #f1f1f1;
+    background-color: #fff;
     transition: 0.3s;
     padding-top: 10px;
+    color: #333;
     &:hover{
       color: #fff;
       background-color: #9c9c9c;
     }
-   }
-  #Privilege{
+  }
+  #Privilege {
     color: #333;
     grid-column: 2 / 3;
     background-color: #9c9c9c;
     transition: 0.3s;
     padding-top: 10px;
+  }
+  #Privilege.hovered {
+    background-color: #fff;
+  }
+  #Ams_Privilege {
+    grid-column: 3 / 4;
+    background-color: #fff;
+    transition: 0.3s;
+    padding-top: 10px;
+    color: #333;
+    &:hover{
+      color: #fff;
+      background-color: #9c9c9c;
+    }
   }
 }
   #datalistEmp{
@@ -681,11 +804,22 @@ export default {
       border-radius: 5px;
     }
   }
+  .copy-List-EmpDf{
+    button{
+      border: 1px solid #fff;
+      border-radius: 5px;
+      background-color:rgb(172, 250, 56);
+      &:hover{
+        background-color: rgb(0, 128, 0);
+        transition: 0.3s
+      }
+    }
+  }
 #grid-container{
   display: grid;
   margin-top: 5px;
   grid-template-columns: 40% 10% 40% 10%;
-  grid-template-rows: 100px 40px 140px 140px 140px;
+  grid-template-rows: 80px 40px 140px 140px 140px;
   height: auto;
   width: auto;
   overflow: auto;
@@ -754,7 +888,7 @@ export default {
 .moveAndSaveData{
   grid-row-start: 4;
   grid-row-end: 5;
-  .notDefineButton {
+  .moveNotDefineButton {
     height: 40px;
     width: 45px;
     border-radius: 5px;
@@ -763,7 +897,7 @@ export default {
       background-color: rgb(0, 128, 0);
     }
   }
-  .defineButton{
+  .moveDefineButton{
     height: 40px;
     width: 45px;
     border-radius: 5px;
@@ -772,8 +906,9 @@ export default {
       background-color: rgb(0, 128, 0);
     }
   }
+  
   .saveData{
-    background-color:greenyellow;
+    background-color:rgb(172, 250, 56);
     border-radius: 5px;
     border: 47px;
     height: 35px;
@@ -781,14 +916,16 @@ export default {
     font-size: 20px;
     &:hover{
       background-color: rgb(0, 128, 0);
+      transition: 0.3s;
     }
   }
+
 }
 .tableDefineApp {
   margin-top: 0px;
   overflow-y: auto;
   height: 400px;
-  width: auto;
+  min-width: 300px;
   grid-row-start: 3;
   grid-row-end: 6;
   thead {

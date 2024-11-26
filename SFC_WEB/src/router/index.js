@@ -14,6 +14,11 @@ const routes = [{
                 import('../views/Applications.vue')
         },
         {
+            path: '/Home/Qualcomm_Aplication',
+            component: () =>
+                import('../views/Qualcomm_Aplication.vue')
+        },
+        {
         path: '/Home/QM',
         component: () =>
             import('../views/QM.vue')
@@ -206,11 +211,23 @@ const routes = [{
         component: () =>
             import('../components/ConfigComponents/Config6.vue'),
     },
+    // config7
     {
         path: '/Home/ConfigApp/Config7',
         component: () =>
             import('../components/ConfigComponents/Config7.vue'),
     },
+    {
+        path: '/Home/ConfigApp/Privilege',
+        component: () =>
+            import('../components/ConfigComponents/Privilege.vue'),
+    },
+    {
+        path: '/Home/ConfigApp/Ams_Privilege',
+        component: () =>
+            import('../components/ConfigComponents/Ams_Privilege.vue'),
+    },
+
     {
         path: '/Home/ConfigApp/Config8',
         component: () =>
@@ -431,11 +448,6 @@ const routes = [{
         path: '/Home/PQE_TELIT/LABEL_MSL',
         component: () =>
             import('../components/ConfigComponents/ConfirmLabel_MSL.vue'),
-    }, 
-    {
-        path: '/Home/ConfigApp/Privilege',
-        component: () =>
-            import('../components/ConfigComponents/Privilege.vue'),
     },
     {
         path: '/Home/UploadData',
@@ -455,7 +467,13 @@ const routes = [{
         component: () =>
             import('../views/ImportExcel.vue'),
     },
-    ]
+    // Quanlcomm model
+    {
+        path: '/Home/ConfigApp/QASN_IN',
+        component: () =>
+            import('../components/QualcommApps/QASN_IN.vue'),
+    }
+]
 },
 {
     path: '/Login',

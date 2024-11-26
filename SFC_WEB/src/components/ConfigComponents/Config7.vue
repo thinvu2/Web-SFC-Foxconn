@@ -9,9 +9,32 @@
             </div>
         </div>
       <div class="menu">
-          <router-link to="/Home/ConfigApp/Config7" id="Config7" class="tabcontent">EMPLOYEE</router-link>
-          <router-link to="/Home/ConfigApp/Privilege" id="Privilege" class="tabcontent">PRIVILEGE</router-link>
-       </div>
+        <router-link 
+          to="/Home/ConfigApp/Config7" 
+          id="Config7"
+          :class = "{ 'hovered' : isHovered }"
+          >
+          EMPLOYEE
+        </router-link>
+
+        <router-link 
+          to="/Home/ConfigApp/Privilege" 
+          id="Privilege"
+          @mouseover = "isHovered = true"
+          @mouseleave = "isHovered = false"
+          >
+          PRIVILEGE
+        </router-link>
+
+        <router-link 
+          to="/Home/ConfigApp/Ams_Privilege" 
+          id="Ams_Privilege"
+          @mouseover = "isHovered = true"
+          @mouseleave = "isHovered = false"
+          >
+          AMS_PRIVILEGE
+        </router-link>
+      </div>
         <div class="div-searchbox row">
             <div class="div-searchbox-content">
                 <input
@@ -142,7 +165,7 @@
                             >
                         </div>
                         <div class="col-md-4 mb-4">
-                            <label for="validationDefault03">DIVISION</label>
+                            <label for="validationDefault03">CLASS_NAME</label>
                             <input type="text"
                                 class="form-control form-control-sm text-element"
                                 id="validationDefault03"
@@ -199,14 +222,11 @@
     </div>
 </template>
 <script>
-//import $ from 'jquery';
 import Repository from "../../services/Repository";
-
 export default {
-  // components: {
-  // },
   data() {
     return {
+      isHovered: false,
       textContent: "",
       searchText: "",
       selectedItem: null,
@@ -240,9 +260,7 @@ export default {
       }
     });
   },
-  computed: {
-    
-  },
+ // computed: {},
   mounted() {
     this.CheckPrivilege();
   },
@@ -256,11 +274,11 @@ export default {
     },
     async GetGroupConfig7( listType, modalType) {
       
-      var payload = {
+      let payload = {
         database_name: localStorage.databaseName,
         value: this.textSearch,
       };
-      var { data } = await Repository.getRepo("GetGroupConfig7", payload);
+      let { data } = await Repository.getRepo("GetGroupConfig7", payload);
       this.$store.commit(listType, data.data);
       this.$store.commit(modalType);
     },
@@ -281,8 +299,8 @@ export default {
           this.$swal("", "Không được bỏ trống", "error");
         }
       } else {   
-        var titleValue = "";
-        var textValue = "";
+        let titleValue = "";
+        let textValue = "";
         if (localStorage.language == "En") {
           titleValue = "Are you sure edit?";
           textValue = "Once OK, data will be updated!";
@@ -299,21 +317,20 @@ export default {
           dangerMode: true,
         }).then(async (willDelete) => {
           if (willDelete.isConfirmed == false) return;
-            var payload = {
-          database_name: localStorage.databaseName,
-          ID: this.model.ID,
-          EMP: localStorage.username,
-          EMP_NO: this.model.EMP_NO,
-          EMP_NAME: this.model.EMP_NAME,
-          EMP_PASS:this.model.EMP_PASS,
-          CLASS_NAME:this.model.CLASS_NAME,
-          QuitDate:this.dateFrom,
-          listGroup:this.$store.state.listSelectDualModel,
-        };
-          var { data } = await Repository.getRepo(
-            "InsertOrUpdateConfig7",
-            payload
-          );
+          let payload = {
+            database_name: localStorage.databaseName,
+            ID: this.model.ID,
+            EMP: localStorage.username,
+            EMP_NO: this.model.EMP_NO,
+            EMP_NAME: this.model.EMP_NAME,
+            EMP_PASS:this.model.EMP_PASS,
+            CLASS_NAME:this.model.CLASS_NAME,
+            QuitDate:this.dateFrom,
+            listGroup:this.$store.state.listSelectDualModel,
+          };
+          console.log("payload: ", payload);
+          
+          let { data } = await Repository.getRepo("InsertOrUpdateConfig7", payload);
           if (data.result == "privilege") {
             if (localStorage.language == "En") {
               this.$swal("", "Not privilege", "error");
@@ -335,8 +352,8 @@ export default {
       }
     },
     DeleteRecord(item) {
-      var titleValue = "";
-      var textValue = "";
+      let titleValue = "";
+      let textValue = "";
       if (localStorage.language == "En") {
         titleValue = "Are you sure?";
         textValue =
@@ -354,13 +371,13 @@ export default {
         dangerMode: true,
       }).then(async (willDelete) => {
         if (willDelete.isConfirmed == false) return;
-        var payload = {
+        let payload = {
           database_name: localStorage.databaseName,
           ID: item.ID,
           EMP: localStorage.username,
           EMP_NO: item.EMP_NO,
         };
-        var { data } = await Repository.getRepo("DeleteConfig7", payload);
+        let { data } = await Repository.getRepo("DeleteConfig7", payload);
         if (data.result == "ok") {
           await this.LoadComponent();
           if (localStorage.language == "En") {
@@ -392,6 +409,7 @@ export default {
       this.valueSearch="";
     },
     ShowDetail(detail) {
+      console.log("detail: ", detail);
       this.ClearForm();
       this.model.ID = detail.ID;
       this.model.EMP_NO=detail.EMP_NO;
@@ -403,11 +421,11 @@ export default {
       
     },
     async GetGroupOfEmNo(emp_no){
-        var payload={
+        let payload={
             database_name: localStorage.databaseName,
             EMP_NO:emp_no,
         }
-        var{data}=await Repository.getRepo("GetGroupConfig7",payload);
+        let{data}=await Repository.getRepo("GetGroupConfig7",payload);
         
         this.$store.state.listSelectDualModel=data.data;
         if(typeof this.$store.state.listSelectDualModel=="undefined"){
@@ -418,12 +436,12 @@ export default {
       this.$router.push({ path: "/Home/ConfigApp" });
     },
     async CheckPrivilege() {
-      var payload = {
+      let payload = {
         database_name: localStorage.databaseName,
         emp_no: localStorage.username,
         fun: "EMPLOYEE",
       };
-      var { data } = await Repository.getRepo("CheckConfigPrivilege", payload);
+      let { data } = await Repository.getRepo("CheckConfigPrivilege", payload);
       if (data.result != "ok") {
         this.$router.push({ path: "/Home/ConfigApp" });
       } else {
@@ -433,10 +451,10 @@ export default {
     async LoadComponent() {
       this.valueSearch = "";
       this.$store.state.listSelectDualModel=[];
-      var payload = {
+      let payload = {
         database_name: localStorage.databaseName,
       };
-      var { data } = await Repository.getRepo("GetConfig7", payload);
+      let { data } = await Repository.getRepo("GetConfig7", payload);
       this.DataTable = [];
       this.DataTable = data.data;
       if (typeof this.DataTable != "undefined") {
@@ -452,11 +470,11 @@ export default {
       }
     },
     async QuerySearch() {
-      var payload = {
+      let payload = {
         database_name: localStorage.databaseName,
         EMP_NO: this.valueSearch,
       };
-      var { data } = await Repository.getRepo("GetConfig7", payload);
+      let { data } = await Repository.getRepo("GetConfig7", payload);
       this.DataTable = [];
       this.DataTable = data.data;
       if (typeof this.DataTable != "undefined") {
@@ -687,30 +705,50 @@ export default {
   color: rgb(0, 0, 0);
   cursor: pointer;
 }
+
 .menu {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 50px;
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  padding: 10px;
-  width: 25%;
-  font-size: 16px;
-
+  text-align: center;
+  cursor: pointer;
+  font-weight: 555;
+  width: 450px;
+  border: 1px solid rgb(82, 78, 78);
+  border-radius: 5px;
+  font-size: 18px;
+  #Config7 {
+    color: #333;
+    grid-column: 1 / 2;
+    background-color: #9c9c9c;
+    transition: 0.3s;
+    padding-top: 10px;
+   }
+  #Config7.hovered {
+    background-color: #fff;
+  }
+  #Privilege {
+    color: #333;
+    grid-column: 2 / 3;
+    background-color: #fff;
+    transition: 0.3s;
+    padding-top: 10px;
+    &:hover {
+    color: #fff;
+    background-color: #9c9c9c;
+    }
+  }
+  #Ams_Privilege {
+    color: #333;
+    grid-column: 3 / 4;
+    background-color: #fff;
+    transition: 0.3s;
+    padding-top: 10px;
+    &:hover {
+    color: #fff;
+    background-color: #9c9c9c;
+    }
+  }
 }
-// .menu button {
-//   background-color: inherit;
-//   float: left;
-//   border: none;
-//   outline: none;
-//   cursor: pointer;
-//   padding: 14px 16px;
-//   transition: 0.3s;
-//   font-size: 17px;
-
-// }
-// .menu button:hover {
-//   background-color: #ddd;
-// }
-// .menu button.active {
-//   background-color: #ccc;
-// }
 </style>

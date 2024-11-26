@@ -6,9 +6,7 @@
           justify-content-between
           text-center
           container-p-x
-          pb-3
-        "
-      >
+          pb-3">
         <div class="pt-3">
           <span class="footer-text font-weight-semibold">{{
             $store.state.language == "En"
@@ -23,8 +21,7 @@
               @change="changeLanguage(language)"
               class="select-language-home"
               name=""
-              id=""
-            >
+              id="">
               <option>En</option>
               <option>Vi</option>
             </select>

@@ -136,6 +136,6 @@ var dataApplications = [
         Route: "/Home/ImportExcel",
         Image: "/assets/img/excelImport.png",
         Style: "background-color: rgb(24 112 65); border: 3px solid rgb(24 112 65); box-shadow: 2px 2px 2px #919191;border-radius: 8px; "
-    },
+    }
 ];
 export default dataApplications;

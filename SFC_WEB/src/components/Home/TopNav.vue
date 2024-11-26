@@ -29,14 +29,11 @@
                 class="dropdown-menu dropdown-usermenu pull-right"
                 aria-labelledby="navbarDropdown"
               >
-                <a
+                <!-- <a
                   class="dropdown-item"
                   href="javascript:;"
                   @click="ChangeLanguage()"
                 >
-                  <!-- {{
-                  $store.state.language == "En" ? "Applications" : "Ứng dụng"
-                }} -->
                   <template v-if="$store.state.language == 'En'">
                     <img
                       src="../../assets/img/vietnam_96px.png"
@@ -53,15 +50,15 @@
                     />
                     <span>English</span>
                   </template>
-                </a>
+                </a> -->
                 <!-- <a class="dropdown-item" href="javascript:;">Help</a> -->
-                <a
+                <!-- <a
                   href="javascript:void(0)"
                   @click="GetSOP()"                
                   class="dropdown-item"
                   ><i class="text-primary fa fa-file pull-right"></i>
-                  {{ $store.state.language == "En" ? "SOP" : "SOP" }}</a
-                >
+                  {{ $store.state.language == "En" ? "SOP" : "SOP" }}
+                </a> -->
                 <a
                   class="dropdown-item"
                   href="javascript:void(0)"
