@@ -7,7 +7,6 @@ namespace SN_API.Models.Config
 {
     public class Config7Element
     {
-        public string emp { get; set; }
         public string ID { get; set; }
         public string database_name { get; set; }
         public string EMP_NO { get; set; }
@@ -23,6 +22,7 @@ namespace SN_API.Models.Config
         public string EMP_NO_NAME { get; set; }
         public string EMP_COPYDF { get; set; }
         public string EMP_COPYNOTDF { get; set; }
+        public string EMP { get; set; }
         public string SPRG_NAME { get; set; }
         public string DPRG_NAME { get; set; }
         public string EMP_PWD_PASS { get; set; }
@@ -32,16 +32,12 @@ namespace SN_API.Models.Config
         public string value { get; set; }
         public string LISTINPUTEMP { get; set; }
         public string valueInput { get; set; }
-        //public string EMPPVI { get; set; }
-        // public string listInputEmpString { get; set; }
         public List<Group> LISTEMP;
         public List<Group> LISTGROUPDF;
         public List<Group> LISTGROUPNOTDF;
-        //public List<ListGroupEmp> listInputEmp { get; set; }
-        //public class ListGroupEmp
-        //{
-        //    public string inputMultiple { get; set; }
-        //}
+        public List<Group> ListDataAms;
+        public List<Group> listGroup;
+  
     }
     public class Group
     {
@@ -53,6 +49,8 @@ namespace SN_API.Models.Config
         public string PRIVILEGE { get; set; }
         public string EMP_NO { get; set; }
         public string EMP { get; set; }
+        public string AP_GROUP { get; set; }
+        public string ROW_ID { get; set; }
 
     }
 

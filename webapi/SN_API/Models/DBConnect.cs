@@ -9,7 +9,19 @@ using System.Web;
 namespace SN_API.Models
 {
     public class DBConnect
-    {        
+    {
+        public static string GetConnectionString(string dbName)
+        {
+            var connectionStrings = new GetString().Get();
+            if(connectionStrings.ContainsKey(dbName))
+            {
+                return connectionStrings[dbName];
+            }
+            else
+            {
+                throw new Exception("connection string not found for database: " + dbName);
+            }
+        }
         public static void ExecuteNoneQuery(string queryString, string dbName)
         {
             var conn = new DbContext().Connect(dbName);           
@@ -36,7 +48,7 @@ namespace SN_API.Models
             }
             conn.Close();
             return dt;
-        }        
+        }
         public static void BuildCommand(OracleCommand comm, params OracleParameter[] parameter)
         {
             if (parameter != null && parameter.Length > 0)

@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 using System.Text;
 using System.Data;
 using SN_API.Models.Config;
-using System.Globalization;
 using System.Text.RegularExpressions;
 using System.Data.SqlClient;
-using Oracle.ManagedDataAccess.Client;
 using SN_API.Services;
+using Oracle.ManagedDataAccess.Client;
+using System.Web;
 
 namespace SN_API.Controllers.Config
 {
@@ -29,7 +29,7 @@ namespace SN_API.Controllers.Config
             DataTable dt = new DataTable();
             if (string.IsNullOrEmpty(model.EMP_NO))
             {
-                getdataemp = $"select ROWIDTOCHAR(ROWID) ID,A.* from SFIS1.C_EMP_DESC_T A where (A.EMAIL not in ('OFFWORK','LOCK') or A.email is null)";
+                getdataemp = $"select ROWIDTOCHAR(ROWID) ID,A.* from SFIS1.C_EMP_DESC_T A where (A.EMAIL not in ('OFFWORK','LOCK') or A.email is null)  and rownum <50";
             }
             else
             {
@@ -80,7 +80,7 @@ namespace SN_API.Controllers.Config
         {
             try
             {
-                string strPrivilege = $" SELECT * FROM  sfis1.C_PRIVILEGE  where PRG_NAME='CONFIG' AND FUN = 'EMPLOYEE_DELETE' AND EMP='{model.emp}'";
+                string strPrivilege = $" SELECT * FROM  sfis1.C_PRIVILEGE  where PRG_NAME='CONFIG' AND FUN = 'EMPLOYEE_DELETE' AND EMP='{model.EMP}'";
                 if (DBConnect.GetData(strPrivilege, model.database_name).Rows.Count <= 0)
                 {
                     return Request.CreateResponse(HttpStatusCode.OK, new { result = "privilege" });
@@ -101,8 +101,6 @@ namespace SN_API.Controllers.Config
         {
             try
             {
-                //string check_Privilege = $"SELECT * FROM  sfis1.C_PRIVILEGE  where PRG_NAME='CONFIG'  AND( FUN = 'EMPLOYEE_ADD' OR FUN='EMPLOYEE_EDIT') AND EMP='{model.emp}'";
-                //DataTable dt_check_privilege = DBConnect.GetData(check_Privilege, model.database_name);
                 string check_privilege = string.Empty;
                 string strInserUpdate = string.Empty;
                 string actionString = string.Empty;
@@ -116,10 +114,9 @@ namespace SN_API.Controllers.Config
                 var pattern = new Regex(@"^(?=.*[0-9A-Za-z])(?=.*\d)(?=.*[!@#$%^&*()_.+])[0-9A-Za-z\d][0-9A-Za-z\d!@#$%^&*()._+]{7,15}$");
                 string check_data = $"SELECT * FROM SFIS1.C_EMP_DESC_T WHERE EMP_NO='{model.EMP_NO}' ";
                 DataTable dt_check_emp = DBConnect.GetData(check_data, model.database_name);
-                DateTime datetime = new DateTime();
                 if (dt_check_emp.Rows.Count == 0)
                 {
-                    check_privilege = $"SELECT * FROM  sfis1.C_PRIVILEGE  where PRG_NAME='CONFIG' and    FUN='EMPLOYEE_ADD' AND EMP='{model.emp}' ";
+                    check_privilege = $"SELECT * FROM  sfis1.C_PRIVILEGE  where PRG_NAME='CONFIG' and    FUN='EMPLOYEE_ADD' AND EMP='{model.EMP}' ";
                     dt_check_prive = DBConnect.GetData(check_privilege, model.database_name);
                     if (dt_check_prive.Rows.Count <= 0)
                     {
@@ -142,7 +139,7 @@ namespace SN_API.Controllers.Config
                 }
                 else
                 {
-                    check_privilege = $"SELECT * FROM  sfis1.C_PRIVILEGE  where PRG_NAME='CONFIG' and    FUN='EMPLOYEE_EDIT' AND EMP='{model.emp}' ";
+                    check_privilege = $"SELECT * FROM  sfis1.C_PRIVILEGE  where PRG_NAME='CONFIG' and    FUN='EMPLOYEE_EDIT' AND EMP='{model.EMP}' ";
                     dt_check_prive = DBConnect.GetData(check_privilege, model.database_name);
                     if (dt_check_prive.Rows.Count <= 0)
                     {
@@ -159,27 +156,27 @@ namespace SN_API.Controllers.Config
                     sb.Append(" WHERE ");
                     sb.Append($" ROWID='{model.ID}'");
 
-                    string delete_group = $"DELETE SFIS1.C_EMP_2_GROUP_T where  EMP_NO='{model.EMP_NO}' ";
-                    DBConnect.ExecuteNoneQuery(delete_group, model.database_name);
+                    //string delete_group = $"DELETE SFIS1.C_EMP_2_GROUP_T where  EMP_NO='{model.EMP_NO}' ";
+                    //DBConnect.ExecuteNoneQuery(delete_group, model.database_name);
                 }
                 strInserUpdate = sb.ToString();
                 sbLog.Append(" INSERT INTO sfism4.r_system_log_t (EMP_NO,PRG_NAME,ACTION_TYPE,ACTION_DESC) ");
                 sbLog.Append(" VALUES ( ");
-                sbLog.Append($" '{model.emp}', ");
+                sbLog.Append($" '{model.EMP}', ");
                 sbLog.Append($" 'CONFIG', ");
                 sbLog.Append($" '{actionString}', ");
                 sbLog.Append($"  'Config7 EMPLOYEE: {model.EMP_NO},;IP:{AuthorizationController.UserIP()}; TABLE: SFIS1.C_EMP_DESC_T' ");
                 sbLog.Append(" ) ");
                 string strInsertLog = sbLog.ToString();
-                DBConnect.ExecuteNoneQuery(strInserUpdate, model.database_name);  //Execute insert update config 6
-                DBConnect.ExecuteNoneQuery(strInsertLog, model.database_name);  //Execute insert log
-                if (model.LISTGROUPDF != null)
+                DBConnect.ExecuteNoneQuery(strInserUpdate, model.database_name);
+                DBConnect.ExecuteNoneQuery(strInsertLog, model.database_name);
+                if (model.listGroup != null)
                 {
-                    if (model.LISTGROUPDF.Count > 0)
+                    if (model.listGroup.Count > 0)
                     {
-                        for (int i = 0; i < model.LISTGROUPDF.Count; i++)
+                        for (int i = 0; i < model.listGroup.Count; i++)
                         {
-                            InsertGroupForUser(model.EMP_NO, model.LISTGROUPDF[i].VALUE, model.database_name);
+                            InsertGroupForUser(model.EMP_NO, model.listGroup[i].VALUE, model.database_name);
                         }
                     }
                 }
@@ -332,14 +329,14 @@ namespace SN_API.Controllers.Config
         }
         #region Privilege
         [System.Web.Http.Route("getEmpNo")]
-        [System.Web.Http.HttpPost]
-        public async Task<HttpResponseMessage> getEmpNo(Config7Element model)
+        [System.Web.Http.HttpGet]
+        public async Task<HttpResponseMessage> getEmpNo(string database_name)
         {
             try
             {
                 string getPrivilege = "";
                 getPrivilege = $"SELECT EMP_NO ||'_'|| EMP_NAME AS EMP_NO_NAME FROM SFIS1.C_EMP_DESC_T";
-                DataTable dtPrivilege = DBConnect.GetData(getPrivilege, model.database_name);
+                DataTable dtPrivilege = DBConnect.GetData(getPrivilege, database_name);
                 if (dtPrivilege.Rows.Count == 0)
                 {
                     return Request.CreateResponse(HttpStatusCode.OK, new { result = "fail" });
@@ -360,14 +357,14 @@ namespace SN_API.Controllers.Config
         }
         //EMP-CopyDF
         [System.Web.Http.Route("getEmpCopyDf")]
-        [System.Web.Http.HttpPost]
-        public async Task<HttpResponseMessage> getEmpCopyDf(Config7Element model)
+        [System.Web.Http.HttpGet]
+        public async Task<HttpResponseMessage> getEmpCopyDf(string database_name)
         {
             try
             {
                 string getPrivilege = "";
                 getPrivilege = $"SELECT EMP_NO ||'_'|| EMP_NAME AS EMP_COPYDF FROM SFIS1.C_EMP_DESC_T";
-                DataTable dtPrivilege = DBConnect.GetData(getPrivilege, model.database_name);
+                DataTable dtPrivilege = DBConnect.GetData(getPrivilege, database_name);
                 if (dtPrivilege.Rows.Count == 0)
                 {
                     return Request.CreateResponse(HttpStatusCode.OK, new { result = "fail" });
@@ -388,14 +385,14 @@ namespace SN_API.Controllers.Config
         }
         //EMP-CopyNotDf
         [System.Web.Http.Route("getEmpCopyNotDf")]
-        [System.Web.Http.HttpPost]
-        public async Task<HttpResponseMessage> getEmpCopyNotDf(Config7Element model)
+        [System.Web.Http.HttpGet]
+        public async Task<HttpResponseMessage> getEmpCopyNotDf(string database_name)
         {
             try
             {
                 string getPrivilege = "";
                 getPrivilege = $"SELECT EMP_NO ||'_'|| EMP_NAME AS EMP_COPYNOTDF FROM SFIS1.C_EMP_DESC_T";
-                DataTable dtPrivilege = DBConnect.GetData(getPrivilege, model.database_name);
+                DataTable dtPrivilege = DBConnect.GetData(getPrivilege, database_name);
                 if (dtPrivilege.Rows.Count == 0)
                 {
                     return Request.CreateResponse(HttpStatusCode.OK, new { result = "fail" });
@@ -416,15 +413,16 @@ namespace SN_API.Controllers.Config
         }
         //Emp-list
         [System.Web.Http.Route("selectMultipleEmp")]
-        [System.Web.Http.HttpPost]
-        public async Task<HttpResponseMessage> selectMultipleEmp(Config7Element model)
+        [System.Web.Http.HttpGet]
+        public async Task<HttpResponseMessage> selectMultipleEmp(string database_name, string LISTINPUTEMP)
         {
             try
             {
+                LISTINPUTEMP = HttpUtility.UrlDecode(LISTINPUTEMP);
                 string getPrivilege = "";
                 string inputValue = "";
-                var listInputEmp = model.LISTINPUTEMP?.Split(new[] { '\n' }, StringSplitOptions.RemoveEmptyEntries).ToList();
-   
+                var listInputEmp = LISTINPUTEMP?.Split(new[] { '\n' }, StringSplitOptions.RemoveEmptyEntries).ToList();
+
                 if (listInputEmp == null || listInputEmp.Count == 0)
                 {
                     return Request.CreateResponse(HttpStatusCode.OK, new { result = "no data" });
@@ -440,18 +438,18 @@ namespace SN_API.Controllers.Config
                         inputValue += ",'" + listInputEmp[i] + "'";
                     }
                 }
-                getPrivilege = $"SELECT PRG_NAME ,FUN, PASSW, PRIVILEGE, EMP FROM SFIS1.C_PRIVILEGE WHERE EMP IN({inputValue}) ORDER BY EMP";
+                getPrivilege = $"SELECT EMP, PRG_NAME ,FUN, PASSW, PRIVILEGE, ROWIDTOCHAR(A.ROWID) as ROW_ID FROM SFIS1.C_PRIVILEGE a WHERE EMP IN({inputValue}) ORDER BY EMP";
                 string getEmp = $"SELECT distinct EMP FROM SFIS1.C_PRIVILEGE WHERE EMP IN({inputValue})";
 
-                DataTable dtPrivilege = DBConnect.GetData(getPrivilege, model.database_name);
-                DataTable dtgetEmp = DBConnect.GetData(getEmp, model.database_name);
+                DataTable dtPrivilege = DBConnect.GetData(getPrivilege, database_name);
+                DataTable dtgetEmp = DBConnect.GetData(getEmp, database_name);
                 if (dtPrivilege.Rows.Count == 0)
                 {
                     return Request.CreateResponse(HttpStatusCode.OK, new { result = "fail" });
                 }
                 else
                 {
-                    return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtPrivilege,  EMP = dtgetEmp });
+                    return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtPrivilege, EMP = dtgetEmp });
                 }
             }
             catch (SqlException ex)
@@ -465,23 +463,30 @@ namespace SN_API.Controllers.Config
         }
 
         [System.Web.Http.Route("selectGetNotDefineApp")]
-        [System.Web.Http.HttpPost]
-        public async Task<HttpResponseMessage> selectGetNotDefineApp(Config7Element model)
+        [System.Web.Http.HttpGet]
+        public async Task<HttpResponseMessage> selectGetNotDefineApp(string database_name, string EMP_COPYNOTDF, string value)
         {
             try
             {
                 string getPrivilege = "";
-                if (model.value == "false")
+                if (value == "false")
                 {
-                    getPrivilege = $"select 'ALL'SPRG_NAME from dual union SELECT distinct PRG_NAME as SPRG_NAME  FROM SFIS1.C_PRIVILEGE where emp in(select regexp_substr('{model.EMP_COPYNOTDF}','^[^_]+') as emp from dual) order by SPRG_NAME";
+                    getPrivilege = $"select 'ALL'SPRG_NAME from dual union SELECT distinct PRG_NAME as SPRG_NAME  FROM SFIS1.C_PRIVILEGE where emp in(select regexp_substr('{EMP_COPYNOTDF}','^[^_]+') as emp from dual) order by SPRG_NAME";
                 }
                 else
                 {
                     getPrivilege = $"select 'ALL'SPRG_NAME from dual union SELECT distinct PRG_NAME as SPRG_NAME FROM (SELECT distinct PRG_NAME FROM SFIS1.C_PRIVILEGE) order by SPRG_NAME";
 
                 }
-                DataTable dtPrivilege = DBConnect.GetData(getPrivilege, model.database_name);
-                return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtPrivilege });
+                DataTable dtPrivilege = DBConnect.GetData(getPrivilege, database_name);
+                if (dtPrivilege.Rows.Count == 0)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, new { result = "fail" });
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtPrivilege });
+                }
             }
             catch (SqlException ex)
             {
@@ -493,16 +498,17 @@ namespace SN_API.Controllers.Config
             }
         }
         [System.Web.Http.Route("selectGetDefineApp")]
-        [System.Web.Http.HttpPost]
-        public async Task<HttpResponseMessage> selectGetDefineApp(Config7Element model)
+        [System.Web.Http.HttpGet]
+        public async Task<HttpResponseMessage> selectGetDefineApp(string database_name, string EMP_NO_NAME, string EMP_COPYDF, string value, string valueInput, string LISTINPUTEMP)
         {
             try
             {
                 string getPrivilege = "";
-                if (model.valueInput == "true")
+                if (valueInput == "true" && value == "false")
                 {
+                    LISTINPUTEMP = HttpUtility.UrlDecode(LISTINPUTEMP);
                     string inputValue = "";
-                    var listInputEmp = model.LISTINPUTEMP?.Split(new[] { '\n' }, StringSplitOptions.RemoveEmptyEntries).ToList();
+                    var listInputEmp = LISTINPUTEMP?.Split(new[] { '\n' }, StringSplitOptions.RemoveEmptyEntries).ToList();
 
                     if (listInputEmp == null || listInputEmp.Count == 0)
                     {
@@ -521,15 +527,15 @@ namespace SN_API.Controllers.Config
                     }
                     getPrivilege = $"select 'ALL'DPRG_NAME from dual union SELECT distinct PRG_NAME as DPRG_NAME FROM SFIS1.C_PRIVILEGE WHERE EMP in ({inputValue}) order by DPRG_NAME";
                 }
-                else if (model.value == "false")
+                else if (value == "false" && valueInput == "false")
                 {
-                    getPrivilege = $"select 'ALL'DPRG_NAME from dual union SELECT distinct PRG_NAME as DPRG_NAME FROM SFIS1.C_PRIVILEGE WHERE EMP in(select regexp_substr ('{model.EMP_COPYDF}','^[^_]+') from dual) order by DPRG_NAME";
+                    getPrivilege = $"select 'ALL'DPRG_NAME from dual union SELECT distinct PRG_NAME as DPRG_NAME FROM SFIS1.C_PRIVILEGE WHERE EMP in(select regexp_substr ('{EMP_COPYDF}','^[^_]+') from dual) order by DPRG_NAME";
                 }
                 else
                 {
-                    getPrivilege = $"select 'ALL'DPRG_NAME from dual union SELECT distinct PRG_NAME as DPRG_NAME FROM SFIS1.C_PRIVILEGE WHERE EMP in(select regexp_substr ('{model.EMP_NO_NAME}','^[^_]+') from dual) order by DPRG_NAME";
+                    getPrivilege = $"select 'ALL'DPRG_NAME from dual union SELECT distinct PRG_NAME as DPRG_NAME FROM SFIS1.C_PRIVILEGE WHERE EMP in(select regexp_substr ('{EMP_NO_NAME}','^[^_]+') from dual) order by DPRG_NAME";
                 }
-                DataTable dtPrivilege = DBConnect.GetData(getPrivilege, model.database_name);
+                DataTable dtPrivilege = DBConnect.GetData(getPrivilege, database_name);
                 return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtPrivilege });
             }
             catch (SqlException ex)
@@ -542,56 +548,58 @@ namespace SN_API.Controllers.Config
             }
         }
         [System.Web.Http.Route("getNotDefineApp")]
-        [System.Web.Http.HttpPost]
-        public async Task<HttpResponseMessage> getNotDefineApp(Config7Element model)
+        [System.Web.Http.HttpGet]
+        public async Task<HttpResponseMessage> getNotDefineApp(string database_name, string EMP_NO_NAME, string SPRG_NAME, string EMP_COPYNOTDF, string value)
         {
             try
             {
                 string getPrivilege = "";
-                if (model.value == "false")
+                if (value == "false")
                 {
-                    if (model.SPRG_NAME == "" || model.SPRG_NAME == "ALL" || model.SPRG_NAME == null)
+                    if (SPRG_NAME == "" || SPRG_NAME == "ALL" || SPRG_NAME == null)
                     {
-                        getPrivilege = $"SELECT distinct PRG_NAME,FUN, PASSW FROM SFIS1.C_PRIVILEGE WHERE EMP in(select regexp_substr ('{model.EMP_COPYNOTDF}','^[^_]+') from dual) order by prg_name";
+                        getPrivilege = $"SELECT distinct PRG_NAME,FUN, PASSW, PRIVILEGE FROM SFIS1.C_PRIVILEGE WHERE EMP in(select regexp_substr ('{EMP_COPYNOTDF}','^[^_]+') from dual) order by prg_name";
                     }
                     else
                     {
-                        getPrivilege = $"SELECT distinct PRG_NAME, FUN, PASSW FROM SFIS1.C_PRIVILEGE WHERE EMP in(select regexp_substr ('{model.EMP_COPYNOTDF}','^[^_]+') from dual) and PRG_NAME ='{model.SPRG_NAME}' order by prg_name";
+                        getPrivilege = $"SELECT distinct PRG_NAME, FUN, PASSW, PRIVILEGE FROM SFIS1.C_PRIVILEGE WHERE EMP in(select regexp_substr ('{EMP_COPYNOTDF}','^[^_]+') from dual) and PRG_NAME ='{SPRG_NAME}' order by prg_name";
                     }
                 }
                 else
                 {
-                    if (model.SPRG_NAME == "" || model.SPRG_NAME == "ALL" || model.SPRG_NAME == null)
+                    if (SPRG_NAME == "" || SPRG_NAME == "ALL" || SPRG_NAME == null)
                     {
-                        getPrivilege = $"SELECT PRG_NAME,  FUN, passw  FROM (SELECT distinct passw ,PRG_NAME, FUN FROM SFIS1.C_PRIVILEGE minus SELECT passw ,PRG_NAME, FUN FROM SFIS1.C_PRIVILEGE WHERE EMP in(select regexp_substr ('{model.EMP_NO_NAME}','^[^_]+') from dual)) order by prg_name";
+                        getPrivilege = $"SELECT PRG_NAME,  FUN, passw FROM (SELECT distinct passw ,PRG_NAME, FUN FROM SFIS1.C_PRIVILEGE minus SELECT passw ,PRG_NAME, FUN FROM SFIS1.C_PRIVILEGE a WHERE EMP in(select regexp_substr ('{EMP_NO_NAME}','^[^_]+') from dual)) order by prg_name";
                     }
                     else
                     {
-                        getPrivilege = $"SELECT PRG_NAME,  FUN, PASSW  FROM (SELECT distinct PRG_NAME,  FUN, PASSW FROM SFIS1.C_PRIVILEGE where PRG_NAME ='{model.SPRG_NAME}' minus SELECT PRG_NAME,  FUN, PASSW FROM SFIS1.C_PRIVILEGE WHERE EMP in(select regexp_substr ('{model.EMP_NO_NAME}','^[^_]+') from dual) and PRG_NAME ='{model.SPRG_NAME}') order by prg_name";
+                        getPrivilege = $"SELECT PRG_NAME, FUN, PASSW FROM (SELECT distinct PRG_NAME, FUN, PASSW FROM SFIS1.C_PRIVILEGE where PRG_NAME ='{SPRG_NAME}' minus SELECT PRG_NAME, FUN, PASSW FROM SFIS1.C_PRIVILEGE WHERE EMP in(select regexp_substr ('{EMP_NO_NAME}','^[^_]+') from dual) and PRG_NAME ='{SPRG_NAME}') order by prg_name";
                     }
                 }
-                DataTable dtPrivilege = DBConnect.GetData(getPrivilege, model.database_name);
+                DataTable dtPrivilege = DBConnect.GetData(getPrivilege, database_name);
                 return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtPrivilege });
-            } catch (SqlException ex)
+            }
+            catch (SqlException ex)
             {
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { error = "Database error", message = ex.Message });
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { error = "An error occurred", message = ex.Message });
             }
         }
         [System.Web.Http.Route("getDefineApp")]
-        [System.Web.Http.HttpPost]
-        public async Task<HttpResponseMessage> getDefineApp(Config7Element model)
+        [System.Web.Http.HttpGet]
+        public async Task<HttpResponseMessage> getDefineApp(string database_name, string EMP_NO_NAME, string DPRG_NAME, string PRIVILEGE, string EMP_COPYDF, string value, string valueInput, string LISTINPUTEMP)
         {
             try
             {
                 string getPrivilege = "";
-
-                if (model.valueInput == "true")
+                if (valueInput == "true" && value == "false")
                 {
+                    LISTINPUTEMP = HttpUtility.UrlDecode(LISTINPUTEMP);
                     string inputValue = "";
-                    var listInputEmp = model.LISTINPUTEMP?.Split(new[] { '\n' }, StringSplitOptions.RemoveEmptyEntries).ToList();
+                    var listInputEmp = LISTINPUTEMP?.Split(new[] { '\n' }, StringSplitOptions.RemoveEmptyEntries).ToList();
 
                     if (listInputEmp == null || listInputEmp.Count == 0)
                     {
@@ -609,44 +617,46 @@ namespace SN_API.Controllers.Config
                         }
                     }
 
-                    if (model.DPRG_NAME == "" || model.DPRG_NAME == "ALL" || model.DPRG_NAME == null)
+                    if (DPRG_NAME == "" || DPRG_NAME == "ALL" || DPRG_NAME == null)
                     {
-                        getPrivilege = $"select PRG_NAME ,FUN, PASSW, PRIVILEGE, EMP FROM SFIS1.C_PRIVILEGE where emp in ({inputValue}) order by PRG_NAME, PRIVILEGE, passw";
+                        getPrivilege = $"select EMP, PRG_NAME ,FUN, PASSW, PRIVILEGE FROM SFIS1.C_PRIVILEGE where emp in ({inputValue}) order by PRG_NAME, PRIVILEGE, passw";
                     }
                     else
                     {
-                        getPrivilege = $"SELECT PRG_NAME ,FUN, PASSW, PRIVILEGE, EMP FROM SFIS1.C_PRIVILEGE WHERE EMP IN ({inputValue}) AND PRG_NAME ='{model.DPRG_NAME}' ORDER BY PRG_NAME";
+                        getPrivilege = $"SELECT EMP, PRG_NAME ,FUN, PASSW, PRIVILEGE FROM SFIS1.C_PRIVILEGE WHERE EMP IN ({inputValue}) AND PRG_NAME ='{DPRG_NAME}' ORDER BY PRG_NAME";
                     }
                 }
-                else if (model.value == "false")
+                else if (value == "false" && valueInput == "false")
                 {
-                    if (model.DPRG_NAME == "" || model.DPRG_NAME == "ALL" || model.DPRG_NAME == null)
+                    if (DPRG_NAME == "" || DPRG_NAME == "ALL" || DPRG_NAME == null)
                     {
-                        getPrivilege = $"select PRG_NAME ,fun, passw, PRIVILEGE from SFIS1.C_PRIVILEGE where emp in (select regexp_substr ('{model.EMP_COPYDF}','^[^_]+') from dual) order by PRG_NAME, PRIVILEGE, passw";
+                        getPrivilege = $"select PRG_NAME ,fun, passw, PRIVILEGE, ROWIDTOCHAR(A.ROWID) as ROW_ID FROM SFIS1.C_PRIVILEGE a where emp in (select regexp_substr ('{EMP_COPYDF}','^[^_]+') from dual) order by PRG_NAME, PRIVILEGE, passw";
                     }
                     else
                     {
-                        getPrivilege = $"SELECT PRG_NAME ,FUN, PASSW, PRIVILEGE FROM SFIS1.C_PRIVILEGE WHERE EMP IN (SELECT REGEXP_SUBSTR ('{model.EMP_COPYDF}','^[^_]+') FROM DUAL) AND PRG_NAME ='{model.DPRG_NAME}' ORDER BY PRG_NAME";
+                        getPrivilege = $"SELECT PRG_NAME ,FUN, PASSW, PRIVILEGE, ROWIDTOCHAR(A.ROWID) as ROW_ID FROM SFIS1.C_PRIVILEGE a WHERE EMP IN (SELECT REGEXP_SUBSTR ('{EMP_COPYDF}','^[^_]+') FROM DUAL) AND PRG_NAME ='{DPRG_NAME}' ORDER BY PRG_NAME";
                     }
                 }
                 else
                 {
-                    if (model.DPRG_NAME == "" || model.DPRG_NAME == "ALL" || model.DPRG_NAME == null)
+                    if (DPRG_NAME == "" || DPRG_NAME == "ALL" || DPRG_NAME == null)
                     {
-                        getPrivilege = $"select PRG_NAME ,fun, passw, PRIVILEGE from SFIS1.C_PRIVILEGE where emp in (select regexp_substr ('{model.EMP_NO_NAME}','^[^_]+') from dual) order by PRG_NAME, PRIVILEGE, passw";
+                        getPrivilege = $"select PRG_NAME ,fun, passw, PRIVILEGE, ROWIDTOCHAR(A.ROWID) as ROW_ID from SFIS1.C_PRIVILEGE a where emp in (select regexp_substr ('{EMP_NO_NAME}','^[^_]+') from dual) order by PRG_NAME, PRIVILEGE, passw";
                     }
                     else
                     {
-                        getPrivilege = $"SELECT PRG_NAME ,FUN, PASSW, PRIVILEGE FROM SFIS1.C_PRIVILEGE WHERE EMP IN (SELECT REGEXP_SUBSTR ('{model.EMP_NO_NAME}','^[^_]+') FROM DUAL) AND PRG_NAME ='{model.DPRG_NAME}' ORDER BY PRG_NAME";
+                        getPrivilege = $"SELECT PRG_NAME ,FUN, PASSW, PRIVILEGE, ROWIDTOCHAR(A.ROWID) as ROW_ID FROM SFIS1.C_PRIVILEGE a WHERE EMP IN (SELECT REGEXP_SUBSTR ('{EMP_NO_NAME}','^[^_]+') FROM DUAL) AND PRG_NAME ='{DPRG_NAME}' ORDER BY PRG_NAME";
                     }
                 }
 
-                DataTable dtPrivilege = DBConnect.GetData(getPrivilege, model.database_name);
+                DataTable dtPrivilege = DBConnect.GetData(getPrivilege, database_name);
                 return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtPrivilege });
-            } catch (SqlException ex)
+            }
+            catch (SqlException ex)
             {
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { error = "Database error", message = ex.Message });
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { error = "An error occurred", message = ex.Message });
             }
@@ -665,14 +675,15 @@ namespace SN_API.Controllers.Config
                     {
                         try
                         {
-                            
+
                             if ((model.LISTGROUPDF == null || model.LISTGROUPDF.Count == 0) && (model.LISTGROUPNOTDF == null || model.LISTGROUPNOTDF.Count == 0))
                             {
                                 return Request.CreateResponse(HttpStatusCode.OK, new { result = "There's nothing to save" });
                             }
-                            if(model.LISTGROUPDF != null && model.LISTGROUPDF.Count > 0 && model.valueInput == "true")
+                            //Input list emp
+                            if (model.LISTGROUPDF != null && model.LISTGROUPDF.Count > 0 && model.valueInput == "true")
                             {
-                                if(model.LISTEMP == null || model.LISTEMP.Count == 0)
+                                if (model.LISTEMP == null || model.LISTEMP.Count == 0)
                                 {
                                     return Request.CreateResponse(HttpStatusCode.OK, new { result = "List emp error!" });
                                 }
@@ -704,11 +715,11 @@ namespace SN_API.Controllers.Config
                                     " AND B.PRIVILEGE = :PRIVILEGE";
                                     using (var command = new OracleCommand(SqlInsertMultiple, conn))
                                     {
-                                        if(prgName != null)
+                                        if (prgName != null)
                                         {
                                             command.Parameters.Add(new OracleParameter("PRG_NAME", prgName));
                                         }
-                                        if(passw != null)
+                                        if (passw != null)
                                         {
                                             command.Parameters.Add(new OracleParameter("PASSW", passw));
                                         }
@@ -721,20 +732,26 @@ namespace SN_API.Controllers.Config
                                     }
                                 }
                             }
-                            else if(model.LISTGROUPDF != null && model.LISTGROUPDF.Count > 0)
+                            //All privilege
+                            else if (model.LISTGROUPDF != null && model.LISTGROUPDF.Count > 0)
                             {
+                                string emp;
+                                if (model.value == "false")
+                                {
+                                    emp = model.EMP_COPYDF.Split('_')[0];
+                                }
+                                else
+                                {
+                                    emp = model.EMP_NO_NAME.Split('_')[0];
+                                }
+                                string checkExistEmp = $"SELECT EMP_NO FROM SFIS1.C_EMP_DESC_T WHERE EMP_NO = '{ emp }' ";
+                                if (DBConnect.GetData(checkExistEmp, model.database_name).Rows.Count <= 0)
+                                {
+                                    return Request.CreateResponse(HttpStatusCode.OK, new { result = $"Error emp: { emp }, does not exist in EMP_DESC_T" });
+                                }
                                 string sqlInsert = "INSERT INTO SFIS1.C_PRIVILEGE (EMP, PASSW, FUN, PRIVILEGE, PRG_NAME) VALUES (:EMP, :PASSW, :FUN, :PRIVILEGE, :PRG_NAME)";
                                 foreach (var group in model.LISTGROUPDF)
                                 {
-                                    string emp;
-                                    if(model.value == "false")
-                                    {
-                                         emp = model.EMP_COPYDF.Split('_')[0];
-                                    }
-                                    else
-                                    {
-                                         emp = model.EMP_NO_NAME.Split('_')[0];
-                                    }
                                     string passw = string.IsNullOrEmpty(group.PASSW) ? null : group.PASSW;
                                     string fun = string.IsNullOrEmpty(group.FUN) ? null : group.FUN;
                                     string privilege = group.PRIVILEGE ?? "0";
@@ -752,25 +769,29 @@ namespace SN_API.Controllers.Config
                                         await command.ExecuteNonQueryAsync();
                                     }
                                     // Insert log
-                                    string logSql = "INSERT INTO SFISM4.R_SYSTEM_LOG_T (EMP_NO, PRG_NAME, ACTION_TYPE, ACTION_DESC) VALUES (:EMP_NO, 'CONFIG', 'INSERT', :ACTION_DESC)";
-                                    using (var logCommand = new OracleCommand(logSql, conn))
-                                    {
-                                        logCommand.Parameters.Add(new OracleParameter("EMP_NO", model.EMP_NO));
-                                        logCommand.Parameters.Add(new OracleParameter("ACTION_DESC", $"Config7 PRIVILEGE  EMP: {emp}, PASSW: {passw}, FUN: {fun}, PRIVILEGE: {privilege}, PRG_NAME: {prgName}, IP:{AuthorizationController.UserIP()}"));
-                                        logCommand.Transaction = transaction;
-                                        await logCommand.ExecuteNonQueryAsync();
-                                    }
+                                    //string logSql = "INSERT INTO SFISM4.R_SYSTEM_LOG_T (EMP_NO, PRG_NAME, ACTION_TYPE, ACTION_DESC) VALUES (:EMP_NO, 'CONFIG', 'INSERT', :ACTION_DESC)";
+                                    //using (var logCommand = new OracleCommand(logSql, conn))
+                                    //{
+                                    //    logCommand.Parameters.Add(new OracleParameter("EMP_NO", model.EMP_NO));
+                                    //    logCommand.Parameters.Add(new OracleParameter("ACTION_DESC", $"Config7 PRIVILEGE  EMP: {emp}, PASSW: {passw}, FUN: {fun}, PRIVILEGE: {privilege}, PRG_NAME: {prgName}, IP:{AuthorizationController.UserIP()}"));
+                                    //    logCommand.Transaction = transaction;
+                                    //    await logCommand.ExecuteNonQueryAsync();
+                                    //}
                                 }
                             }
                             //delete
-                            else if(model.LISTGROUPNOTDF != null && model.LISTGROUPNOTDF.Count > 0)
+                            if (model.LISTGROUPNOTDF != null && model.LISTGROUPNOTDF.Count > 0)
                             {
                                 foreach (var group in model.LISTGROUPNOTDF)
                                 {
                                     string emp;
-                                    if (model.value == "false")
+                                    if(model.value == "false" && model.valueInput == "false")
                                     {
                                         emp = model.EMP_COPYDF.Split('_')[0];
+                                    }
+                                    else if(model.valueInput == "true" && model.value == "false")
+                                    {
+                                        emp = group.EMP;
                                     }
                                     else
                                     {
@@ -780,41 +801,43 @@ namespace SN_API.Controllers.Config
                                     string fun = string.IsNullOrEmpty(group.FUN) ? null : group.FUN;
                                     string privilege = group.PRIVILEGE ?? "0";
                                     string prgName = group.PRG_NAME;
+                                    string rowid = group.ROW_ID;
 
                                     string sqlDelete = "DELETE SFIS1.C_PRIVILEGE WHERE EMP = :EMP AND " +
                                         (passw == null ? "PASSW IS NULL" : "PASSW = :PASSW") + " AND " +
-                                        (fun == null ? "FUN IS NULL" : "FUN = :FUN") + 
-                                        " AND PRIVILEGE = :PRIVILEGE AND PRG_NAME = :PRG_NAME";
+                                        (fun == null ? "FUN IS NULL" : "FUN = :FUN") +
+                                        " AND PRIVILEGE = :PRIVILEGE AND PRG_NAME = :PRG_NAME AND ROWID = :ROW_ID";
 
                                     using (var command = new OracleCommand(sqlDelete, conn))
                                     {
                                         command.Parameters.Add(new OracleParameter("EMP", emp));
-                                        if(passw != null)
+                                        if (passw != null)
                                         {
                                             command.Parameters.Add(new OracleParameter("PASSW", passw));
                                         }
-                                        if(fun != null)
+                                        if (fun != null)
                                         {
                                             command.Parameters.Add(new OracleParameter("FUN", fun));
                                         }
                                         command.Parameters.Add(new OracleParameter("PRIVILEGE", privilege));
                                         command.Parameters.Add(new OracleParameter("PRG_NAME", prgName));
+                                        command.Parameters.Add(new OracleParameter("ROW_ID", rowid));
                                         command.Transaction = transaction;
                                         await command.ExecuteNonQueryAsync();
                                     }
                                     // Insert log
-                                    string logSql = "INSERT INTO SFISM4.R_SYSTEM_LOG_T (EMP_NO, PRG_NAME, ACTION_TYPE, ACTION_DESC) VALUES (:EMP_NO, 'CONFIG', 'DELETE', :ACTION_DESC)";
-                                    using (var logCommand = new OracleCommand(logSql, conn))
-                                    {
-                                        logCommand.Parameters.Add(new OracleParameter("EMP_NO", model.EMP_NO));
-                                        logCommand.Parameters.Add(new OracleParameter("ACTION_DESC", $"Config7 PRIVILEGE  EMP: {emp}, PASSW: {passw}, FUN: {fun}, PRIVILEGE: {privilege}, PRG_NAME: {prgName}, IP:{AuthorizationController.UserIP()}"));
-                                        logCommand.Transaction = transaction;
-                                        await logCommand.ExecuteNonQueryAsync();
-                                    }
+                                    //string logSql = "INSERT INTO SFISM4.R_SYSTEM_LOG_T (EMP_NO, PRG_NAME, ACTION_TYPE, ACTION_DESC) VALUES (:EMP_NO, 'CONFIG', 'DELETE', :ACTION_DESC)";
+                                    //using (var logCommand = new OracleCommand(logSql, conn))
+                                    //{
+                                    //    logCommand.Parameters.Add(new OracleParameter("EMP_NO", model.EMP_NO));
+                                    //    logCommand.Parameters.Add(new OracleParameter("ACTION_DESC", $"Config7 PRIVILEGE  EMP: {emp}, PASSW: {passw}, FUN: {fun}, PRIVILEGE: {privilege}, PRG_NAME: {prgName}, IP:{AuthorizationController.UserIP()}"));
+                                    //    logCommand.Transaction = transaction;
+                                    //    await logCommand.ExecuteNonQueryAsync();
+                                    //}
                                 }
                             }
-                                transaction.Commit();
-                                return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok" });
+                            transaction.Commit();
+                            return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok" });
                         }
                         catch (Exception ex)
                         {
@@ -826,6 +849,123 @@ namespace SN_API.Controllers.Config
             catch (Exception ex)
             {
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { error = "Internal serve error: " + ex.Message });
+            }
+        }
+        #endregion
+        #region Ams_Privilege
+        [System.Web.Http.Route("getEmpNoAms")]
+        [System.Web.Http.HttpGet]
+        public async Task<HttpResponseMessage> getEmpNoAms(string database_name)
+        {
+            try
+            {
+                string getPrivilege = "";
+
+                getPrivilege = $"SELECT EMP_NO ||'_'|| EMP_NAME AS EMP_NO FROM SFIS1.C_EMP_DESC_T";
+
+                DataTable dtCheck = DBConnect.GetData(getPrivilege, database_name);
+                if (dtCheck.Rows.Count == 0)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, new { result = "fail" });
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtCheck });
+                }
+            }
+            catch (SqlException ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { error = "Database error", message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { error = "An error occurred", message = ex.Message });
+            }
+        }
+        [System.Web.Http.Route("getAmsPrivilege")]
+        [System.Web.Http.HttpGet]
+        public async Task<HttpResponseMessage> getAmsPrivilege(string database_name, string emp_no)
+        {
+            try
+            {
+                string getAmsPrivilege = $"SELECT AP_GROUP FROM SFIS1.C_AMS_PRIVILEGE_T WHERE EMP_NO = REGEXP_SUBSTR('{ emp_no }', '^[^_]+')";
+                DataTable dtCheck = DBConnect.GetData(getAmsPrivilege, database_name);
+                if (dtCheck.Rows.Count == 0)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, new { result = "fail" });
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok", data = dtCheck });
+                }
+            }
+            catch (SqlException ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { error = "Database error", message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { error = "An error occurred", message = ex.Message });
+            }
+        }
+        [System.Web.Http.Route("insertDeleteAms")]
+        [System.Web.Http.HttpPost]
+        public async Task<HttpResponseMessage> insertDeleteAms(Config7Element model)
+        {
+            try
+            {
+                string checkExist = $"SELECT emp_no FROM SFIS1.C_EMP_DESC_T where emp_no ='{model.EMP_NO}'";
+
+                if (DBConnect.GetData(checkExist, model.database_name).Rows.Count <= 0)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, new { result = $"C_EMP_DESC_T have not EMP {model.EMP_NO} " });
+                }
+
+                if (model.ListDataAms == null || model.ListDataAms.Count == 0)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, new { result = "There's nothing to save" });
+                }
+                else
+                {
+                    string checkAmsPrivilege = $"SELECT AP_GROUP FROM SFIS1.C_AMS_PRIVILEGE_T WHERE EMP_NO ='{ model.EMP_NO }' ";
+                    DataTable dtCheck = DBConnect.GetData(checkAmsPrivilege, model.database_name);
+                    //if (dtCheck.Rows.Count == 0)
+                    //{
+                    //    return Request.CreateResponse(HttpStatusCode.OK, new { result = "fail" });
+                    //}
+                    //else
+                    //{
+                        HashSet<string> existingGroups = new HashSet<string>(dtCheck.AsEnumerable().Select(row => row.Field<string>("AP_GROUP")).ToList());
+
+                        HashSet<string> newGroups = new HashSet<string>(model.ListDataAms.Select(ams => ams.AP_GROUP).ToList());
+
+                        var groupsToInsert = newGroups.Except(existingGroups).ToList();
+
+                        var groupsToDelete = existingGroups.Except(newGroups).ToList();
+
+                        if(groupsToInsert.Count > 0)
+                        {
+                            foreach (var group in groupsToInsert)
+                            {
+                                string insertQuery = $"INSERT INTO SFIS1.C_AMS_PRIVILEGE_T (EMP_NO, AP_GROUP) VALUES ('{model.EMP_NO}', '{group}')";
+                                DBConnect.ExecuteNoneQuery(insertQuery, model.database_name);
+                            }
+                        }else if(groupsToDelete.Count > 0) 
+                        {
+                            foreach (var group in groupsToDelete)
+                            {
+                                string deleteQuery = $"DELETE FROM SFIS1.C_AMS_PRIVILEGE_T WHERE EMP_NO = '{model.EMP_NO}' AND AP_GROUP = '{group}'";
+                                DBConnect.ExecuteNoneQuery(deleteQuery, model.database_name);
+                            }
+                        }
+
+                        return Request.CreateResponse(HttpStatusCode.OK, new { result = "ok" });
+                    //}
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, "An error occurred: " + ex.Message);
             }
         }
         #endregion

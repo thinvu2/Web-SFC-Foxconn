@@ -221,6 +221,7 @@
     <Compile Include="Controllers\Config\ParameterConfig.cs" />
     <Compile Include="Controllers\Config\UploadDataController.cs" />
     <Compile Include="Controllers\LINKDNController.cs" />
+    <Compile Include="Controllers\QualcommApps\QASN_INController.cs" />
     <Compile Include="Controllers\ShippingDataController.cs" />
     <Compile Include="Controllers\TrapTestController.cs" />
     <Compile Include="Controllers\Config\Config23Controller.cs" />
@@ -414,6 +415,7 @@
     <Folder Include="Views\LINKDN\" />
     <Folder Include="Views\Lock\" />
     <Folder Include="Views\MoFix_BomRoute\" />
+    <Folder Include="Views\QASN_IN\" />
     <Folder Include="Views\QM\" />
     <Folder Include="Views\Query6\" />
     <Folder Include="Views\QueryInv2\" />

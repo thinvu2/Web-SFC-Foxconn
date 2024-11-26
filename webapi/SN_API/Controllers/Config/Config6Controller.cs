@@ -96,6 +96,7 @@ namespace SN_API.Controllers
             try
             {
                 //check privilege
+
                 string strPrivilege = $" SELECT * FROM  sfis1.C_PRIVILEGE  where PRG_NAME='CONFIG'  AND FUN = 'MODEL_EDIT' AND EMP='{model.EMP}'";
                 StringBuilder sb = new StringBuilder();
 

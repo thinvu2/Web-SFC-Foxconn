@@ -9,7 +9,6 @@ namespace SN_API.Services
     {
         public static string UI = StringConnect("10.224.134.98", "1527", "SFCODB", "HOGAN", "sfcsystem2014#!");
         public static string CQSFC = StringConnect("10.245.212.61", "1903", "SFCODB", "HOGAN", "cqtovnsfc");
-        //public static string TEST = StringConnect("10.225.35.61", "1521", "NBBDBTEST", "SFIS1", "vnsfis2014#!");
         public static string CPEII = StringConnect("10.224.81.34", "1521", "VNSFC", "SFIS1", "VNSFIS2014#!");
         public static string TEST = StringConnect("10.220.94.68", "1521", "SFCODB", "SFIS1", "dog2007#!");
 
